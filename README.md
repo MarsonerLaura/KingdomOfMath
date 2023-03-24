@@ -22,8 +22,7 @@
 <p>
 <div>
 <img align="left" width="53%" height="auto" src="https://user-images.githubusercontent.com/104200268/227624597-b379a28d-b547-41ef-bdc3-bba323bf3e7f.gif">
-<br>
- <h1>About</h1>
+<h1>About</h1>
 <li><b>Role:</b>&emsp;&emsp;&emsp;&emsp;Solo Dev</li>
 <li><b>Duration:</b>&emsp;&emsp;2 Months</li>
 <li><b>Group Size:</b>&emsp;1</li>
@@ -75,8 +74,6 @@ alt="Watch Trailer on YouTube" align="left" width="700" height="auto" border="10
 <br>
 <br>
 <div align="center"> Klick on the Image on the left or the button below to watch the Trailer on YouTube! 
-<br>
-<br>
 <br>
   
 [![Watch Trailer on YouTube](https://img.shields.io/badge/Watch%20Trailer-FF0000?logo=youtube&style=for-the-badge)](http://www.youtube.com/watch?feature=player_embedded&v=zHgLsDbrP3M) 
