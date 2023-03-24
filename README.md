@@ -48,10 +48,13 @@
 <li><b>Dialogue, Quest & Shop System</b></li>
 <li><b>Saving System, Scene Management</b></li>
 <li><b>Progression System</b> (Stats, Traits, Difficulty)</li>
+ <br>
+<br>
+ <br>
 </div>
 </p>
 
-<br>
+
 <br>
 
 <p>
