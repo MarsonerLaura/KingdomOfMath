@@ -63,8 +63,7 @@
 <div>
 <img align="left" width="50%" height="auto" src="https://user-images.githubusercontent.com/104200268/227634579-c074e1ef-75a3-4509-9fca-d6fabc0073be.gif">
 <br>
- <br>
- <h1>Features</h1>
+<h1>Features</h1>
 <li>Items & Inventory</li>
 <li>Combat & Abilities</li>
 <li>Stats & Traits</li>
