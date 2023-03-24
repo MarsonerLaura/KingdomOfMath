@@ -82,6 +82,7 @@
 alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="10" /></a>
 <br>
  <br>
+  <br>
 <div align="center"> Klick on the Image on the left or the button below to watch the Trailer on YouTube! 
 <br>
 <br>
@@ -95,8 +96,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 <br>
 <br>
 <br>
-<br>
-<br>
+
 
 ---
 
