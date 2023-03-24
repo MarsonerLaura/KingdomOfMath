@@ -29,8 +29,8 @@
 <li><b>Engine:</b>&emsp;&emsp;&emsp;Unity</li>
 <li><b>Genre:</b>&emsp;&emsp;&emsp;&nbsp;Action RPG x Serious Math Game</li>
 <li><b>Platform:</b>&emsp;&emsp;PC</li>
-<li><b>Context:</b>&emsp;&emsp;&nbsp;Informatics: Games Engineering Bachelors’ Thesis</li>
-<li><b>Build:</b>&emsp;&emsp;&emsp;&nbsp;&nbsp;https://lauramarsoner.itch.io/kingdomofmath</li>
+<li><b>Context:</b>&emsp;&emsp;&nbsp;Bachelors’ Thesis</li>
+<li><b>Build:</b>&emsp;&emsp;&emsp;&nbsp;&nbsp;<a href="https://lauramarsoner.itch.io/kingdomofmath">Itch.io</a></li>
 </div>
 </p>
 
