@@ -80,7 +80,7 @@
 
  <a href="http://www.youtube.com/watch?feature=player_embedded&v=zHgLsDbrP3M
 " target="_blank"><img src="https://user-images.githubusercontent.com/104200268/227638337-fd73fd4e-50a8-41b3-9bd4-4d418f4fe416.png" 
-alt="Watch Trailer on YouTube" align="left" width="60%" height="auto" border="10" /></a>
+alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="10" /></a>
 
  <br>
 <div align="center"> Klick on the Image on the left or the button below to watch the Trailer on YouTube! 
@@ -94,6 +94,11 @@ alt="Watch Trailer on YouTube" align="left" width="60%" height="auto" border="10
 
 <br>
 <br>
+<br>
+<br>
+
+---
+
 <p>
 <div>
 <details>
