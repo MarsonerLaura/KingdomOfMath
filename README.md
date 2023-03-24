@@ -4,19 +4,30 @@
 <div>
 <img align="left" width="50%" height="auto" src="https://user-images.githubusercontent.com/104200268/227256803-92b0ec28-cf02-42f3-a0a7-31b2b6e70073.png">
 <h1>About</h1>
-<li><b>Role: </b>Solo Dev</li>
-<li><b>Duration:</b> 2 Months</li>
-<li><b>Group Size:</b> 1</li>
-<li><b>Engine: </b>Unity</li>
-<li><b>Genre: </b>Action RPG x Serious Math Game</li>
-<li><b>Platform:</b> PC</li>
-<li><b>Context: </b>Bachelors’ Thesis in Informatik: Games Engineering</li>
-  <li><b>Download:</b> https://lauramarsoner.itch.io/kingdomofmath</li>
+<li><b>Role:</b>&emsp;&emsp;&emsp;&emsp;Solo Dev</li>
+<li><b>Duration:</b>&emsp;&emsp;2 Months</li>
+<li><b>Group Size:</b>&emsp;1</li>
+<li><b>Engine:</b>&emsp;&emsp;&emsp;Unity</li>
+<li><b>Genre:</b>&emsp;&emsp;&emsp;&nbsp;Action RPG x Serious Math Game</li>
+<li><b>Platform:</b>&emsp;&emsp;PC</li>
+<li><b>Context:</b>&emsp;&emsp;&nbsp;Bachelors’ Thesis in Informatik: Games Engineering</li>
+<li><b>Download:</b>&emsp;&nbsp;https://lauramarsoner.itch.io/kingdomofmath</li>
 </div>
 </div>
+<br>
 
 
+ <a href="http://www.youtube.com/watch?feature=player_embedded&v=zHgLsDbrP3M
+" target="_blank"><img src="https://user-images.githubusercontent.com/104200268/227499387-f225a309-0126-43fe-82c4-2609e0966360.png" 
+alt="Watch Trailer on YouTube" align="left" width="700" height="auto" border="10" /></a>
+<br>
+<br>
+<div align="center"> Klick on the Image on the left or the button below to watch the Trailer on YouTube! 
+<br>
+<br>
+<br>
+  
+[![Watch Trailer on YouTube](https://img.shields.io/badge/Watch%20Trailer-FF0000?logo=youtube&style=for-the-badge)](http://www.youtube.com/watch?feature=player_embedded&v=zHgLsDbrP3M) 
+ 
+</div>
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=zHgLsDbrP3M
-" target="_blank"><img src="http://img.youtube.com/vi/zHgLsDbrP3M/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
