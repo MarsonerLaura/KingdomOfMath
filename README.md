@@ -56,8 +56,10 @@
 
 <br>
 <br>
+<br>
+<br>
 
-
+<p>
 <div>
 <img align="left" width="50%" height="auto" src="https://user-images.githubusercontent.com/104200268/227256803-92b0ec28-cf02-42f3-a0a7-31b2b6e70073.png">
 <h1>Features</h1>
@@ -69,6 +71,7 @@
 <li>Tutorial + Prototype Level (1h - 1.5h playtime)</li>
 <li>Math Content (Quests, Chests, Shops, Item Upgrades)</li>
 </div>
+</p>
 <br>
 <br>
 <br>
@@ -77,8 +80,7 @@
 
  <a href="http://www.youtube.com/watch?feature=player_embedded&v=zHgLsDbrP3M
 " target="_blank"><img src="https://user-images.githubusercontent.com/104200268/227499387-f225a309-0126-43fe-82c4-2609e0966360.png" 
-alt="Watch Trailer on YouTube" align="left" width="700" height="auto" border="10" /></a>
-<br>
+alt="Watch Trailer on YouTube" align="left" width="60%" height="auto" border="10" /></a>
 <br>
 <div align="center"> Klick on the Image on the left or the button below to watch the Trailer on YouTube! 
 <br>
