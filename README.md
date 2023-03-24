@@ -61,7 +61,7 @@
 
 <p>
 <div>
-<img align="left" width="50%" height="auto" src="https://user-images.githubusercontent.com/104200268/227256803-92b0ec28-cf02-42f3-a0a7-31b2b6e70073.png">
+<img align="left" width="50%" height="auto" src="https://user-images.githubusercontent.com/104200268/227634579-c074e1ef-75a3-4509-9fca-d6fabc0073be.gif">
 <h1>Features</h1>
 <li>Items & Inventory</li>
 <li>Combat & Abilities</li>
@@ -72,19 +72,20 @@
 <li>Math Content (Quests, Chests, Shops, Item Upgrades)</li>
 </div>
 </p>
-<br>
-<br>
-<br>
 
-<div>
+<br>
+<br>
+<br>
 
  <a href="http://www.youtube.com/watch?feature=player_embedded&v=zHgLsDbrP3M
 " target="_blank"><img src="https://user-images.githubusercontent.com/104200268/227499387-f225a309-0126-43fe-82c4-2609e0966360.png" 
 alt="Watch Trailer on YouTube" align="left" width="60%" height="auto" border="10" /></a>
-<br>
+
+ <br>
 <div align="center"> Klick on the Image on the left or the button below to watch the Trailer on YouTube! 
 <br>
-  
+<br>
+ 
 [![Watch Trailer on YouTube](https://img.shields.io/badge/Watch%20Trailer-FF0000?logo=youtube&style=for-the-badge)](http://www.youtube.com/watch?feature=player_embedded&v=zHgLsDbrP3M) 
  
 </div>
