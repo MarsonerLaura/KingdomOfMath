@@ -39,7 +39,7 @@
 
 <p>
 <div>
-<img align="right" width="45%" height="auto" src="https://user-images.githubusercontent.com/104200268/227627070-b529d4c9-8838-4a3e-8055-d579a45d0ede.png">
+<img align="right" width="42%" height="auto" src="https://user-images.githubusercontent.com/104200268/227627070-b529d4c9-8838-4a3e-8055-d579a45d0ede.png">
 <br>
  <br>
  <h1>Responsibilities</h1>
@@ -51,9 +51,12 @@
 <li><b>Dialogue, Quest & Shop System</b></li>
 <li><b>Saving System, Scene Management</b></li>
 <li><b>Progression System</b> (Stats, Traits, Difficulty)</li>
- <br>
 </div>
 </p>
+
+<br>
+<br>
+
 
 <div>
 <img align="left" width="50%" height="auto" src="https://user-images.githubusercontent.com/104200268/227256803-92b0ec28-cf02-42f3-a0a7-31b2b6e70073.png">
