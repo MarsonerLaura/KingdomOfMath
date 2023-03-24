@@ -31,9 +31,8 @@
 <li><b>Context:</b>&emsp;&emsp;&nbsp;Bachelors’ Thesis</li>
 <li><b>Build:</b>&emsp;&emsp;&emsp;&nbsp;&nbsp;<a href="https://lauramarsoner.itch.io/kingdomofmath">Itch.io</a></li>
 </p>
-<br>
 
----
+<br>
 
 <p>
 <div>
@@ -53,8 +52,7 @@
 </p>
 
 <br>
-
----
+<br>
 
 <p>
 <div>
@@ -71,8 +69,6 @@
 </div>
 </p>
 
-<br>
-<br>
 <br>
 
 ---
