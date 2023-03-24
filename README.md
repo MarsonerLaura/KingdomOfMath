@@ -45,10 +45,10 @@
 <li><b>Dialogue, Quest & Shop System</b></li>
 <li><b>Saving System, Scene Management</b></li>
 <li><b>Progression System</b> (Stats, Traits, Difficulty)</li>
-<li><b>Project Management</b></li>
+<li><b>Project Management & Source Control</b></li>
 <li><b>Prototyping & Bugfixing</b></li>
 <br>
- <br>
+<br>
 </div>
 </p>
 
