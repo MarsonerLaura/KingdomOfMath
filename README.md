@@ -34,11 +34,12 @@
 </div>
 </p>
 
+
 <br>
 
 <p>
 <div>
-<img align="right" width="50%" height="auto" src="https://user-images.githubusercontent.com/104200268/227256803-92b0ec28-cf02-42f3-a0a7-31b2b6e70073.png">
+<img align="right" width="50%" height="auto" src="https://user-images.githubusercontent.com/104200268/227627070-b529d4c9-8838-4a3e-8055-d579a45d0ede.png">
 <h1>Responsibilities</h1>
 <li><b>Gameplay Programming</b> (Combat, Inventory, Movement)</li>
 <li><b>Game Design</b> (Level, Tutorial, Worldbuilding, Quests, UI/UX)</li>
