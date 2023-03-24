@@ -4,9 +4,19 @@
 
 <br>
 
-[<kbd style="background-color: blue; color: white;">Click Me</kbd>]()
 
-[![Button](https://img.shields.io/badge/Click%20Me-blue?style=flat-square&logo=none)]()
+<div align="center">
+ 
+`Unity`
+`C#`
+`Krita`
+`Rider`
+`Mixamo`
+`Google Sheets`
+`Prototyping`
+`Scriptable Objects`
+ 
+</div>
 
 
 <br>
