@@ -20,7 +20,6 @@
 ---
 
 <p>
-
 <img align="left" width="53%" height="auto" src="https://user-images.githubusercontent.com/104200268/227624597-b379a28d-b547-41ef-bdc3-bba323bf3e7f.gif">
 <h1>About</h1>
 <li><b>Role:</b>&emsp;&emsp;&emsp;&emsp;Solo Dev</li>
@@ -31,8 +30,8 @@
 <li><b>Platform:</b>&emsp;&emsp;PC</li>
 <li><b>Context:</b>&emsp;&emsp;&nbsp;Bachelors’ Thesis</li>
 <li><b>Build:</b>&emsp;&emsp;&emsp;&nbsp;&nbsp;<a href="https://lauramarsoner.itch.io/kingdomofmath">Itch.io</a></li>
-
 </p>
+<br>
 
 ---
 
@@ -53,8 +52,6 @@
 </div>
 </p>
 
-<br>
-<br>
 <br>
 
 ---
