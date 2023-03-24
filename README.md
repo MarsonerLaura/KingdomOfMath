@@ -34,9 +34,7 @@
 
 </p>
 
-<br>
-<br>
-<br>
+---
 
 <p>
 <div>
@@ -58,11 +56,8 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+---
 
 <p>
 <div>
@@ -84,6 +79,8 @@
 <br>
 
 ---
+
+<br>
 
  <a href="http://www.youtube.com/watch?feature=player_embedded&v=zHgLsDbrP3M
 " target="_blank"><img src="https://user-images.githubusercontent.com/104200268/227499387-f225a309-0126-43fe-82c4-2609e0966360.png" 
