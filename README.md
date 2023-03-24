@@ -4,7 +4,6 @@
 
 <br>
 
-
 <div align="center">
  
 `Unity`
@@ -15,44 +14,30 @@
 `Google Sheets`
 `Prototyping`
 `Scriptable Objects`
- 
-</div>
 
+</div>
 
 <br>
 
-<div>
-<img align="left" width="50%" height="auto" src="https://user-images.githubusercontent.com/104200268/227256803-92b0ec28-cf02-42f3-a0a7-31b2b6e70073.png">
-<h1>About</h1>
-<li><b>Role:</b>&emsp;&emsp;&emsp;&emsp;Solo Dev</li>
-<li><b>Duration:</b>&emsp;&emsp;2 Months</li>
-<li><b>Group Size:</b>&emsp;1</li>
-<li><b>Engine:</b>&emsp;&emsp;&emsp;Unity</li>
-<li><b>Genre:</b>&emsp;&emsp;&emsp;&nbsp;Action RPG x Serious Math Game</li>
-<li><b>Platform:</b>&emsp;&emsp;PC</li>
-<li><b>Context:</b>&emsp;&emsp;&nbsp;Bachelors’ Thesis in Informatik: Games Engineering</li>
-<li><b>Build:</b>&emsp;&emsp;&emsp;&nbsp;&nbsp;https://lauramarsoner.itch.io/kingdomofmath</li>
-</div>
-
-
 <p>
-
-<img align="left" width="50%" height="auto" src="https://user-images.githubusercontent.com/104200268/227600971-382fc760-c7a2-4272-9da6-9073759d3da0.gif">
 <div>
-<h1>About</h1>
+<img align="left" width="53%" height="auto" src="https://user-images.githubusercontent.com/104200268/227624597-b379a28d-b547-41ef-bdc3-bba323bf3e7f.gif">
+<br>
+ <h1>About</h1>
 <li><b>Role:</b>&emsp;&emsp;&emsp;&emsp;Solo Dev</li>
 <li><b>Duration:</b>&emsp;&emsp;2 Months</li>
 <li><b>Group Size:</b>&emsp;1</li>
 <li><b>Engine:</b>&emsp;&emsp;&emsp;Unity</li>
 <li><b>Genre:</b>&emsp;&emsp;&emsp;&nbsp;Action RPG x Serious Math Game</li>
 <li><b>Platform:</b>&emsp;&emsp;PC</li>
-<li><b>Context:</b>&emsp;&emsp;&nbsp;Bachelors’ Thesis in Informatik: Games Engineering</li>
+<li><b>Context:</b>&emsp;&emsp;&nbsp;Informatics: Games Engineering Bachelors’ Thesis</li>
 <li><b>Build:</b>&emsp;&emsp;&emsp;&nbsp;&nbsp;https://lauramarsoner.itch.io/kingdomofmath</li>
 </div>
 </p>
-<br>
+
 <br>
 
+<p>
 <div>
 <img align="right" width="50%" height="auto" src="https://user-images.githubusercontent.com/104200268/227256803-92b0ec28-cf02-42f3-a0a7-31b2b6e70073.png">
 <h1>Responsibilities</h1>
@@ -65,18 +50,18 @@
 <li><b>Saving System, Scene Management</b></li>
 <li><b>Progression System</b> (Stats, Traits, Difficulty)</li>
 </div>
+</p>
 
 <div>
 <img align="left" width="50%" height="auto" src="https://user-images.githubusercontent.com/104200268/227256803-92b0ec28-cf02-42f3-a0a7-31b2b6e70073.png">
 <h1>Features</h1>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li>Items & Inventory</li>
+<li>Combat & Abilities</li>
+<li>Stats & Traits</li>
+<li>Dialogues & Quests</li>
+<li>Different Enemies</li>
+<li>Tutorial + Prototype Level (1h - 1.5h playtime)</li>
+<li>Math Content (Quests, Chests, Shops, Item Upgrades)</li>
 </div>
 <br>
 <br>
