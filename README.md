@@ -79,7 +79,7 @@
 <br>
 
  <a href="http://www.youtube.com/watch?feature=player_embedded&v=zHgLsDbrP3M
-" target="_blank"><img src="https://user-images.githubusercontent.com/104200268/227499387-f225a309-0126-43fe-82c4-2609e0966360.png" 
+" target="_blank"><img src="https://user-images.githubusercontent.com/104200268/227638337-fd73fd4e-50a8-41b3-9bd4-4d418f4fe416.png" 
 alt="Watch Trailer on YouTube" align="left" width="60%" height="auto" border="10" /></a>
 
  <br>
@@ -88,7 +88,7 @@ alt="Watch Trailer on YouTube" align="left" width="60%" height="auto" border="10
 <br>
  
 [![Watch Trailer on YouTube](https://img.shields.io/badge/Watch%20Trailer-FF0000?logo=youtube&style=for-the-badge)](http://www.youtube.com/watch?feature=player_embedded&v=zHgLsDbrP3M) 
- 
+
 </div>
 </div>
 
