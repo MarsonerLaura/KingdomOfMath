@@ -57,7 +57,7 @@
 
 <p>
 <div>
-<img align="left" width="50%" height="auto" src="https://user-images.githubusercontent.com/104200268/227634579-c074e1ef-75a3-4509-9fca-d6fabc0073be.gif">
+<img align="left" width="50%" height="auto" src="https://user-images.githubusercontent.com/104200268/227796152-a848cc4a-c7f6-4511-988b-5db69b7c1583.gif">
 <br>
 <h1>Features</h1>
 <li>Items & Inventory</li>
