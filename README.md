@@ -139,18 +139,21 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
       Triggers can be used to activate actions when a dialog node is entered or exited, such as removing quest items from the player's inventory or giving rewards. The combination of conditions and triggers in dialogs is a powerful tool for driving the story and gameplay. 
       </div>
       
-      - <details> 
-        <summary>Code Snippets</summary>
-        
-        ```C#
-        [MenuItem("Window/Dialogue Editor")]
-         public static void ShowEditorWindow()
-         {
-             GetWindow(typeof(DialogueEditor), false, "Dialogue Editor");
-         }
+   </details>
  
-        </details> 
+ - <details> 
+    <summary>Code Snippets</summary>
+        
+      ```c#
+      [MenuItem("Window/Dialogue Editor")]
+      public static void ShowEditorWindow()
+      {
+          GetWindow(typeof(DialogueEditor), false, "Dialogue Editor");
+      }
+      ```
+ 
       ---
+      
    </details>
 
 </details>
