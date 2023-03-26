@@ -114,21 +114,28 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
  
   - <details> 
      <summary>Dialogue Editor</summary>
+ 
       <br>
+ 
       <div align="center">
       The Dialogue Editor also allows developers to create dialogs quickly and efficiently and provides a better overview over the dialogue. Each dialogue consists of several nodes that are connected by Bézier curves.     
       <img src="https://user-images.githubusercontent.com/104200268/227770424-3d76d338-f03b-4df5-a914-addf655d198a.png" width="80%" height="auto">
       </div>
+ 
       <br>
+
+
       <div align="center"> 
       Nodes can be added, linked, or deleted, and can also be moved and arranged by dragging them.
       <img src="https://user-images.githubusercontent.com/104200268/227791963-3c6d6053-8d6b-49de-ae02-3e3182ebc0c5.gif" width="80%" height="auto">
       </div>
+ 
       <br>
+ 
       <div align="center">
       The Nodes are implemented using scriptable objects. There are different configuration options for the nodes: the size of the text field, selecting whether it is a player or NPC part of the conversation, and adding an Enter or Exit actions. Conditions can be set, such as requiring players to have certain items in their inventory to unlock specific answer options, which is useful for quests and gameplay.
-      <img src="https://user-images.githubusercontent.com/104200268/227783622-dc31d03f-cbb5-4e40-8393-d270860b8ce7.PNG" width="50%" height="auto">
-      
+      <img src="https://user-images.githubusercontent.com/104200268/227792229-3e894d1e-12cc-48b5-a301-15247fc87b24.png" width="50%" height="auto">
+       
       Triggers can be used to activate actions when a dialog node is entered or exited, such as removing quest items from the player's inventory or giving rewards. The combination of conditions and triggers in dialogs is a powerful tool for driving the story and gameplay. 
       </div>
  
