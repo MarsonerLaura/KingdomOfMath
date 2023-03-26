@@ -138,11 +138,15 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
       Triggers can be used to activate actions when a dialog node is entered or exited, such as removing quest items from the player's inventory or giving rewards. The combination of conditions and triggers in dialogs is a powerful tool for driving the story and gameplay. 
       </div>
     
+      <br>
+ 
     </details>
  
   - <details> 
      <summary>Code Snippets</summary>
-        
+     <br>
+      Creation of an Editor Window
+ 
       ```c#
       [MenuItem("Window/Dialogue Editor")]
       public static void ShowEditorWindow()
@@ -150,7 +154,41 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
           GetWindow(typeof(DialogueEditor), false, "Dialogue Editor");
       }
       ```
+      <br>
+      This Method draws the Bezier Curves to connect the dialogue nodes.
  
+      ```csharp
+      private void DrawConnections(DialogueNode node)
+      {
+          Vector3 startPosition = new Vector3(node.GetRect().xMax, node.GetRect().center.y,0);
+          foreach (DialogueNode childNode in _selectedDialogue.GetAllChildren(node))
+          {
+              Vector3 endPosition = new Vector3(childNode.GetRect().xMin, childNode.GetRect().center.y,0);
+              Vector3 controlPointOffset = endPosition - startPosition;
+              controlPointOffset.y = 0;
+              controlPointOffset.x *= 0.9f;
+              Handles.DrawBezier(startPosition, endPosition, startPosition + controlPointOffset, 
+                endPosition - controlPointOffset, Color.white, null, 4f);
+          }
+      }
+      ```
+      <br>
+      This Method is called if a Dialogue Scriptable object is opened and automatically opens the Dialogue Editor.
+ 
+      ```csharp
+      [OnOpenAsset(1)]
+      public static bool OpenDialogue(int instanceID, int line)
+      {
+          Dialogue dialogue = EditorUtility.InstanceIDToObject(instanceID) as Dialogue;  
+          if (dialogue != null)
+          {
+              ShowEditorWindow();
+              _selectedDialogue = dialogue;
+              return true;
+          }
+          return false;
+      }
+      ```
       ---
       
    </details>
