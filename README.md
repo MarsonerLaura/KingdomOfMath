@@ -99,37 +99,112 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 <p>
 <h1>Additional Information</h1>
-<div>
 <details>
-  <summary>Click to expand</summary>
+  <summary>Dialogue & Editor</summary>
+  ![mehrere_megliche_ontwortn](https://user-images.githubusercontent.com/104200268/227770422-955ecd57-e185-40f4-b9fa-aca13a8e6842.png)
+![mehrere_megliche_ontwortn02](https://user-images.githubusercontent.com/104200268/227770423-0f27141e-4c54-478e-a061-1bda0ba10a19.png)
+![image22](https://user-images.githubusercontent.com/104200268/227770424-3d76d338-f03b-4df5-a914-addf655d198a.png)
+![dialogueEditor1](https://user-images.githubusercontent.com/104200268/227770731-43d8f6fc-03c6-4ab8-a377-28771b3f9de5.PNG)
+![dialogueEditor2](https://user-images.githubusercontent.com/104200268/227770734-870e6dc9-a4ef-443a-99c1-62a476c61472.PNG)
+![dialogueEditor](https://user-images.githubusercontent.com/104200268/227770737-b3b5016d-ce63-4ef2-bc02-f4bf4a60bb60.PNG)
+
+  This is the text that will be hidden and can be expanded by clicking on the button.
+  
+</details>
+
+<details>
+  <summary>Chests</summary>
+  
+![image6](https://user-images.githubusercontent.com/104200268/227770154-8badb528-65da-446a-9569-44b6c27e9f2d.png)
+
+![image16](https://user-images.githubusercontent.com/104200268/227770156-dcc77aea-e740-4666-8390-46ec6a41f624.gif)
+</details>
+
+<details>
+  <summary>Shops</summary>
+  
+  This is the text that will be hidden and can be expanded by clicking on the button.
+  ![Shop02](https://user-images.githubusercontent.com/104200268/227770460-569c4c95-b963-4cb7-a131-89b8d7e1130e.png)
+![image23](https://user-images.githubusercontent.com/104200268/227770464-ebbb5689-2909-4237-acb7-b239e64786f8.png)
+![image17](https://user-images.githubusercontent.com/104200268/227770519-99289146-2117-4316-bfc8-f4d785567e80.gif)
+
+</details>
+
+<details>
+  <summary>Item Upgrades</summary>
+  
+  This is the text that will be hidden and can be expanded by clicking on the button.
+  ![image14](https://user-images.githubusercontent.com/104200268/227770235-918c6946-e085-44bb-8934-d9b8539eb122.gif)
+
+</details>
+
+<details>
+  <summary>Quests</summary>
+  ![ezgif com-optimize](https://user-images.githubusercontent.com/104200268/227770657-7a97f0d5-4023-4d54-b5b8-06b8be63d407.gif)
+
+  This is the text that will be hidden and can be expanded by clicking on the button.
+  
+</details>
+<details>
+  <summary>Combat</summary>
+  ![Circle_Auf_Boden](https://user-images.githubusercontent.com/104200268/227770296-7393e827-009d-40d3-8bf2-66c58208fe2a.png)
+![Combat02 (1)](https://user-images.githubusercontent.com/104200268/227770300-7b7ad007-3772-4824-a9cb-df7fcbc2a674.png)
+![ezgif com-optimize](https://user-images.githubusercontent.com/104200268/227770574-cb417695-9541-4a4f-8e6f-ce76981e2da6.gif)
+![enemies](https://user-images.githubusercontent.com/104200268/227770721-d5af6a25-117b-4bcf-bbc9-f14638d5cdc3.PNG)
+
+  This is the te![image24](https://user-images.githubusercontent.com/104200268/227770600-8bd23f67-29e6-4a71-b5c4-b9e46901845b.gif)
+xt that will be hidden and can be expanded by clicking on the button.
+  
+</details>
+
+<details>
+  <summary>Tutorial</summary>
+  
+  This is the text that will be hidden and can be expanded by clicking on the button.
+  ![tutorial01_Text03](https://user-images.githubusercontent.com/104200268/227770307-db398f6f-c979-40eb-82f8-4371b3911c14.png)
+![tutorial02_Text](https://user-images.githubusercontent.com/104200268/227770308-6e6f8038-4a5b-4b0e-a55b-abe1af29667d.png)
+
+</details>
+
+<details>
+  <summary>Level</summary>
   
   This is the text that will be hidden and can be expanded by clicking on the button.
   
 </details>
-</div>
+<details>
+  <summary>Items, Inventory & Equipment</summary>
+  
+  This is th![Inventar_ZuoftSchunGmocht](https://user-images.githubusercontent.com/104200268/227770376-1bd74a0c-e1eb-49fa-aa4f-ba115ed9c0a5.png)
+e text that will be hidden and can be expanded by clicking on the button.
+  ![pickups](https://user-images.githubusercontent.com/104200268/227770789-9d1f210c-045b-4b2c-9957-82d47082fa67.PNG)
+
+</details>
+
+<details>
+  <summary>Stats & Traits</summary>
+  ![Stats](https://user-images.githubusercontent.com/104200268/227770405-c5de455d-2b22-4b6a-9718-c5bfed2134e6.png)
+![Stats02](https://user-images.githubusercontent.com/104200268/227770407-1ae44eb7-fcd5-489c-94f2-1a1e2b7dbf7c.png)
+
+  This is the text that will be hidden and can be expanded by clicking on the button.
+  
+</details>
+<details>
+  <summary>Menu & HUD</summary>
+  ![image21](https://user-images.githubusercontent.com/104200268/227770525-ef541b4f-d53b-4120-807c-01e16119342c.png)
+![Main_Menu](https://user-images.githubusercontent.com/104200268/227770545-a1086e54-4a32-4f67-aca6-2fe967083310.png)
+
+  This is the text that![PauseMenue02](https://user-images.githubusercontent.com/104200268/227770529-10d03e56-53cc-4d44-85d2-3c4264bc70d0.png)
+ will be hidden and can be expanded by clicking on the button.
+  
+</details>
+<details>
+  <summary>Progression</summary>
+
+
+  ![Progression](https://user-images.githubusercontent.com/104200268/227770766-03aae77e-b416-47e4-b5fd-298adc3d674b.PNG)
+![progressionenemy](https://user-images.githubusercontent.com/104200268/227770767-931b36e0-f552-4b84-81bb-308809898956.PNG)
+![progressionPlayer](https://user-images.githubusercontent.com/104200268/227770769-d5deefb6-f553-4ed1-b972-cc427b201126.PNG)
+
+</details>
 </p>
-
-![image6](https://user-images.githubusercontent.com/104200268/227768992-0c00db0d-3461-4ae1-a1f6-f63f40d141b2.png)
-
-![image14](https://user-images.githubusercontent.com/104200268/227769005-509095ec-ba1b-4927-862f-9df856dffaa8.gif)
-
-![image15](https://user-images.githubusercontent.com/104200268/227769030-428e0cdf-a811-4627-81b3-f6d7317ace27.png)
-
-![image16](https://user-images.githubusercontent.com/104200268/227769035-d9f1f90d-ca34-4894-9f19-08e898075c96.gif)
-![image17](https://user-images.githubusercontent.com/104200268/227769041-cf41f2cc-f161-4bc4-a8d1-7e647ba5dd2d.gif)
-![image24](https://user-images.githubusercontent.com/104200268/227769050-f225eb03-9fdf-4bce-b949-02665bb7bc26.gif)
-![image22](https://user-images.githubusercontent.com/104200268/227769054-5a8ca320-98e4-41ce-bf3d-978edc0cfa43.png)
-
-![image26](https://user-images.githubusercontent.com/104200268/227769063-af3b0276-9281-4d5d-b354-c9ff3c6a1a98.png)
-![Main_Menu](https://user-images.githubusercontent.com/104200268/227769112-69730ec4-057c-4523-8ca9-f66952e2f96a.png)
-
-
-![PauseMenue02](https://user-images.githu![Inventar_ZuoftSchunGmocht](https://user-images.githubusercontent.com/104200268/227769110-1ead7480-dfb4-4b44-87f3-cac8d7726905.png)
-busercontent.com/104200268/227769080-18d0adb5-6127-44c6-9770-209345ef631f.png)
-![Stats02](https://user-images.githubusercontent.com/104200268/227769096-94c42bdd-6a4b-46fa-af71-482903031639.png)
-![Tooltip03](https://user-images.githubusercontent.com/104200268/227769101-fb37818b-940b-4baa-acc5-c83dec93496d.png)
-
-![tutorial01_Text03](https://user-images.githubusercontent.com/104200268/227769088-42dff69c-5df2-405a-a062-2b43f3b5ea7f.png)
-![Shop02](https://user-images.githubusercontent.com/104200268/227769090-15debe41-454d-44dd-9691-af9097ac9002.png)
-![Skillpoints](https://user-images.githubusercontent.com/104200268/227769091-ce3f5476-81f4-4b9d-8860-2c5fe708c6a3.png)
-![Stats](https://user-images.githubusercontent.com/104200268/227769095-3b590742-ae89-4984-ac91-e5ca63db3e16.png)
