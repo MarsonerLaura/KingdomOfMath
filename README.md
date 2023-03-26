@@ -122,7 +122,8 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 <details>
   <summary>Shops</summary>
-  
+  ![image10](https://user-images.githubusercontent.com/104200268/227770826-a3e598af-7dfa-428b-95e4-d6a2278be8af.gif)
+
   This is the text that will be hidden and can be expanded by clicking on the button.
   ![Shop02](https://user-images.githubusercontent.com/104200268/227770460-569c4c95-b963-4cb7-a131-89b8d7e1130e.png)
 ![image23](https://user-images.githubusercontent.com/104200268/227770464-ebbb5689-2909-4237-acb7-b239e64786f8.png)
