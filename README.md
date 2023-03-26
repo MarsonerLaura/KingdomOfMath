@@ -101,7 +101,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 <details>
 
   <summary>Dialogues & Dialogue Editor</summary>
-   <br>
+ 
  
   - <details> 
     <summary>Dialogues</summary>
