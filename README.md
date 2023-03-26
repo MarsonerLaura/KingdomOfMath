@@ -122,7 +122,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
       
       <div align="center"> 
       Nodes can be added, linked, or deleted, and can also be moved and arranged by dragging them.
-      <img src="https://user-images.githubusercontent.com/104200268/227790962-d529d05d-fc01-43ef-a6e5-14353e62d9da.gif" width="80%" height="auto">
+      <img src="https://user-images.githubusercontent.com/104200268/227791963-3c6d6053-8d6b-49de-ae02-3e3182ebc0c5.gif" width="80%" height="auto">
       </div>
  
       <div align="center">
@@ -135,9 +135,8 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
       ---
    </details>
 
-      
-
 </details>
+
 
 <details>
   <summary>Chests</summary>
