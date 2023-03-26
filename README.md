@@ -195,7 +195,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
  >    This Code only works in the Editor Mode and displays how nodes are created and deleted.
  >
  > ```csharp
- > if UNITY_EDITOR
+ > #if UNITY_EDITOR
  >   public void CreateNode(DialogueNode parent)
  >   {
  >       DialogueNode child = MakeNode(parent);
