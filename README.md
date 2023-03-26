@@ -112,8 +112,8 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
     
     </details>
  
-  - <details> 
-     <summary>Dialogue Editor</summary>
+ - <details> 
+    <summary>Dialogue Editor</summary>
  
       <br>
  
@@ -123,7 +123,6 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
       </div>
  
       <br>
-
 
       <div align="center"> 
       Nodes can be added, linked, or deleted, and can also be moved and arranged by dragging them.
@@ -138,11 +137,11 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
        
       Triggers can be used to activate actions when a dialog node is entered or exited, such as removing quest items from the player's inventory or giving rewards. The combination of conditions and triggers in dialogs is a powerful tool for driving the story and gameplay. 
       </div>
-      
-   </details>
+    
+    </details>
  
- - <details> 
-    <summary>Code Snippets</summary>
+  - <details> 
+     <summary>Code Snippets</summary>
         
       ```c#
       [MenuItem("Window/Dialogue Editor")]
