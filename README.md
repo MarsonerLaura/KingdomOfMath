@@ -103,154 +103,150 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   <summary>Dialogues & Dialogue Editor</summary>
  
  
-  - <details> 
-    <summary>Dialogues</summary>
-     <br>
-     <div align="center">
-     The players can interact with NPCs by clicking on them, which opens the dialogue window. The conversation starts with the NPC's part, followed by the player's response with multiple answer choices. The dialogues can trigger NPC actions, such as giving quests and NPCs can give random answers. 
-      Dialogues should enhance immersion while adding a dynamic feeling to the game.
-     <img src="https://user-images.githubusercontent.com/104200268/227634579-c074e1ef-75a3-4509-9fca-d6fabc0073be.gif" width="60%" height="auto">
-     </div>
-    </details>
+  > <details> 
+  >  <summary>Dialogues</summary>
+  >  <br>
+  >  <div align="center">
+  >    The players can interact with NPCs by clicking on them, which opens the dialogue window. The conversation starts with the NPC's part, followed by the player's response with multiple answer choices. The dialogues can trigger NPC actions, such as giving quests and NPCs can give random answers. 
+  >    Dialogues should enhance immersion while adding a dynamic feeling to the game.
+  >   <img src="https://user-images.githubusercontent.com/104200268/227634579-c074e1ef-75a3-4509-9fca-d6fabc0073be.gif" width="60%" height="auto">
+  >   </div>
+  >  </details>
+  
+ > <details> 
+ >   <summary>Dialogue Editor</summary>
+ >
+ >   <br>
+ >
+ >    <div align="center">
+ >    The Dialogue Editor also allows developers to create dialogs quickly and efficiently and provides a better overview over the dialogue. Each dialogue consists of several nodes that are connected by Bézier curves.     
+ >     <img src="https://user-images.githubusercontent.com/104200268/227770424-3d76d338-f03b-4df5-a914-addf655d198a.png" width="80%" height="auto">
+ >     </div>
+ >
+ >    <br>
+ >
+ >    <div align="center"> 
+ >    Nodes can be added, linked, or deleted, and can also be moved and arranged by dragging them.
+ >    <img src="https://user-images.githubusercontent.com/104200268/227791963-3c6d6053-8d6b-49de-ae02-3e3182ebc0c5.gif" width="80%" height="auto">
+ >    </div>
+ >
+ >    <br>
+ >
+ >    <div align="center">
+ >    The Nodes are implemented using scriptable objects. There are different configuration options for the nodes: the size of the text field, selecting whether it is a player or NPC part of the conversation, and adding an Enter or Exit actions. Conditions can be set, such as requiring players to have certain items in their inventory to unlock specific answer options, which is useful for quests and gameplay.
+ >    <img src="https://user-images.githubusercontent.com/104200268/227792229-3e894d1e-12cc-48b5-a301-15247fc87b24.png" width="50%" height="auto">
+ >      
+ >    Triggers can be used to activate actions when a dialog node is entered or exited, such as removing quest items from the player's inventory or giving rewards. The combination of conditions and triggers in dialogs is a powerful tool for driving the story and gameplay. 
+ > </div>
+ >   
+ > <br>
+ >
+ > </details>
  
- - <details> 
-    <summary>Dialogue Editor</summary>
- 
-      <br>
- 
-      <div align="center">
-      The Dialogue Editor also allows developers to create dialogs quickly and efficiently and provides a better overview over the dialogue. Each dialogue consists of several nodes that are connected by Bézier curves.     
-      <img src="https://user-images.githubusercontent.com/104200268/227770424-3d76d338-f03b-4df5-a914-addf655d198a.png" width="80%" height="auto">
-      </div>
- 
-      <br>
-
-      <div align="center"> 
-      Nodes can be added, linked, or deleted, and can also be moved and arranged by dragging them.
-      <img src="https://user-images.githubusercontent.com/104200268/227791963-3c6d6053-8d6b-49de-ae02-3e3182ebc0c5.gif" width="80%" height="auto">
-      </div>
- 
-      <br>
- 
-      <div align="center">
-      The Nodes are implemented using scriptable objects. There are different configuration options for the nodes: the size of the text field, selecting whether it is a player or NPC part of the conversation, and adding an Enter or Exit actions. Conditions can be set, such as requiring players to have certain items in their inventory to unlock specific answer options, which is useful for quests and gameplay.
-      <img src="https://user-images.githubusercontent.com/104200268/227792229-3e894d1e-12cc-48b5-a301-15247fc87b24.png" width="50%" height="auto">
-       
-      Triggers can be used to activate actions when a dialog node is entered or exited, such as removing quest items from the player's inventory or giving rewards. The combination of conditions and triggers in dialogs is a powerful tool for driving the story and gameplay. 
-      </div>
-    
-      <br>
- 
-    </details>
- 
-  - <details> 
-     <summary>Code Snippets</summary>
-     <br>
-      Creation of an Editor Window
- 
-      ```c#
-      [MenuItem("Window/Dialogue Editor")]
-      public static void ShowEditorWindow()
-      {
-          GetWindow(typeof(DialogueEditor), false, "Dialogue Editor");
-      }
-      ```
-      <br>
-      This Method draws the Bezier Curves to connect the dialogue nodes.
- 
-      ```csharp
-      private void DrawConnections(DialogueNode node)
-      {
-          Vector3 startPosition = new Vector3(node.GetRect().xMax, node.GetRect().center.y,0);
-          foreach (DialogueNode childNode in _selectedDialogue.GetAllChildren(node))
-          {
-              Vector3 endPosition = new Vector3(childNode.GetRect().xMin, childNode.GetRect().center.y,0);
-              Vector3 controlPointOffset = endPosition - startPosition;
-              controlPointOffset.y = 0;
-              controlPointOffset.x *= 0.9f;
-              Handles.DrawBezier(startPosition, endPosition, startPosition + controlPointOffset, 
-                endPosition - controlPointOffset, Color.white, null, 4f);
-          }
-      }
-      ```
-      <br>
-      This Method is called if a Dialogue Scriptable object is opened and automatically opens the Dialogue Editor.
- 
-      ```csharp
-      [OnOpenAsset(1)]
-      public static bool OpenDialogue(int instanceID, int line)
-      {
-          Dialogue dialogue = EditorUtility.InstanceIDToObject(instanceID) as Dialogue;  
-          if (dialogue != null)
-          {
-              ShowEditorWindow();
-              _selectedDialogue = dialogue;
-              return true;
-          }
-          return false;
-      }
-      ```
-     <br>
-     This Code only works in the Editor Mode and displays how nodes are created and deleted.
- 
-     ```csharp
-     if UNITY_EDITOR
-        public void CreateNode(DialogueNode parent)
-        {
-            DialogueNode child = MakeNode(parent);
-
-            Undo.RegisterCreatedObjectUndo(child, "Created Dialogue Node");
-            if (AssetDatabase.GetAssetPath(this) != "")
-            {
-                Undo.RecordObject(this, "Added Dialogue Node");
-            }
-            
-            AddNode(child);
-        }
-        
-        public void DeleteNode(DialogueNode nodeToDelete)
-        {
-            Undo.RecordObject(this, "Removed Dialogue Node");
-            nodes.Remove(nodeToDelete);
-            CleanDeletedChildren(nodeToDelete);
-            OnValidate();
-            Undo.DestroyObjectImmediate(nodeToDelete);
-        }
- 
-        private DialogueNode MakeNode(DialogueNode parent)
-        {
-            DialogueNode child = CreateInstance<DialogueNode>();
-            child.name = Guid.NewGuid().ToString();
-
-            if (parent != null)
-            {
-                parent.AddChild(child.name);
-                child.SetPlayerSpeaking(!parent.IsPlayerSpeaking());
-                child.SetPosition(parent.GetRect().position + newNodeOffset);
-            }
-
-            return child;
-        }
-        private void AddNode(DialogueNode child)
-        {
-            nodes.Add(child);
-
-            OnValidate();
-        }
-        
-        private void CleanDeletedChildren(DialogueNode nodeToDelete)
-        {
-            foreach (DialogueNode node in GetAllNodes())
-            {
-                node.RemoveChild(nodeToDelete.name);
-            }
-        }
-      #endif
-      ```
- 
-      ---
-      
-   </details>
+ > <details> 
+ >  <summary>Code Snippets</summary>
+ >  <br>
+ >    Creation of an Editor Window
+ >
+ > ```c#
+ > [MenuItem("Window/Dialogue Editor")]
+ > public static void ShowEditorWindow()
+ > {
+ >     GetWindow(typeof(DialogueEditor), false, "Dialogue Editor");
+ > }
+ > ```
+ > <br>
+ >    This Method draws the Bezier Curves to connect the dialogue nodes.
+ >
+ > ```csharp
+ > private void DrawConnections(DialogueNode node)
+ > {
+ >     Vector3 startPosition = new Vector3(node.GetRect().xMax, node.GetRect().center.y,0);
+ >     foreach (DialogueNode childNode in _selectedDialogue.GetAllChildren(node))
+ >     {
+ >         Vector3 endPosition = new Vector3(childNode.GetRect().xMin, childNode.GetRect().center.y,0);
+ >         Vector3 controlPointOffset = endPosition - startPosition;
+ >         controlPointOffset.y = 0;
+ >         controlPointOffset.x *= 0.9f;
+ >         Handles.DrawBezier(startPosition, endPosition, startPosition + controlPointOffset, 
+ >           endPosition - controlPointOffset, Color.white, null, 4f);
+ >     }
+ > }
+ > ```
+ > <br>
+ >    This Method is called if a Dialogue Scriptable object is opened and automatically opens the Dialogue Editor.
+ >
+ > ```csharp
+ > [OnOpenAsset(1)]
+ > public static bool OpenDialogue(int instanceID, int line)
+ > {
+ >     Dialogue dialogue = EditorUtility.InstanceIDToObject(instanceID) as Dialogue;  
+ >     if (dialogue != null)
+ >     {
+ >         ShowEditorWindow();
+ >         _selectedDialogue = dialogue;
+ >         return true;
+ >     }
+ >     return false;
+ > }
+ > ```
+ ><br>
+ >
+ >    This Code only works in the Editor Mode and displays how nodes are created and deleted.
+ >
+ > ```csharp
+ > if UNITY_EDITOR
+ >   public void CreateNode(DialogueNode parent)
+ >   {
+ >       DialogueNode child = MakeNode(parent);
+ >       Undo.RegisterCreatedObjectUndo(child, "Created Dialogue Node");
+ >       if (AssetDatabase.GetAssetPath(this) != "")
+ >       {
+ >           Undo.RecordObject(this, "Added Dialogue Node");
+ >       }       
+ >       AddNode(child);
+ >   }
+ >       
+ >   public void DeleteNode(DialogueNode nodeToDelete)
+ >   {
+ >       Undo.RecordObject(this, "Removed Dialogue Node");
+ >       nodes.Remove(nodeToDelete);
+ >       CleanDeletedChildren(nodeToDelete);
+ >       OnValidate();
+ >       Undo.DestroyObjectImmediate(nodeToDelete);
+ >   }
+ >
+ >   private DialogueNode MakeNode(DialogueNode parent)
+ >   {
+ >       DialogueNode child = CreateInstance<DialogueNode>();
+ >       child.name = Guid.NewGuid().ToString();
+ >       if (parent != null)
+ >       {
+ >           parent.AddChild(child.name);
+ >           child.SetPlayerSpeaking(!parent.IsPlayerSpeaking());
+ >           child.SetPosition(parent.GetRect().position + newNodeOffset);
+ >       }
+ >       return child;
+ >   }
+ >
+ >   private void AddNode(DialogueNode child)
+ >   {
+ >       nodes.Add(child);
+ >       OnValidate();
+ >   }
+ >       
+ >   private void CleanDeletedChildren(DialogueNode nodeToDelete)
+ >   {
+ >       foreach (DialogueNode node in GetAllNodes())
+ >       {
+ >           node.RemoveChild(nodeToDelete.name);
+ >       }
+ >   }
+ > #endif
+ > ```
+ >
+ > ---     
+ > </details>
 
 </details>
 
@@ -398,4 +394,30 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
    ![progressionPlayer](https://user-images.githubusercontent.com/104200268/227770769-d5deefb6-f553-4ed1-b972-cc427b201126.PNG)
 
 </details>
+ 
+> <details>
+>   <summary>Click to toggle</summary>
+>   
+>   This is the content that will be hidden or shown when the toggle is clicked.
+> </details>
+ 
+> <details>
+>   <summary></summary>
+>   
+>   > This is the content that will be hidden or shown when the toggle is clicked.
+> </details>
+ 
+ > This is a blockquote.
+> 
+>     This is a multi-line
+>     code snippet inside the
+>     blockquote.
+ 
+ > This is a blockquote.
+> 
+> ```python
+> # This is a multi-line code snippet inside the blockquote.
+> def example_function():
+>     print("Hello world!")
+> ```
 </p>
