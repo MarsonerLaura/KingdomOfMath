@@ -109,7 +109,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
      <div align="center">
      The players can interact with NPCs by clicking on them, which opens the dialogue window. The conversation starts with the NPC's part, followed by the player's response with multiple answer choices. The dialogues can trigger NPC actions, such as giving quests and NPCs can give random answers. 
       Dialogues should enhance immersion while adding a dynamic feeling to the game.
-     <img src="https://user-images.githubusercontent.com/104200268/227634579-c074e1ef-75a3-4509-9fca-d6fabc0073be.gif" width="50%" height="auto">
+     <img src="https://user-images.githubusercontent.com/104200268/227634579-c074e1ef-75a3-4509-9fca-d6fabc0073be.gif" width="60%" height="auto">
      </div>
     </details>
  
