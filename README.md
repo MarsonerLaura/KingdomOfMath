@@ -245,7 +245,6 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
  > #endif
  > ```
  >
- > ---     
  > </details>
 
 </details>
@@ -395,29 +394,4 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 </details>
  
-> <details>
->   <summary>Click to toggle</summary>
->   
->   This is the content that will be hidden or shown when the toggle is clicked.
-> </details>
- 
-> <details>
->   <summary></summary>
->   
->   > This is the content that will be hidden or shown when the toggle is clicked.
-> </details>
- 
- > This is a blockquote.
-> 
->     This is a multi-line
->     code snippet inside the
->     blockquote.
- 
- > This is a blockquote.
-> 
-> ```python
-> # This is a multi-line code snippet inside the blockquote.
-> def example_function():
->     print("Hello world!")
-> ```
 </p>
