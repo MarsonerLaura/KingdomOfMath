@@ -113,6 +113,10 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
    ![dialogueEditor](https://user-images.githubusercontent.com/104200268/227770737-b3b5016d-ce63-4ef2-bc02-f4bf4a60bb60.PNG)
 
+   ![ezgif com-video-to-gif](https://user-images.githubusercontent.com/104200268/227782412-63a21a9c-e7d0-4324-8d3d-416f13fdca29.gif)
+ 
+   ![diologueaction](https://user-images.githubusercontent.com/104200268/227783622-dc31d03f-cbb5-4e40-8393-d270860b8ce7.PNG)
+
 </details>
 
 <details>
@@ -123,7 +127,11 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
    ![bild_von_chestui](https://user-images.githubusercontent.com/104200268/227773074-8da5f304-e6e1-4149-80c5-539b9f4ffaaf.png)
 
    ![image16](https://user-images.githubusercontent.com/104200268/227770156-dcc77aea-e740-4666-8390-46ec6a41f624.gif)
- 
+  
+   ![chestso](https://user-images.githubusercontent.com/104200268/227783725-840da6e9-04af-4575-a74b-5c005d6c083d.PNG)
+  
+   ![mathproblemso](https://user-images.githubusercontent.com/104200268/227783746-ca419d56-0ea0-4bb4-8d91-919a67477e7b.PNG)
+
 </details>
 
 <details>
@@ -136,6 +144,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
    ![image23](https://user-images.githubusercontent.com/104200268/227770464-ebbb5689-2909-4237-acb7-b239e64786f8.png)
 
    ![image17](https://user-images.githubusercontent.com/104200268/227770519-99289146-2117-4316-bfc8-f4d785567e80.gif)
+![shopconfig](https://user-images.githubusercontent.com/104200268/227784072-9dadd6ac-e99c-4a35-bedd-e0410cc6fb38.PNG)
 
 </details>
 
@@ -156,7 +165,13 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
    ![Quest02 (1)](https://user-images.githubusercontent.com/104200268/227773129-757250c6-f349-4574-a258-8c4c31d723f8.png)
    
    ![ezgif com-optimize](https://user-images.githubusercontent.com/104200268/227770657-7a97f0d5-4023-4d54-b5b8-06b8be63d407.gif)
-  
+ 
+   ![npccontroller](https://user-images.githubusercontent.com/104200268/227784055-3c87845f-5980-4aec-bd95-8efcfaecced8.PNG)
+
+   ![questso](https://user-images.githubusercontent.com/104200268/227784059-d7468f50-ab60-453d-9dc0-a67f2a4eeebe.PNG)
+   
+   ![triggers](https://user-images.githubusercontent.com/104200268/227784080-f1cc0818-f074-486c-a6da-b61cf8b560dc.PNG)
+
 </details>
 
 <details>
@@ -174,6 +189,12 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
    ![image24](https://user-images.githubusercontent.com/104200268/227770600-8bd23f67-29e6-4a71-b5c4-b9e46901845b.gif)
   
+   ![abilityso](https://user-images.githubusercontent.com/104200268/227782438-9990bba2-73d9-488f-89f5-8ca20afa2ae3.PNG)
+
+   ![enemieconfig](https://user-images.githubusercontent.com/104200268/227782446-ce732ad7-9e89-4f33-bd9d-aa1a6d338b1c.PNG)
+
+   ![droptableso](https://user-images.githubusercontent.com/104200268/227782459-acca4fc9-8328-49c5-8588-ef98f6702e5a.PNG)
+
 </details>
 
 <details>
@@ -202,6 +223,12 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
    ![Inventar_ZuoftSchunGmocht](https://user-images.githubusercontent.com/104200268/227770376-1bd74a0c-e1eb-49fa-aa4f-ba115ed9c0a5.png)
 
    ![pickups_mit_Untertitel02 (1)](https://user-images.githubusercontent.com/104200268/227773612-9354560d-2631-44d9-bac0-9722b049a7f2.PNG)
+
+   ![math so](https://user-images.githubusercontent.com/104200268/227782490-362ea03f-2107-456b-b195-65b74c05f1ae.PNG)
+
+   ![bowso](https://user-images.githubusercontent.com/104200268/227783402-ae62c1aa-3ba2-4de1-a588-ec69baa010b7.PNG)
+
+   ![helmetso](https://user-images.githubusercontent.com/104200268/227783412-d0e094c0-55b8-4aec-aee2-605aee1c5a4d.PNG)
 
 </details>
 
