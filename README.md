@@ -99,23 +99,43 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 <p>
 <h1>Additional Information</h1>
 <details>
-  <summary>Dialogue & Editor</summary>
+
+  <summary>Dialogues & Dialogue Editor</summary>
+   <br>
  
-   ![mehrere_megliche_ontwortn](https://user-images.githubusercontent.com/104200268/227770422-955ecd57-e185-40f4-b9fa-aca13a8e6842.png)
-
-   ![mehrere_megliche_ontwortn02](https://user-images.githubusercontent.com/104200268/227770423-0f27141e-4c54-478e-a061-1bda0ba10a19.png)
-
-   ![image22](https://user-images.githubusercontent.com/104200268/227770424-3d76d338-f03b-4df5-a914-addf655d198a.png)
-
-   ![dialogueEditor1](https://user-images.githubusercontent.com/104200268/227770731-43d8f6fc-03c6-4ab8-a377-28771b3f9de5.PNG)
-
-   ![dialogueEditor2](https://user-images.githubusercontent.com/104200268/227770734-870e6dc9-a4ef-443a-99c1-62a476c61472.PNG)
-
-   ![dialogueEditor](https://user-images.githubusercontent.com/104200268/227770737-b3b5016d-ce63-4ef2-bc02-f4bf4a60bb60.PNG)
-
-   ![ezgif com-video-to-gif](https://user-images.githubusercontent.com/104200268/227782412-63a21a9c-e7d0-4324-8d3d-416f13fdca29.gif)
+  - <details> 
+    <summary>Dialogues</summary>
+     
+    ![mehrere_megliche_ontwortn](https://user-images.githubusercontent.com/104200268/227770422-955ecd57-e185-40f4-b9fa-aca13a8e6842.png)
+     
+    ![mehrere_megliche_ontwortn02](https://user-images.githubusercontent.com/104200268/227770423-0f27141e-4c54-478e-a061-1bda0ba10a19.png)
+    
+    </details>
  
-   ![diologueaction](https://user-images.githubusercontent.com/104200268/227783622-dc31d03f-cbb5-4e40-8393-d270860b8ce7.PNG)
+  - <details> 
+     <summary>Dialogue Editor</summary>
+      <br>
+      
+      The Dialogue Editor also allows developers to create dialogs quickly and efficiently and provides a better overview over the dialogue. Each dialogue consists of several nodes that are connected by Bézier curves. 
+      <div align="center">
+      <img src="https://user-images.githubusercontent.com/104200268/227770424-3d76d338-f03b-4df5-a914-addf655d198a.png" width="70%" height="auto">
+      </div>
+      
+      Nodes can be added, linked, or deleted, and can also be moved and arranged by dragging them.
+      <div align="center">
+      <img src="https://user-images.githubusercontent.com/104200268/227790962-d529d05d-fc01-43ef-a6e5-14353e62d9da.gif" width="70%" height="auto">
+      </div>
+ 
+      The Nodes are implemented using scriptable objects. There are different configuration options for the nodes: the size of the text field, selecting whether it is a player or NPC part of the conversation, and adding an Enter or Exit actions. Conditions can be set, such as requiring players to have certain items in their inventory to unlock specific answer options, which is useful for quests and gameplay.
+      <div align="center">
+      <img src="https://user-images.githubusercontent.com/104200268/227783622-dc31d03f-cbb5-4e40-8393-d270860b8ce7.PNG" width="30%" height="auto">
+      </div>
+      Triggers can be used to activate actions when a dialog node is entered or exited, such as removing quest items from the player's inventory or giving rewards.       The combination of conditions and triggers in dialogs is a powerful tool for driving the story and gameplay. 
+ 
+      ---
+   </details>
+
+      
 
 </details>
 
