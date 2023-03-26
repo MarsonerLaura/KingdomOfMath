@@ -189,6 +189,64 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
           return false;
       }
       ```
+     <br>
+     This Code only works in the Editor Mode and displays how nodes are created and deleted.
+ 
+     ```csharp
+     if UNITY_EDITOR
+        public void CreateNode(DialogueNode parent)
+        {
+            DialogueNode child = MakeNode(parent);
+
+            Undo.RegisterCreatedObjectUndo(child, "Created Dialogue Node");
+            if (AssetDatabase.GetAssetPath(this) != "")
+            {
+                Undo.RecordObject(this, "Added Dialogue Node");
+            }
+            
+            AddNode(child);
+        }
+        
+        public void DeleteNode(DialogueNode nodeToDelete)
+        {
+            Undo.RecordObject(this, "Removed Dialogue Node");
+            nodes.Remove(nodeToDelete);
+            CleanDeletedChildren(nodeToDelete);
+            OnValidate();
+            Undo.DestroyObjectImmediate(nodeToDelete);
+        }
+ 
+        private DialogueNode MakeNode(DialogueNode parent)
+        {
+            DialogueNode child = CreateInstance<DialogueNode>();
+            child.name = Guid.NewGuid().ToString();
+
+            if (parent != null)
+            {
+                parent.AddChild(child.name);
+                child.SetPlayerSpeaking(!parent.IsPlayerSpeaking());
+                child.SetPosition(parent.GetRect().position + newNodeOffset);
+            }
+
+            return child;
+        }
+        private void AddNode(DialogueNode child)
+        {
+            nodes.Add(child);
+
+            OnValidate();
+        }
+        
+        private void CleanDeletedChildren(DialogueNode nodeToDelete)
+        {
+            foreach (DialogueNode node in GetAllNodes())
+            {
+                node.RemoveChild(nodeToDelete.name);
+            }
+        }
+      #endif
+      ```
+ 
       ---
       
    </details>
