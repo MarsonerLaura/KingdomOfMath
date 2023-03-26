@@ -194,14 +194,14 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 <details>
   <summary>Items, Inventory & Equipment</summary>
-  
+   
+   ![Gladiature](https://user-images.githubusercontent.com/104200268/227773632-13ac5757-80d4-482c-8c00-0a187c97fb62.png)
+
    ![Voll_Bag](https://user-images.githubusercontent.com/104200268/227773165-9d35752c-2f08-4d92-ab82-c4e7d3b60c9c.png)
 
    ![Inventar_ZuoftSchunGmocht](https://user-images.githubusercontent.com/104200268/227770376-1bd74a0c-e1eb-49fa-aa4f-ba115ed9c0a5.png)
 
-   ![pickups](https://user-images.githubusercontent.com/104200268/227770789-9d1f210c-045b-4b2c-9957-82d47082fa67.PNG)
-
-   ![pickups_mit_Text](https://user-images.githubusercontent.com/104200268/227773103-a495a5c8-9711-4038-ab98-ba9b3c1012ba.png)
+   ![pickups_mit_Untertitel02 (1)](https://user-images.githubusercontent.com/104200268/227773612-9354560d-2631-44d9-bac0-9722b049a7f2.PNG)
 
 </details>
 
