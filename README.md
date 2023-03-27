@@ -249,7 +249,13 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 </details>
 
+<details>
+  <summary>Inventory System</summary>
+  
 
+</details>
+
+ 
 <details>
   <summary>Chests</summary>
   
