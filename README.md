@@ -254,11 +254,12 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   <br>
    If the player saves the game, the entire game state is saved, including dropped items, shops, chests, current health, mana, positions, money, inventory and equipment, dead enemies/players, experience, stats, traits, etc. The game is also automatically saved when a new level or scene is loaded. For this, persistent objects which persist between scenes are used as an alternative to the singleton pattern. The saving system is implemented by using unique IDs for each object to be saved, collecting all these objects, and saving them using JSON.
   <br>
+ <br>
  
  > <details> 
  >  <summary>Code Snippets</summary>
  >  <br>
- >  Every object that has components that want to be saved needs to have a <code>JsonSaveableEntity.cs</code> script on it to allow the components to be saved. The following code displays how each object is assigned a unique identifier and how the saveable components of the object are saved.
+ >  Every object that has components that want to be saved needs to have a <code>JsonSaveableEntity.cs</code> script on it to allow the components to be saved. The following code displays how each object is assigned a unique identifier and how the saveable components of the object are saved and restored.
  >
  > ```csharp
  > [ExecuteAlways]
@@ -266,6 +267,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
  > {
  >     [SerializeField] private string uniqueIdentifier = "";
  >      static Dictionary<string, JsonSaveableEntity> globalLookup = new Dictionary<string, JsonSaveableEntity>();
+ > //Assigns a unique identifier to the object
  > #if UNITY_EDITOR
  >     private void Update() {
  >         if (Application.IsPlaying(gameObject)) return;
@@ -284,6 +286,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
  >     }
  > #endif
  >
+ >     //Collects all saveable components of this object
  >     public JToken CaptureAsJtoken()
  >     {
  >         IDictionary<string, JToken> stateDict = state;
@@ -296,6 +299,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
  >         return state;
  >     }
  >
+ >     //Restores all saveable components of this object
  >     public void RestoreFromJToken(JToken s) 
  >     {
  >         JObject state = s.ToObject<JObject>();
@@ -411,7 +415,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
  > }
  > ```
  > <br>
- > This is an example how the Saving of the Health of Players and Enemies works. The `_healthPoints.value` is saved using `CaptureAsJToken()` and loaded using `RestoreFromJToken()`. After loading the state of the Characters is also updated using `UpdateState()`.
+ > This is an example how the Saving of the Health of Players and Enemies works. The <code>_healthPoints</code> value is saved using <code>CaptureAsJToken()</code> and loaded using <code>RestoreFromJToken()</code>. After loading the state of the Characters is also updated using <code>UpdateState()</code>.
  >
  > ```csharp
  > public class Health : MonoBehaviour, IJsonSaveable
