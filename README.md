@@ -250,74 +250,66 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 </details>
 
 <details>
-  <summary>Saving Systemt</summary>
-  The game can be paused with the [P] key, which freezes time and opens a pause menu where players can save the game. This will save the entire game state, including dropped items, shops, chests, current health, mana, positions, money, inventory and equipment, dead enemies/players, experience, stats, traits, etc.  The game is also saved when a new level or scene is loaded. For this, persistent objects which persist between scenes are used as an alternative to the singleton pattern.  The saving system is implemented by using unique IDs for each object to be saved, collecting all these objects, and saving them using JSON.
- 
- 
- 
+  <summary>Saving System</summary>
+  <br>
+   If the player saves the game, the entire game state is saved, including dropped items, shops, chests, current health, mana, positions, money, inventory and equipment, dead enemies/players, experience, stats, traits, etc. The game is also automatically saved when a new level or scene is loaded. For this, persistent objects which persist between scenes are used as an alternative to the singleton pattern. The saving system is implemented by using unique IDs for each object to be saved, collecting all these objects, and saving them using JSON.
+  
  > <details> 
  >  <summary>Code Snippets</summary>
  >  <br>
- >    Creation of an Editor Window
+ >  Every object that has components that want to be saved needs to have a <code>JsonSaveableEntity.cs</code> script on it to allow the components to be saved. The following code displays how each object is assigned a unique identifier and how the saveable components of the object are saved.
+ > ```csharp
+ > [ExecuteAlways]
+ > public class JsonSaveableEntity : MonoBehaviour
+ > {
+ >     [SerializeField] private string uniqueIdentifier = "";
+ >      static Dictionary<string, JsonSaveableEntity> globalLookup = new Dictionary<string, JsonSaveableEntity>();
+ > #if UNITY_EDITOR
+ >     private void Update() {
+ >         if (Application.IsPlaying(gameObject)) return;
+ >         if (string.IsNullOrEmpty(gameObject.scene.path)) return;
  >
- Every object that has components that want to be saved needs to have a `JsonSaveableEntity.cs` script on it to allow the components to be saved. The following code displays how each object is assigned a unique identifier and how the saveable components of the object are saved.
- [ExecuteAlways]
-    public class JsonSaveableEntity : MonoBehaviour
-    {
-    
-        [SerializeField] private string uniqueIdentifier = "";
-
-        // CACHED STATE
-        static Dictionary<string, JsonSaveableEntity> globalLookup = new Dictionary<string, JsonSaveableEntity>();
-    #if UNITY_EDITOR
-        private void Update() {
-            if (Application.IsPlaying(gameObject)) return;
-            if (string.IsNullOrEmpty(gameObject.scene.path)) return;
-
-            SerializedObject serializedObject = new SerializedObject(this);
-            SerializedProperty property = serializedObject.FindProperty("uniqueIdentifier");
-            
-            if (string.IsNullOrEmpty(property.stringValue) || !IsUnique(property.stringValue))
-            {
-                property.stringValue = System.Guid.NewGuid().ToString();
-                serializedObject.ApplyModifiedProperties();
-            }
-
-            globalLookup[property.stringValue] = this;
-        }
-    #endif
- 
- public JToken CaptureAsJtoken()
-        {
-            JObject state = new JObject();
-            IDictionary<string, JToken> stateDict = state;
-            foreach (IJsonSaveable jsonSaveable in GetComponents<IJsonSaveable>())
-            {
-               
-                JToken token = jsonSaveable.CaptureAsJToken();
-                string component = jsonSaveable.GetType().ToString();
-                //Debug.Log($"{name} Capture {component} = {token.ToString()}");
-                stateDict[jsonSaveable.GetType().ToString()] = token;
-            }
-            return state;
-        }
-
-        public void RestoreFromJToken(JToken s) 
-        {
-            JObject state = s.ToObject<JObject>();
-            IDictionary<string, JToken> stateDict = state;
-            foreach (IJsonSaveable jsonSaveable in GetComponents<IJsonSaveable>())
-            {
-                string component = jsonSaveable.GetType().ToString();
-                if (stateDict.ContainsKey(component))
-                {
-
-                    //Debug.Log($"{name} Restore {component} =>{stateDict[component].ToString()}");
-                    jsonSaveable.RestoreFromJToken(stateDict[component]);
-                }
-            }
-        }
-   }
+ >         SerializedObject serializedObject = new SerializedObject(this);
+ >         SerializedProperty property = serializedObject.FindProperty("uniqueIdentifier");
+ >           
+ >         if (string.IsNullOrEmpty(property.stringValue) || !IsUnique(property.stringValue))
+ >         {
+ >             property.stringValue = System.Guid.NewGuid().ToString();
+ >             serializedObject.ApplyModifiedProperties();
+ >         }
+ >
+ >         globalLookup[property.stringValue] = this;
+ >     }
+ > #endif
+ >
+ >     public JToken CaptureAsJtoken()
+ >     {
+ >         IDictionary<string, JToken> stateDict = state;
+ >         foreach (IJsonSaveable jsonSaveable in GetComponents<IJsonSaveable>())
+ >         {             
+ >             JToken token = jsonSaveable.CaptureAsJToken();
+ >             string component = jsonSaveable.GetType().ToString();
+ >             stateDict[jsonSaveable.GetType().ToString()] = token;
+ >         }
+ >         return state;
+ >     }
+ >
+ >     public void RestoreFromJToken(JToken s) 
+ >     {
+ >         JObject state = s.ToObject<JObject>();
+ >         IDictionary<string, JToken> stateDict = state;
+ >         foreach (IJsonSaveable jsonSaveable in GetComponents<IJsonSaveable>())
+ >         {
+ >             string component = jsonSaveable.GetType().ToString();
+ >             if (stateDict.ContainsKey(component))
+ >             {
+ >                 jsonSaveable.RestoreFromJToken(stateDict[component]);
+ >             }
+ >         }
+ >     }
+ > }
+ > ```
+ > <br>
  The `JsonSavingSystem` class contains the code for saving and loading Scenes and for deleting saveFiles.
  
  This Method loads the last active Scene for example if the player wants to continue a game.
@@ -461,7 +453,8 @@ saves the current state to a given savefile
 <details>
   <summary>Scene Management</summary>
    Portals are used for the transition between levels, through which the players can pass. As a transition, a white screen is displayed to provide enough time for the new scene to load, and then that scene is displayed. The players have set spawn points and are then spawned at that point and the corresponding level is loaded.
- TODO bild of portal
+ ![portal](https://user-images.githubusercontent.com/104200268/227874597-2d466531-98cd-47aa-8150-faf1d2eb98ee.PNG)
+
   > <details> 
  >  <summary>Code Snippets</summary>
  >  <br>
@@ -702,7 +695,7 @@ saves the current state to a given savefile
 
 <details>
   <summary>Menu & HUD</summary>
-  
+  The game can be paused with the [P] key, which freezes time and opens a pause menu where players can save the game. 
    ![image21](https://user-images.githubusercontent.com/104200268/227770525-ef541b4f-d53b-4120-807c-01e16119342c.png)
 
    ![Main_Menu](https://user-images.githubusercontent.com/104200268/227770545-a1086e54-4a32-4f67-aca6-2fe967083310.png)
