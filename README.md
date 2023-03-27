@@ -622,7 +622,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   <br>
  <img src="https://user-images.githubusercontent.com/104200268/227963440-7fca7c13-5cd7-4499-abdd-c4c1eb7a5585.png" width="70%" height="auto">
  </div> 
-
+<br>
 </details>
 
 <details>
