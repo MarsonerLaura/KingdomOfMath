@@ -648,8 +648,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
     </div> 
     <br>
     <div align="center"> 
-     Before a shopkeeper is placed in the world, some configurations must be made. First, a name for the shop must be chosen. Next, the stock is set by adding items to the stock list and configuring them. Therefore, the initial stock of an item and the level at which the item is sold in the shop can be set. This is used to replenish the shop when a player reaches a new level. Also, the default discount for an item and the sale percentage at which the item can be sold back to the shop can be set.
-     Furthermore, a default selling percentage can be set for the shop, which is the percentage of money that the players will receive less for each item that they sell in that shop. Also the maximum discount that players can get in this shop if they maximize the Charisma trait, can be set.
+     There are various configuration options for shops: the name of the shop, the stock is set by adding items to the stock list and configuring them. Therefore, the initial stock of an item and the level at which the item is sold in the shop can be set. This is used to replenish the shop when a player reaches a new level. Also, the default discount for an item and the sell percentage at which the item can be sold back to the shop can be set. Furthermore, a default selling percentage can be set for the whole shop, which is the percentage of money that the players will receive less for each item that they sell in that shop. Also the maximum discount that players can get in this shop if they maximize the Charisma trait, can be set.
      <br>
      <img src="https://user-images.githubusercontent.com/104200268/227975579-137436f0-f745-41a3-8981-af81d934cb19.PNG" width="70%" height="auto">
     </div>
