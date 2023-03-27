@@ -596,6 +596,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   <br>
   <div align="center"> 
  Chests, as the name suggests, are objects placed in the world that contain items and work as follows. When the players hold the mouse cursor over a chest, the mouse cursor turns into a yellow square. When the players click on a chest, they automatically move into range of the chest, if they are not already in that range from where they can open it.
+   <br>
  <img src="https://user-images.githubusercontent.com/104200268/227770156-dcc77aea-e740-4666-8390-46ec6a41f624.gif" width="80%" height="auto">
  </div>
  <br>
