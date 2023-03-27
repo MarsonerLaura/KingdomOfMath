@@ -637,23 +637,24 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
     <div align="center"> 
      It contains various items available for purchase at the current player level, the quantity available for each, the price, and the number that will be added to the shopping list. The players can also switch between buying and selling and filter the items. To buy something, the players can click the [+] or [-] button to add or remove an item from their shopping list. If they have enough money to buy the corresponding items the items will be added to the players' inventory. It should be noted that the transaction is completed only when there is enough space in the inventory and that the stackable items are stacked and not placed in separate places. If the players do not have enough money, the total amount will be displayed in red and the [Kaufen] button will be disabled. 
      <br>
-     <img src="https://user-images.githubusercontent.com/104200268/227770519-99289146-2117-4316-bfc8-f4d785567e80.gif" width="70%" height="auto">
-     <img src="https://user-images.githubusercontent.com/104200268/227770826-a3e598af-7dfa-428b-95e4-d6a2278be8af.gif" width="70%" height="auto">
+     <img src="https://user-images.githubusercontent.com/104200268/227770519-99289146-2117-4316-bfc8-f4d785567e80.gif" width="90%" height="auto">
+     <img src="https://user-images.githubusercontent.com/104200268/227770826-a3e598af-7dfa-428b-95e4-d6a2278be8af.gif" width="40%" height="auto">
     </div> 
     <br>
     <div align="center"> 
-     There exist different types of shops for example, an armor shop sells different armor items. Some of these shops can also be seen in the image below, where a weapons shop can be seen on the left and an equipment shop on the right.
+     There exist different types of shops for example, an armor shop sells different armor items. Some of these shops can also be seen in the image below, where a weapons shop can be seen on the left and an armor shop on the right.
      <br>
-     <img src="https://user-images.githubusercontent.com/104200268/227770460-569c4c95-b963-4cb7-a131-89b8d7e1130e.png" width="70%" height="auto">
+     <img src="https://user-images.githubusercontent.com/104200268/227770464-ebbb5689-2909-4237-acb7-b239e64786f8.png" width="70%" height="auto">
     </div> 
     <br>
     <div align="center"> 
      Before a shopkeeper is placed in the world, some configurations must be made. First, a name for the shop must be chosen. Next, the stock is set by adding items to the stock list and configuring them. Therefore, the initial stock of an item and the level at which the item is sold in the shop can be set. This is used to replenish the shop when a player reaches a new level. Also, the default discount for an item and the sale percentage at which the item can be sold back to the shop can be set.
      Furthermore, a default selling percentage can be set for the shop, which is the percentage of money that the players will receive less for each item that they sell in that shop. Also the maximum discount that players can get in this shop if they maximize the Charisma trait, can be set.
      <br>
-     <img src="https://user-images.githubusercontent.com/104200268/227770464-ebbb5689-2909-4237-acb7-b239e64786f8.png" width="70%" height="auto">
+     <img src="https://user-images.githubusercontent.com/104200268/227975579-137436f0-f745-41a3-8981-af81d934cb19.PNG" width="70%" height="auto">
     </div>
     <br>
+
 </details>
 
 <details>
