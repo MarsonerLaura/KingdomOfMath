@@ -251,7 +251,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 <details>
   <summary>Saving System</summary>
-  <br>
+ <br>
  <div align="center"> 
    If the player saves the game, the entire game state is saved, including dropped items, shops, chests, current health, mana, positions, money, inventory and equipment, dead enemies/players, experience, stats, traits, etc. The game is also automatically saved when a new level or scene is loaded. For this, persistent objects which persist between scenes are used as an alternative to the singleton pattern. The saving system is implemented by using unique IDs for each object to be saved, collecting all these objects, and saving them using JSON.
  </div>
@@ -458,6 +458,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 <details>
   <summary>Scene Management</summary>
+ <br>
  <div align="center"> 
  Portals are used for the transition between levels, through which the players can pass. As a transition, a white screen is displayed to provide enough time for the new scene to load, and then that scene is displayed. The players have set spawn points and are then spawned at that point and the corresponding level is loaded.
  <img src="https://user-images.githubusercontent.com/104200268/227874597-2d466531-98cd-47aa-8150-faf1d2eb98ee.PNG" width="80%" height="auto">
