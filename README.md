@@ -253,11 +253,13 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   <summary>Saving System</summary>
   <br>
    If the player saves the game, the entire game state is saved, including dropped items, shops, chests, current health, mana, positions, money, inventory and equipment, dead enemies/players, experience, stats, traits, etc. The game is also automatically saved when a new level or scene is loaded. For this, persistent objects which persist between scenes are used as an alternative to the singleton pattern. The saving system is implemented by using unique IDs for each object to be saved, collecting all these objects, and saving them using JSON.
-  
+  <br>
+ 
  > <details> 
  >  <summary>Code Snippets</summary>
  >  <br>
  >  Every object that has components that want to be saved needs to have a <code>JsonSaveableEntity.cs</code> script on it to allow the components to be saved. The following code displays how each object is assigned a unique identifier and how the saveable components of the object are saved.
+ >
  > ```csharp
  > [ExecuteAlways]
  > public class JsonSaveableEntity : MonoBehaviour
@@ -310,106 +312,103 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
  > }
  > ```
  > <br>
- The `JsonSavingSystem` class contains the code for saving and loading Scenes and for deleting saveFiles.
- 
- This Method loads the last active Scene for example if the player wants to continue a game.
- public IEnumerator LoadLastScene(string saveFile)
-        {
-            JObject state = LoadJsonFromFile(saveFile);
-            IDictionary<string, JToken> stateDict = state; 
-            int buildIndex = SceneManager.GetActiveScene().buildIndex;
-            if (stateDict.ContainsKey("lastSceneBuildIndex"))
-            {
-                buildIndex = (int)stateDict["lastSceneBuildIndex"];
-            }
-            yield return SceneManager.LoadSceneAsync(buildIndex);
-            RestoreFromToken(state);
-        }
- this method loads a given savefile
-        public void Load(string saveFile)
-        {
-            print("Loading from " + GetPathFromSaveFile(saveFile));
-            RestoreFromToken(LoadJsonFromFile(saveFile));
-        }
- 
- saves the state of the current scene to the savefile
-        public void Save(string saveFile)
-        {
-            print("Saving to " + GetPathFromSaveFile(saveFile));
-            JObject state = LoadJsonFromFile(saveFile);
-            CaptureAsToken(state);
-            SaveFileAsJSon(saveFile, state);
-        }
- 
- 
- loads the json data from a file
- private JObject LoadJsonFromFile(string saveFile)
-        {
-            string path = GetPathFromSaveFile(saveFile);
-            print("Loading from " + path);
-            if (!File.Exists(path))
-            {
-                return new JObject();
-            }
-            
-            using (var textReader = File.OpenText(path))
-            {
-                using (var reader = new JsonTextReader(textReader))
-                {
-                    reader.FloatParseHandling = FloatParseHandling.Double;
-
-                    return JObject.Load(reader);
-                }
-            }
-
-        }
-saves the current state to a given savefile
-        private void SaveFileAsJSon(string saveFile, JObject state)
-        {
-            string path = GetPathFromSaveFile(saveFile);
-            print("Saving to " + path);
-            using (var textWriter = File.CreateText(path))
-            {
-                using (var writer = new JsonTextWriter(textWriter))
-                {
-                    writer.Formatting = Formatting.Indented;
-                    state.WriteTo(writer);
-                }
-            }
-        }
- 
- //deletes the given savefile
-  public void Delete(string saveFile)
-        {
-            print("Deleting from " + GetPathFromSaveFile(saveFile));
-            File.Delete(GetPathFromSaveFile(saveFile));
-        }
- 
- //Collects all saveable objects in a dictionary and sets the lastSceneBuildIndex to the current scene
+ > The <code>JsonSavingSystem</code> class contains the code for saving and loading Scenes and for deleting saveFiles.
+ >
+ > ```csharp
+ > //Loads the last active Scene for example if the player wants to continue a game.
+ > public IEnumerator LoadLastScene(string saveFile)
+ > {
+ >     JObject state = LoadJsonFromFile(saveFile);
+ >     IDictionary<string, JToken> stateDict = state; 
+ >     int buildIndex = SceneManager.GetActiveScene().buildIndex;
+ >     if (stateDict.ContainsKey("lastSceneBuildIndex"))
+ >     {
+ >         buildIndex = (int)stateDict["lastSceneBuildIndex"];
+ >     }
+ >     yield return SceneManager.LoadSceneAsync(buildIndex);
+ >     RestoreFromToken(state);
+ > }
+ >
+ > //Loads a given savefile
+ > public void Load(string saveFile)
+ > {
+ >     print("Loading from " + GetPathFromSaveFile(saveFile));
+ >     RestoreFromToken(LoadJsonFromFile(saveFile));
+ > }
+ >
+ >//Saves the state of the current scene to the savefile
+ > public void Save(string saveFile)
+ > {
+ >     print("Saving to " + GetPathFromSaveFile(saveFile));
+ >     JObject state = LoadJsonFromFile(saveFile);
+ >     SaveFileAsJSon(saveFile, state);
+ > }
+ >
+ > //Loads the json data from a file
+ > private JObject LoadJsonFromFile(string saveFile)
+ > {
+ >     string path = GetPathFromSaveFile(saveFile);
+ >     print("Loading from " + path);
+ >     if (!File.Exists(path))
+ >     {
+ >         return new JObject();
+ >     }
+ >     using (var textReader = File.OpenText(path))
+ >     {
+ >         using (var reader = new JsonTextReader(textReader))
+ >         {
+ >             reader.FloatParseHandling = FloatParseHandling.Double;
+ >             return JObject.Load(reader);
+ >         }
+ >     }
+ > }
+ >
+ > //Saves the current state to a given savefile
+ > private void SaveFileAsJSon(string saveFile, JObject state)
+ > {
+ >     string path = GetPathFromSaveFile(saveFile);
+ >     print("Saving to " + path);
+ >     using (var textWriter = File.CreateText(path))
+ >     {
+ >         using (var writer = new JsonTextWriter(textWriter))
+ >         {
+ >             writer.Formatting = Formatting.Indented;
+ >             state.WriteTo(writer);
+ >         }
+ >     }
+ > }
+ >
+ > //Deletes the given savefile
+ > public void Delete(string saveFile)
+ > {
+ >     print("Deleting from " + GetPathFromSaveFile(saveFile));
+ >     File.Delete(GetPathFromSaveFile(saveFile));
+ > }
+ >
+ > //Collects all saveable objects in a dictionary and sets the lastSceneBuildIndex to the current scene
  > private void CaptureAsToken(JObject state)
-        {
-            IDictionary<string, JToken> stateDict = state;
-            foreach (JsonSaveableEntity saveable in FindObjectsOfType<JsonSaveableEntity>())
-            {
-                stateDict[saveable.GetUniqueIdentifier()] = saveable.CaptureAsJtoken();
-            }
-
-            stateDict["lastSceneBuildIndex"] = SceneManager.GetActiveScene().buildIndex;
-        }
-
- //Restores the state of all the saveable components 
-        private void RestoreFromToken(JObject state)
-        {
-            IDictionary<string, JToken> stateDict = state;
-            foreach (JsonSaveableEntity savable in FindObjectsOfType<JsonSaveableEntity>())
-            {
-                string id = savable.GetUniqueIdentifier();
-                if (stateDict.ContainsKey(id))
-                {
-                    savable.RestoreFromJToken(stateDict[id]);
-                }
-            }
-        }
+ > {
+ >     IDictionary<string, JToken> stateDict = state;
+ >     foreach (JsonSaveableEntity saveable in FindObjectsOfType<JsonSaveableEntity>())
+ >     {
+ >         stateDict[saveable.GetUniqueIdentifier()] = saveable.CaptureAsJtoken();
+ >     }
+ >     stateDict["lastSceneBuildIndex"] = SceneManager.GetActiveScene().buildIndex;
+ > }
+ >
+ > //Restores the state of all the saveable components 
+ > private void RestoreFromToken(JObject state)
+ > {
+ >     IDictionary<string, JToken> stateDict = state;
+ >     foreach (JsonSaveableEntity savable in FindObjectsOfType<JsonSaveableEntity>())
+ >     {
+ >         string id = savable.GetUniqueIdentifier();
+ >         if (stateDict.ContainsKey(id))
+ >         {
+ >             savable.RestoreFromJToken(stateDict[id]);
+ >         }
+ >     }
+ > }
  > ```
  > <br>
  > This is an example how the Saving of the Health of Players and Enemies works. The `_healthPoints.value` is saved using `CaptureAsJToken()` and loaded using `RestoreFromJToken()`. After loading the state of the Characters is also updated using `UpdateState()`.
