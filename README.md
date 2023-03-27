@@ -414,36 +414,38 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
  > This is an example how the Saving of the Health of Players and Enemies works. The `_healthPoints.value` is saved using `CaptureAsJToken()` and loaded using `RestoreFromJToken()`. After loading the state of the Characters is also updated using `UpdateState()`.
  >
  > ```csharp
- public class Health : MonoBehaviour, IJsonSaveable
-    {
- > private LazyValue<float> _healthPoints; //lazyvalue ensures that variable is initialized before use
- > public JToken CaptureAsJToken()
+ > public class Health : MonoBehaviour, IJsonSaveable
  > {
- >     return JToken.FromObject(_healthPoints.value);
- > }
- >
- > public void RestoreFromJToken(JToken state)
- > {
- >    float val = state.ToObject<float>();
- >     _healthPoints.value = val;
- >     UpdateState();
- > }
- >
- > private void UpdateState()
- > {
- >    if (!_wasDeadLastFrame && IsDead())
+ >     private LazyValue<float> _healthPoints; //lazyvalue ensures that variable is initialized before use
+ >     
+ >     //Converts the healthPoints value to a JToken and returns it to be saved
+ >     public JToken CaptureAsJToken()
  >     {
- >         _animator.SetTrigger(DieTrigger);
- >         _actionScheduler.CancelCurrentAction();
+ >         return JToken.FromObject(_healthPoints.value);
+ >     }
+ >     
+ >     //Restores the healthPoints from the given JToken and updates the state
+ >     public void RestoreFromJToken(JToken state)
+ >     {
+ >         float val = state.ToObject<float>();
+ >         _healthPoints.value = val;
+ >         UpdateState();
  >     }
  >
- >     if (_wasDeadLastFrame && !IsDead())
+ >     //Updates the state of the object having the health script on it
+ >     private void UpdateState()
  >     {
- >         _animator.Rebind();
- >     }
- >     _wasDeadLastFrame = IsDead();
+ >         if (!_wasDeadLastFrame && IsDead())
+ >         {
+ >             _animator.SetTrigger(DieTrigger);
+ >             _actionScheduler.CancelCurrentAction();
+ >         }
+ >         if (_wasDeadLastFrame && !IsDead())
+ >         {
+ >             _animator.Rebind();
+ >         }
+ >         _wasDeadLastFrame = IsDead();
  > }
- }
  > ```
  >
  > </details>
