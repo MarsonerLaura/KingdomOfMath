@@ -252,8 +252,9 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 <details>
   <summary>Saving System</summary>
   <br>
+ <div align="center"> 
    If the player saves the game, the entire game state is saved, including dropped items, shops, chests, current health, mana, positions, money, inventory and equipment, dead enemies/players, experience, stats, traits, etc. The game is also automatically saved when a new level or scene is loaded. For this, persistent objects which persist between scenes are used as an alternative to the singleton pattern. The saving system is implemented by using unique IDs for each object to be saved, collecting all these objects, and saving them using JSON.
-  <br>
+ </div>
  <br>
  
  > <details> 
@@ -457,120 +458,133 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 <details>
   <summary>Scene Management</summary>
-   Portals are used for the transition between levels, through which the players can pass. As a transition, a white screen is displayed to provide enough time for the new scene to load, and then that scene is displayed. The players have set spawn points and are then spawned at that point and the corresponding level is loaded.
- ![portal](https://user-images.githubusercontent.com/104200268/227874597-2d466531-98cd-47aa-8150-faf1d2eb98ee.PNG)
-
-  > <details> 
+ <div align="center"> 
+ Portals are used for the transition between levels, through which the players can pass. As a transition, a white screen is displayed to provide enough time for the new scene to load, and then that scene is displayed. The players have set spawn points and are then spawned at that point and the corresponding level is loaded.
+ <img src="https://user-images.githubusercontent.com/104200268/227874597-2d466531-98cd-47aa-8150-faf1d2eb98ee.PNG" width="80%" height="auto">
+ </div>
+ <br>
+  
+ > <details> 
  >  <summary>Code Snippets</summary>
  >  <br>
- >    Creation of an Editor Window
+ > After the player enters a portal the transition to the next scene is started.
  >
- After the player enters a portal the transition to the next scene is started.
-```
-  private void OnTriggerEnter(Collider other)
-        {
-            if (other.CompareTag("Player"))
-            {
-                StartCoroutine(TransitionToScene());
-            }
-        }
+ > ```csharp
+ > private void OnTriggerEnter(Collider other)
+ > {
+ >     if (other.CompareTag("Player"))
+ >     {
+ >         StartCoroutine(TransitionToScene());
+ >     }
+ > }
  > ```
  >
- To transition to a new scene the playerController is disabled and the scene is faded out. Next the state of the current scene is saved, the next scene is loaded. Then the portal of the new scene where the player enters is loaded and the player is updated. The transition ends with saving the new scene, fading in and enabling player controls.
- private IEnumerator TransitionToScene()
-        {
-            if (sceneToLoadIndex < 0)
-            {
-                Debug.LogError("Scene to load not set.");
-                yield break; 
-            }
-            
-            DontDestroyOnLoad(gameObject);
-            
-            Fader fader = FindObjectOfType<Fader>();
-            SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
-
-            PlayerController playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
-            playerController.enabled = false;
-            
-            yield return fader.FadeOut(fadeOutTime);
-            
-            savingWrapper.Save();
-            
-            yield return SceneManager.LoadSceneAsync(sceneToLoadIndex);
-            PlayerController newPlayerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
-            newPlayerController.enabled = false;
-            
-            savingWrapper.Load();
- 
-            Portal otherPortal = GetOtherPortal();
-            UpdatePlayer(otherPortal);
-
-            savingWrapper.Save();
-            
-            yield return new WaitForSeconds(fadeWaitTime);
-            
-            fader.FadeIn(fadeInTime);
-            
-            newPlayerController.enabled = true;
-            
-            Destroy(gameObject);
-        }
-  private void UpdatePlayer(Portal otherPortal)
-        {
-            print("portal: "+otherPortal);
-            GameObject player = GameObject.FindWithTag("Player");
-            print("player: "+player);
-            player.GetComponent<NavMeshAgent>().enabled = false;
-            player.GetComponent<NavMeshAgent>().Warp(otherPortal.spawnPoint.position);
-            player.transform.rotation = otherPortal.spawnPoint.rotation;
-            player.GetComponent<NavMeshAgent>().enabled = true;
-        }
- 
- To fade in and out between scenes coroutines are use as displayed in the following code of the Fader.cs class.
- public class Fader : MonoBehaviour
-    {
-        private CanvasGroup _canvasGroup;
-        private Coroutine currentActiveFade = null;
- 
- private void Awake()
-        {
-            _canvasGroup = GetComponent<CanvasGroup>();
-        }
- public Coroutine FadeOut(float time)
-        {
-            return Fade(time, 1f);
-        }
-
-        public Coroutine FadeIn(float time)
-        {
-            return Fade(time, 0);
-        }
-
-        public Coroutine Fade(float time, float alphaTarget)
-        {
-            if (currentActiveFade != null)
-            {
-                StopCoroutine(currentActiveFade);
-            }
-            currentActiveFade = StartCoroutine(FadeRoutine(time,alphaTarget));
-            return currentActiveFade;
-        }
-        public void FadeOutImmediate()
-        {
-            _canvasGroup.alpha = 1;
-        }
-
-
-        private IEnumerator FadeRoutine(float time, float alphaTarget)
-        {
-            while (!Mathf.Approximately(_canvasGroup.alpha,alphaTarget))
-            {
-                _canvasGroup.alpha = Mathf.MoveTowards(_canvasGroup.alpha,alphaTarget, Time.unscaledDeltaTime / time);
-                yield return null; //wait for 1 frame
-            }
-        }
- }
+ > To transition to a new scene the playerController is disabled and the scene is faded out. Next the state of the current scene is saved, the next scene is loaded. Then the portal of the new scene where the player enters is loaded and the player is updated. The transition ends with saving the new scene, fading in and enabling player controls.
+ >
+ > ```csharp
+ > private IEnumerator TransitionToScene()
+ > {
+ >     if (sceneToLoadIndex < 0)
+ >     {
+ >         Debug.LogError("Scene to load not set.");
+ >         yield break; 
+ >     }
+ >           
+ >     DontDestroyOnLoad(gameObject);
+ >          
+ >     Fader fader = FindObjectOfType<Fader>();
+ >     SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
+ >
+ >     PlayerController playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+ >     playerController.enabled = false;
+ >         
+ >     yield return fader.FadeOut(fadeOutTime);
+ >           
+ >     savingWrapper.Save();
+ >           
+ >     yield return SceneManager.LoadSceneAsync(sceneToLoadIndex);
+ >     PlayerController newPlayerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+ >     newPlayerController.enabled = false;
+ >           
+ >     savingWrapper.Load();
+ > 
+ >     Portal otherPortal = GetOtherPortal();
+ >     UpdatePlayer(otherPortal);
+ >
+ >     savingWrapper.Save();
+ >           
+ >     yield return new WaitForSeconds(fadeWaitTime);
+ >           
+ >     fader.FadeIn(fadeInTime);
+ >           
+ >     newPlayerController.enabled = true;
+ >           
+ >     Destroy(gameObject);
+ > }
+ >
+ > //Updates the players position/rotation based on the new portal
+ > private void UpdatePlayer(Portal otherPortal)
+ > {
+ >     GameObject player = GameObject.FindWithTag("Player");
+ >     player.GetComponent<NavMeshAgent>().enabled = false;
+ >     player.GetComponent<NavMeshAgent>().Warp(otherPortal.spawnPoint.position);
+ >     player.transform.rotation = otherPortal.spawnPoint.rotation;
+ >     player.GetComponent<NavMeshAgent>().enabled = true;
+ > }
+ > ```
+ >
+ > To fade in and out between scenes coroutines are use as displayed in the following code of the Fader.cs class.
+ >
+ > ```csharp 
+ > public class Fader : MonoBehaviour
+ > {
+ >     private CanvasGroup _canvasGroup;
+ >     private Coroutine currentActiveFade = null;
+ > 
+ >     private void Awake()
+ >     {
+ >         _canvasGroup = GetComponent<CanvasGroup>();
+ >     }
+ >
+ >     public Coroutine FadeOut(float time)
+ >     {
+ >         return Fade(time, 1f);
+ >     }
+ >
+ >     public Coroutine FadeIn(float time)
+ >     {
+ >         return Fade(time, 0);
+ >     }
+ >
+ >     //Fades in or out depending on the alpha value
+ >     public Coroutine Fade(float time, float alphaTarget)
+ >     {
+ >         if (currentActiveFade != null)
+ >         {
+ >             StopCoroutine(currentActiveFade);
+ >         }
+ >         currentActiveFade = StartCoroutine(FadeRoutine(time,alphaTarget));
+ >         return currentActiveFade;
+ >     }
+ >     
+ >     //Fades out immediately by setting the alpha of the canvasGroup to 1
+ >     public void FadeOutImmediate()
+ >     {
+ >         _canvasGroup.alpha = 1;
+ >     }
+ >
+ >     //Slowly increses/decreases the alpha value of the canvas until the intended alpha value is reached
+ >     private IEnumerator FadeRoutine(float time, float alphaTarget)
+ >     {
+ >         while (!Mathf.Approximately(_canvasGroup.alpha,alphaTarget))
+ >         {
+ >             _canvasGroup.alpha = Mathf.MoveTowards(_canvasGroup.alpha,alphaTarget, Time.unscaledDeltaTime / time);
+ >             yield return null; //wait for 1 frame
+ >         }
+ >     }
+ > }
+ > ```
+ >
  > </details>
    
 
