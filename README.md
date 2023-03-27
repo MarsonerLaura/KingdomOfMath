@@ -461,10 +461,10 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
  <br>
  <div align="center"> 
  Portals are used for the transition between levels, through which the players can pass. As a transition, a white screen is displayed to provide enough time for the new scene to load, and then that scene is displayed. The players have set spawn points and are then spawned at that point and the corresponding level is loaded.
- <img src="https://user-images.githubusercontent.com/104200268/227874597-2d466531-98cd-47aa-8150-faf1d2eb98ee.PNG" width="80%" height="auto">
+ <img src="https://user-images.githubusercontent.com/104200268/227891326-1d00fcc3-2789-4860-9cef-499e59f94d5b.gif" width="80%" height="auto">
  </div>
  <br>
-  
+
  > <details> 
  >  <summary>Code Snippets</summary>
  >  <br>
