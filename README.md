@@ -250,11 +250,333 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 </details>
 
 <details>
-  <summary>Inventory System</summary>
-  
+  <summary>Saving Systemt</summary>
+  The game can be paused with the [P] key, which freezes time and opens a pause menu where players can save the game. This will save the entire game state, including dropped items, shops, chests, current health, mana, positions, money, inventory and equipment, dead enemies/players, experience, stats, traits, etc.  The game is also saved when a new level or scene is loaded. For this, persistent objects which persist between scenes are used as an alternative to the singleton pattern.  The saving system is implemented by using unique IDs for each object to be saved, collecting all these objects, and saving them using JSON.
+ 
+ 
+ 
+ > <details> 
+ >  <summary>Code Snippets</summary>
+ >  <br>
+ >    Creation of an Editor Window
+ >
+ Every object that has components that want to be saved needs to have a `JsonSaveableEntity.cs` script on it to allow the components to be saved. The following code displays how each object is assigned a unique identifier and how the saveable components of the object are saved.
+ [ExecuteAlways]
+    public class JsonSaveableEntity : MonoBehaviour
+    {
+    
+        [SerializeField] private string uniqueIdentifier = "";
 
+        // CACHED STATE
+        static Dictionary<string, JsonSaveableEntity> globalLookup = new Dictionary<string, JsonSaveableEntity>();
+    #if UNITY_EDITOR
+        private void Update() {
+            if (Application.IsPlaying(gameObject)) return;
+            if (string.IsNullOrEmpty(gameObject.scene.path)) return;
+
+            SerializedObject serializedObject = new SerializedObject(this);
+            SerializedProperty property = serializedObject.FindProperty("uniqueIdentifier");
+            
+            if (string.IsNullOrEmpty(property.stringValue) || !IsUnique(property.stringValue))
+            {
+                property.stringValue = System.Guid.NewGuid().ToString();
+                serializedObject.ApplyModifiedProperties();
+            }
+
+            globalLookup[property.stringValue] = this;
+        }
+    #endif
+ 
+ public JToken CaptureAsJtoken()
+        {
+            JObject state = new JObject();
+            IDictionary<string, JToken> stateDict = state;
+            foreach (IJsonSaveable jsonSaveable in GetComponents<IJsonSaveable>())
+            {
+               
+                JToken token = jsonSaveable.CaptureAsJToken();
+                string component = jsonSaveable.GetType().ToString();
+                //Debug.Log($"{name} Capture {component} = {token.ToString()}");
+                stateDict[jsonSaveable.GetType().ToString()] = token;
+            }
+            return state;
+        }
+
+        public void RestoreFromJToken(JToken s) 
+        {
+            JObject state = s.ToObject<JObject>();
+            IDictionary<string, JToken> stateDict = state;
+            foreach (IJsonSaveable jsonSaveable in GetComponents<IJsonSaveable>())
+            {
+                string component = jsonSaveable.GetType().ToString();
+                if (stateDict.ContainsKey(component))
+                {
+
+                    //Debug.Log($"{name} Restore {component} =>{stateDict[component].ToString()}");
+                    jsonSaveable.RestoreFromJToken(stateDict[component]);
+                }
+            }
+        }
+   }
+ The `JsonSavingSystem` class contains the code for saving and loading Scenes and for deleting saveFiles.
+ 
+ This Method loads the last active Scene for example if the player wants to continue a game.
+ public IEnumerator LoadLastScene(string saveFile)
+        {
+            JObject state = LoadJsonFromFile(saveFile);
+            IDictionary<string, JToken> stateDict = state; 
+            int buildIndex = SceneManager.GetActiveScene().buildIndex;
+            if (stateDict.ContainsKey("lastSceneBuildIndex"))
+            {
+                buildIndex = (int)stateDict["lastSceneBuildIndex"];
+            }
+            yield return SceneManager.LoadSceneAsync(buildIndex);
+            RestoreFromToken(state);
+        }
+ this method loads a given savefile
+        public void Load(string saveFile)
+        {
+            print("Loading from " + GetPathFromSaveFile(saveFile));
+            RestoreFromToken(LoadJsonFromFile(saveFile));
+        }
+ 
+ saves the state of the current scene to the savefile
+        public void Save(string saveFile)
+        {
+            print("Saving to " + GetPathFromSaveFile(saveFile));
+            JObject state = LoadJsonFromFile(saveFile);
+            CaptureAsToken(state);
+            SaveFileAsJSon(saveFile, state);
+        }
+ 
+ 
+ loads the json data from a file
+ private JObject LoadJsonFromFile(string saveFile)
+        {
+            string path = GetPathFromSaveFile(saveFile);
+            print("Loading from " + path);
+            if (!File.Exists(path))
+            {
+                return new JObject();
+            }
+            
+            using (var textReader = File.OpenText(path))
+            {
+                using (var reader = new JsonTextReader(textReader))
+                {
+                    reader.FloatParseHandling = FloatParseHandling.Double;
+
+                    return JObject.Load(reader);
+                }
+            }
+
+        }
+saves the current state to a given savefile
+        private void SaveFileAsJSon(string saveFile, JObject state)
+        {
+            string path = GetPathFromSaveFile(saveFile);
+            print("Saving to " + path);
+            using (var textWriter = File.CreateText(path))
+            {
+                using (var writer = new JsonTextWriter(textWriter))
+                {
+                    writer.Formatting = Formatting.Indented;
+                    state.WriteTo(writer);
+                }
+            }
+        }
+ 
+ //deletes the given savefile
+  public void Delete(string saveFile)
+        {
+            print("Deleting from " + GetPathFromSaveFile(saveFile));
+            File.Delete(GetPathFromSaveFile(saveFile));
+        }
+ 
+ //Collects all saveable objects in a dictionary and sets the lastSceneBuildIndex to the current scene
+ > private void CaptureAsToken(JObject state)
+        {
+            IDictionary<string, JToken> stateDict = state;
+            foreach (JsonSaveableEntity saveable in FindObjectsOfType<JsonSaveableEntity>())
+            {
+                stateDict[saveable.GetUniqueIdentifier()] = saveable.CaptureAsJtoken();
+            }
+
+            stateDict["lastSceneBuildIndex"] = SceneManager.GetActiveScene().buildIndex;
+        }
+
+ //Restores the state of all the saveable components 
+        private void RestoreFromToken(JObject state)
+        {
+            IDictionary<string, JToken> stateDict = state;
+            foreach (JsonSaveableEntity savable in FindObjectsOfType<JsonSaveableEntity>())
+            {
+                string id = savable.GetUniqueIdentifier();
+                if (stateDict.ContainsKey(id))
+                {
+                    savable.RestoreFromJToken(stateDict[id]);
+                }
+            }
+        }
+ > ```
+ > <br>
+ > This is an example how the Saving of the Health of Players and Enemies works. The `_healthPoints.value` is saved using `CaptureAsJToken()` and loaded using `RestoreFromJToken()`. After loading the state of the Characters is also updated using `UpdateState()`.
+ >
+ > ```csharp
+ public class Health : MonoBehaviour, IJsonSaveable
+    {
+ > private LazyValue<float> _healthPoints; //lazyvalue ensures that variable is initialized before use
+ > public JToken CaptureAsJToken()
+ > {
+ >     return JToken.FromObject(_healthPoints.value);
+ > }
+ >
+ > public void RestoreFromJToken(JToken state)
+ > {
+ >    float val = state.ToObject<float>();
+ >     _healthPoints.value = val;
+ >     UpdateState();
+ > }
+ >
+ > private void UpdateState()
+ > {
+ >    if (!_wasDeadLastFrame && IsDead())
+ >     {
+ >         _animator.SetTrigger(DieTrigger);
+ >         _actionScheduler.CancelCurrentAction();
+ >     }
+ >
+ >     if (_wasDeadLastFrame && !IsDead())
+ >     {
+ >         _animator.Rebind();
+ >     }
+ >     _wasDeadLastFrame = IsDead();
+ > }
+ }
+ > ```
+ >
+ > </details>
 </details>
 
+<details>
+  <summary>Scene Management</summary>
+   Portals are used for the transition between levels, through which the players can pass. As a transition, a white screen is displayed to provide enough time for the new scene to load, and then that scene is displayed. The players have set spawn points and are then spawned at that point and the corresponding level is loaded.
+ TODO bild of portal
+  > <details> 
+ >  <summary>Code Snippets</summary>
+ >  <br>
+ >    Creation of an Editor Window
+ >
+ After the player enters a portal the transition to the next scene is started.
+```
+  private void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                StartCoroutine(TransitionToScene());
+            }
+        }
+ > ```
+ >
+ To transition to a new scene the playerController is disabled and the scene is faded out. Next the state of the current scene is saved, the next scene is loaded. Then the portal of the new scene where the player enters is loaded and the player is updated. The transition ends with saving the new scene, fading in and enabling player controls.
+ private IEnumerator TransitionToScene()
+        {
+            if (sceneToLoadIndex < 0)
+            {
+                Debug.LogError("Scene to load not set.");
+                yield break; 
+            }
+            
+            DontDestroyOnLoad(gameObject);
+            
+            Fader fader = FindObjectOfType<Fader>();
+            SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
+
+            PlayerController playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+            playerController.enabled = false;
+            
+            yield return fader.FadeOut(fadeOutTime);
+            
+            savingWrapper.Save();
+            
+            yield return SceneManager.LoadSceneAsync(sceneToLoadIndex);
+            PlayerController newPlayerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+            newPlayerController.enabled = false;
+            
+            savingWrapper.Load();
+ 
+            Portal otherPortal = GetOtherPortal();
+            UpdatePlayer(otherPortal);
+
+            savingWrapper.Save();
+            
+            yield return new WaitForSeconds(fadeWaitTime);
+            
+            fader.FadeIn(fadeInTime);
+            
+            newPlayerController.enabled = true;
+            
+            Destroy(gameObject);
+        }
+  private void UpdatePlayer(Portal otherPortal)
+        {
+            print("portal: "+otherPortal);
+            GameObject player = GameObject.FindWithTag("Player");
+            print("player: "+player);
+            player.GetComponent<NavMeshAgent>().enabled = false;
+            player.GetComponent<NavMeshAgent>().Warp(otherPortal.spawnPoint.position);
+            player.transform.rotation = otherPortal.spawnPoint.rotation;
+            player.GetComponent<NavMeshAgent>().enabled = true;
+        }
+ 
+ To fade in and out between scenes coroutines are use as displayed in the following code of the Fader.cs class.
+ public class Fader : MonoBehaviour
+    {
+        private CanvasGroup _canvasGroup;
+        private Coroutine currentActiveFade = null;
+ 
+ private void Awake()
+        {
+            _canvasGroup = GetComponent<CanvasGroup>();
+        }
+ public Coroutine FadeOut(float time)
+        {
+            return Fade(time, 1f);
+        }
+
+        public Coroutine FadeIn(float time)
+        {
+            return Fade(time, 0);
+        }
+
+        public Coroutine Fade(float time, float alphaTarget)
+        {
+            if (currentActiveFade != null)
+            {
+                StopCoroutine(currentActiveFade);
+            }
+            currentActiveFade = StartCoroutine(FadeRoutine(time,alphaTarget));
+            return currentActiveFade;
+        }
+        public void FadeOutImmediate()
+        {
+            _canvasGroup.alpha = 1;
+        }
+
+
+        private IEnumerator FadeRoutine(float time, float alphaTarget)
+        {
+            while (!Mathf.Approximately(_canvasGroup.alpha,alphaTarget))
+            {
+                _canvasGroup.alpha = Mathf.MoveTowards(_canvasGroup.alpha,alphaTarget, Time.unscaledDeltaTime / time);
+                yield return null; //wait for 1 frame
+            }
+        }
+ }
+ > </details>
+   
+
+</details> 
  
 <details>
   <summary>Chests</summary>
