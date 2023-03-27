@@ -598,26 +598,26 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
  Chests, as the name suggests, are objects placed in the world that contain items and work as follows. When the players hold the mouse cursor over a chest, the mouse cursor turns into a yellow square. When the players click on a chest, they automatically move into range of the chest, if they are not already in that range from where they can open it.
  <img src="https://user-images.githubusercontent.com/104200268/227770156-dcc77aea-e740-4666-8390-46ec6a41f624.gif" width="80%" height="auto">
  </div>
- 
+ <br>
  <div align="center"> 
- Once the players are within range, the chest window displayed in Figure \ref{fig:ChestUI_image} opens. The window consists of a mathematical question, an answer field where the players can enter their answer, and a confirmation button. If the players enter an incorrect answer, they receives visual feedback in the form of a screen shake, after which they can try again. If the answer is correct, the chest opens and a pickup for an item is spawned. 
- <img src="https://user-images.githubusercontent.com/104200268/227770154-8badb528-65da-446a-9569-44b6c27e9f2d.png" width="80%" height="auto">
+ Once the players are within range, the chest window displayed below opens. The window consists of a mathematical question, an answer field where the players can enter their answer, and a confirmation button. If the answer is correct, the chest opens and a pickup for an item is spawned.  
+  <img src="https://user-images.githubusercontent.com/104200268/227773074-8da5f304-e6e1-4149-80c5-539b9f4ffaaf.png" width="80%" height="auto">
  </div>
-   
+   <br>
 <div align="center"> 
  There are three different types of chests: easy chests, which are wooden and can be opened by solving easy math problems or even trick questions; medium chests, which are golden and can be opened by solving medium math problems; and difficult chests, which are purple and have a golden frame and can be opened by solving difficult math problems.
- <img src="https://user-images.githubusercontent.com/104200268/227773074-8da5f304-e6e1-4149-80c5-539b9f4ffaaf.png" width="80%" height="auto">
+ <img src="https://user-images.githubusercontent.com/104200268/227770154-8badb528-65da-446a-9569-44b6c27e9f2d.png" width="80%" height="auto">
  </div>
-  
+  <br>
  <div align="center"> 
- The chests are implemented using scriptable objects, where the developer can configure various options. One of them is the respective math problem, which is also implemented via a scriptable object consisting of the difficulty, a question, a solution, and a list of hints. The chest object additionally has a chest prefab depending on the difficulty, a chest protector being the fairy with the clues, a voice output for opening the chest, a level, and a drop library containing the loot that is spawned when the chest is opened.
- <img src="https://user-images.githubusercontent.com/104200268/227963440-7fca7c13-5cd7-4499-abdd-c4c1eb7a5585.png" width="80%" height="auto">
- </div>
-   
- <div align="center"> 
- There are three different types of chests: easy chests, which are wooden and can be opened by solving easy math problems or even trick questions; medium chests, which are golden and can be opened by solving medium math problems; and difficult chests, which are purple and have a golden frame and can be opened by solving difficult math problems.
+ The chests are implemented using scriptable objects, where the developer can configure various options. This includes the respective math problem, a chest prefab depending on the difficulty, a chest protector being the fairy with the clues, a voice output for opening the chest, a level, and a drop library containing the loot that is spawned when the chest is opened.
  <img src="https://user-images.githubusercontent.com/104200268/227963447-784f63a2-dc0a-4b69-b179-5859e7be0717.png" width="80%" height="auto">
  </div>
+ <br>
+ <div align="center"> 
+ The math problems are also implemented using scriptable objects consisting of the difficulty, a question, a solution, and a list of hints.
+ <img src="https://user-images.githubusercontent.com/104200268/227963440-7fca7c13-5cd7-4499-abdd-c4c1eb7a5585.png" width="80%" height="auto">
+ </div> 
 
 </details>
 
