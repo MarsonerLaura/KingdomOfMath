@@ -252,10 +252,10 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 <details>
   <summary>Saving System</summary>
  <br>
- <div align="center"> 
-   If the player saves the game, the entire game state is saved, including dropped items, shops, chests, current health, mana, positions, money, inventory and equipment, dead enemies/players, experience, stats, traits, etc. The game is also automatically saved when a new level or scene is loaded. For this, persistent objects which persist between scenes are used as an alternative to the singleton pattern. The saving system is implemented by using unique IDs for each object to be saved, collecting all these objects, and saving them using JSON.
- </div>
- <br>
+ 
+ > <div align="center"> 
+ >  If the player saves the game, the entire game state is saved, including dropped items, shops, chests, current health, mana, positions, money, inventory and equipment, dead enemies/players, experience, stats, traits, etc. The game is also automatically saved when a new level or scene is loaded. For this, persistent objects which persist between scenes are used as an alternative to the singleton pattern. The saving system is implemented by using unique IDs for each object to be saved, collecting all these objects, and saving them using JSON.
+ > </div>
  
  > <details> 
  >  <summary>Code Snippets</summary>
@@ -459,11 +459,12 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 <details>
   <summary>Scene Management</summary>
  <br>
- <div align="center"> 
- Portals are used for the transition between levels, through which the players can pass. As a transition, a white screen is displayed to provide enough time for the new scene to load, and then that scene is displayed. The players have set spawn points and are then spawned at that point and the corresponding level is loaded.
- <img src="https://user-images.githubusercontent.com/104200268/227891326-1d00fcc3-2789-4860-9cef-499e59f94d5b.gif" width="80%" height="auto">
- </div>
- <br>
+ 
+ > <div align="center"> 
+ > Portals are used for the transition between levels, through which the players can pass. As a transition, a white screen is displayed to provide enough time for the new scene to load, and then that scene is displayed. The players have set spawn points and are then spawned at that point and the corresponding level is loaded.
+ > <img src="https://user-images.githubusercontent.com/104200268/227891326-1d00fcc3-2789-4860-9cef-499e59f94d5b.gif" width="80%" height="auto">
+ > </div>
+  <br>
 
  > <details> 
  >  <summary>Code Snippets</summary>
@@ -594,17 +595,18 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 <details>
   <summary>Chests</summary>
   <br>
-  <div align="center"> 
- Chests, as the name suggests, are objects placed in the world that contain items and work as follows. When the players hold the mouse cursor over a chest, the mouse cursor turns into a yellow square. When the players click on a chest, they automatically move into range of the chest, if they are not already in that range from where they can open it.
-   <br>
- <img src="https://user-images.githubusercontent.com/104200268/227770156-dcc77aea-e740-4666-8390-46ec6a41f624.gif" width="80%" height="auto">
- </div>
- <br>
- <div align="center"> 
- Once the players are within range, the chest window displayed below opens. The window consists of a mathematical question, an answer field where the players can enter their answer, and a confirmation button. If the answer is correct, the chest opens and a pickup for an item is spawned.  
-  <img src="https://user-images.githubusercontent.com/104200268/227773074-8da5f304-e6e1-4149-80c5-539b9f4ffaaf.png" width="70%" height="auto">
- </div>
-   <br>
+ 
+ > <div align="center"> 
+ > Chests, as the name suggests, are objects placed in the world that contain items and work as follows. When the players hold the mouse cursor over a chest, the mouse cursor turns into a yellow square. When the players click on a chest, they automatically move into range of the chest, if they are not already in that range from where they can open it.
+ > <br>
+ > <img src="https://user-images.githubusercontent.com/104200268/227770156-dcc77aea-e740-4666-8390-46ec6a41f624.gif" width="80%" height="auto">
+ > </div>
+ > <br>
+ > <div align="center"> 
+ > Once the players are within range, the chest window displayed below opens. The window consists of a mathematical question, an answer field where the players can enter their answer, and a confirmation button. If the answer is correct, the chest opens and a pickup for an item is spawned.  
+ > <img src="https://user-images.githubusercontent.com/104200268/227773074-8da5f304-e6e1-4149-80c5-539b9f4ffaaf.png" width="70%" height="auto">
+ > </div>
+ > <br>
 <div align="center"> 
  There are three different types of chests: easy chests, which are wooden and can be opened by solving easy math problems or even trick questions; medium chests, which are golden and can be opened by solving medium math problems; and difficult chests, which are purple and have a golden frame and can be opened by solving difficult math problems.
  <br>
