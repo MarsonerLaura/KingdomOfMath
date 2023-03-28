@@ -677,25 +677,22 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 <details>
   <summary>Quests</summary>
-  The article discusses the integration of mathematics into a video game to help players learn and understand mathematical concepts. The game features various levels, each focused on a different topic such as percentage calculations, and includes quests that present real-world problems related to the topic. The quests are designed to engage players emotionally by creating an attachment to NPC characters and motivating them to solve mathematical problems to help those characters. The game also includes a quest window displaying active and completed quests, along with their goals and rewards. Quests are implemented using scriptable objects that contain objectives, descriptions, and conditions for completion. The article highlights the benefits of using quests to teach mathematics, such as increasing player immersion and recognizing mathematical concepts in real-world situations.
- 
-    <div align="center"> 
-     Players can move numbers between different items to maximize their stats. The reached value is automatically updated and added to the respective stat. The numbers and signs can be changed at any time to optimize the stat of the item. Only simple operations like addition, subtraction, multiplication, and division are currently supported.
-     <br>
-     <img src="https://user-images.githubusercontent.com/104200268/227773157-4fd39c2a-9f3e-492e-a889-8a4d9cde515f.png" width="50%" height="auto">
-    </div>
-
-   ![Quest02 (1)](https://user-images.githubusercontent.com/104200268/227773129-757250c6-f349-4574-a258-8c4c31d723f8.png)
-   
-  
+  <br>
   <div align="center"> 
-     Players can move numbers between different items to maximize their stats. The reached value is automatically updated and added to the respective stat. The numbers and signs can be changed at any time to optimize the stat of the item. Only simple operations like addition, subtraction, multiplication, and division are currently supported.
+     The game features various levels, each focused on a different topic such as percentage calculations, and includes quests that present real-world problems related to the topic. The quests are designed to engage players emotionally by creating an attachment to NPC characters and motivating them to solve mathematical problems to help those characters.
+ The game also includes a quest window displaying active and completed quests, along with their goals and rewards.
      <br>
-     <img src="https://user-images.githubusercontent.com/104200268/227773157-4fd39c2a-9f3e-492e-a889-8a4d9cde515f.png" width="50%" height="auto">
+     <img src="https://user-images.githubusercontent.com/104200268/227773129-757250c6-f349-4574-a258-8c4c31d723f8.png" width="70%" height="auto">
     </div>
   
-   ![questso](https://user-images.githubusercontent.com/104200268/227784059-d7468f50-ab60-453d-9dc0-a67f2a4eeebe.PNG)
-   Non-playable characters (NPCs) play a crucial role in a game's story, gameplay, and immersion. There are two types of NPCs: static NPCs and those with dialogs or quests for players. Static NPCs help make the game world feel more lively, while those with quests or dialogs allow players to interact with them and advance the game's story.
+  <br>
+  <div align="center"> 
+      Quests are implemented using scriptable objects that contain objectives, descriptions, and conditions for completion.
+     <br>
+     <img src="https://user-images.githubusercontent.com/104200268/227784059-d7468f50-ab60-453d-9dc0-a67f2a4eeebe.PNG" width="60%" height="auto">
+    </div>
+   <br>
+   
  </details>
 
 <details>
