@@ -838,6 +838,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   > <div align="center"> 
   >  If you are interested in obtaining more information, you can download the final presentation and the bachelor's thesis using the links provided below. These resources contain valuable insights and details about the project.
   > <br>
+  > <br>
   >
   > [Presentation.pptx.pdf](https://github.com/MarsonerLaura/KingdomOfMath/files/11094236/BA.Prasentation.pptx.pdf)
   > <br>
