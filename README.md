@@ -701,11 +701,9 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 <details>
   <summary>NPCs</summary>
  <br>
-
-<br>
   <div align="center"> 
     Non-playable characters (NPCs) play a crucial role in a game's story, gameplay, and immersion. There are two types of NPCs: static NPCs and those with dialogs or quests for players. 
-     <img src="shopkeepersd2](https://user-images.githubusercontent.com/104200268/228180590-fa9d8973-d424-455f-aba7-bfbc68b266ae.png" width="50%" height="auto">
+     <img src="https://user-images.githubusercontent.com/104200268/228180590-fa9d8973-d424-455f-aba7-bfbc68b266ae.png" width="50%" height="auto">
  </div>
  <br>
   <div align="center"> 
@@ -716,10 +714,10 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   <div align="center">     
    To implement NPCs, an NPC Controller is used, which contains a list of NPCActions. Each NPCAction includes a description, position in the game world, time for the action, speed, dialog, and list of animation states. The NPC begins in the first action and moves at the set speed to the next action's position when the specified time has elapsed or when a dialog trigger changes the action. 
      <br>
-     <img src="https://user-images.githubusercontent.com/104200268/227773157-4fd39c2a-9f3e-492e-a889-8a4d9cde515f.png" width="50%" height="auto">
+     <img src="https://user-images.githubusercontent.com/104200268/228182600-d797f8b2-2c40-41ab-a73c-17a17bbceab7.PNG" width="50%" height="auto">
     </div>
  <br>
-  <div align="center"> 
+  <div align="center">
    The use of dialogue triggers provides a high level of control over the NPC's behavior, allowing for multiple actions and dialogues for a single NPC to enhance the game's realism. Also The NPCs gan give quests, complete quest or give the players items.
      <br>
      <img src="https://user-images.githubusercontent.com/104200268/227784080-f1cc0818-f074-486c-a6da-b61cf8b560dc.PNG" width="50%" height="auto">
