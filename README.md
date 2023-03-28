@@ -607,122 +607,125 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
  > <img src="https://user-images.githubusercontent.com/104200268/227773074-8da5f304-e6e1-4149-80c5-539b9f4ffaaf.png" width="70%" height="auto">
  > </div>
  > <br>
-<div align="center"> 
- There are three different types of chests: easy chests, which are wooden and can be opened by solving easy math problems or even trick questions; medium chests, which are golden and can be opened by solving medium math problems; and difficult chests, which are purple and have a golden frame and can be opened by solving difficult math problems.
- <br>
- <img src="https://user-images.githubusercontent.com/104200268/227770154-8badb528-65da-446a-9569-44b6c27e9f2d.png" width="60%" height="auto">
- </div>
-  <br>
- <div align="center"> 
- The chests are implemented using scriptable objects, where the developer can configure various options. This includes the respective math problem, a chest prefab depending on the difficulty, a chest protector being the fairy with the clues, a voice output for opening the chest, a level, and a drop library containing the loot that is spawned when the chest is opened.
-  <br>
- <img src="https://user-images.githubusercontent.com/104200268/227963447-784f63a2-dc0a-4b69-b179-5859e7be0717.png" width="70%" height="auto">
- </div>
- <br>
- <div align="center"> 
- The math problems are also implemented using scriptable objects consisting of the difficulty, a question, a solution, and a list of hints.
-  <br>
- <img src="https://user-images.githubusercontent.com/104200268/227963440-7fca7c13-5cd7-4499-abdd-c4c1eb7a5585.png" width="70%" height="auto">
- </div> 
-<br>
+ > <div align="center"> 
+ > There are three different types of chests: easy chests, which are wooden and can be opened by solving easy math problems or even trick questions; medium chests, which are golden and can be opened by solving medium math problems; and difficult chests, which are purple and have a golden frame and can be opened by solving difficult math problems.
+ > <br>
+ > <img src="https://user-images.githubusercontent.com/104200268/227770154-8badb528-65da-446a-9569-44b6c27e9f2d.png" width="60%" height="auto">
+ > </div>
+ > <br>
+ > <div align="center"> 
+ > The chests are implemented using scriptable objects, where the developer can configure various options. This includes the respective math problem, a chest prefab depending on the difficulty, a chest protector being the fairy with the clues, a voice output for opening the chest, a level, and a drop library containing the loot that is spawned when the chest is opened.
+ > <br>
+ > <img src="https://user-images.githubusercontent.com/104200268/227963447-784f63a2-dc0a-4b69-b179-5859e7be0717.png" width="70%" height="auto">
+ > </div>
+ > <br>
+ > <div align="center"> 
+ > The math problems are also implemented using scriptable objects consisting of the difficulty, a question, a solution, and a list of hints.
+ > <br>
+ > <img src="https://user-images.githubusercontent.com/104200268/227963440-7fca7c13-5cd7-4499-abdd-c4c1eb7a5585.png" width="70%" height="auto">
+ > </div> 
+> <br>
 </details>
 
 <details>
   <summary>Shops</summary>
-    <br>
-    <div align="center"> 
-      Shops subtly teach math by motivating the players to buy and sell items at different prices and with or without discounts. A shop is indicated in the game by an NPC called a shopkeeper. The shop window shown below opens when clicking on a shopkeeper.
-     <br>
-     <img src="https://user-images.githubusercontent.com/104200268/227770460-569c4c95-b963-4cb7-a131-89b8d7e1130e.png" width="70%" height="auto">
-    </div> 
-    <br>
-    <div align="center"> 
-     It contains various items available for purchase at the current player level, the quantity available for each, the price, and the number that will be added to the shopping list. The players can also switch between buying and selling and filter the items. If they have enough money to buy the corresponding items the items will be added to the players' inventory. 
-     It should be noted that the transaction is completed only when there is enough space in the inventory and that the stackable items are stacked and not placed in separate places. If the players do not have enough money, the total amount will be displayed in red and the [Kaufen] button will be disabled. 
-     <br>
-     <img src="https://user-images.githubusercontent.com/104200268/227770519-99289146-2117-4316-bfc8-f4d785567e80.gif" width="90%" height="auto">
-     <img src="https://user-images.githubusercontent.com/104200268/227770826-a3e598af-7dfa-428b-95e4-d6a2278be8af.gif" width="40%" height="auto">
-    </div> 
-    <br>
-    <div align="center"> 
-     There exist different types of shops for example, an armor shop sells different armor items. Some of these shops can also be seen in the image below, where a weapons shop can be seen on the left and an armor shop on the right.
-     <br>
-     <img src="https://user-images.githubusercontent.com/104200268/227770464-ebbb5689-2909-4237-acb7-b239e64786f8.png" width="70%" height="auto">
-    </div> 
-    <br>
-    <div align="center"> 
-     There are various configuration options for shops: the name of the shop, the stock is set by adding items to the stock list and configuring them. Therefore, the initial stock of an item and the level at which the item is sold in the shop can be set. This is used to replenish the shop when a player reaches a new level. Also, the default discount for an item and the sell percentage at which the item can be sold back to the shop can be set. Furthermore, a default selling percentage can be set for the whole shop, which is the percentage of money that the players will receive less for each item that they sell in that shop. Also the maximum discount that players can get in this shop if they maximize the Charisma trait, can be set.
-     <br>
-     <img src="https://user-images.githubusercontent.com/104200268/227975579-137436f0-f745-41a3-8981-af81d934cb19.PNG" width="70%" height="auto">
-    </div>
-    <br>
+ 
+   > <br>
+   > <div align="center"> 
+   >   Shops subtly teach math by motivating the players to buy and sell items at different prices and with or without discounts. A shop is indicated in the game by an NPC called a shopkeeper. The shop window shown below opens when clicking on a shopkeeper.
+   >  <br>
+   >  <img src="https://user-images.githubusercontent.com/104200268/227770460-569c4c95-b963-4cb7-a131-89b8d7e1130e.png" width="70%" height="auto">
+   > </div> 
+   > <br>
+   > <div align="center"> 
+   >  It contains various items available for purchase at the current player level, the quantity available for each, the price, and the number that will be added to the shopping list. The players can also switch between buying and selling and filter the items. If they have enough money to buy the corresponding items the items will be added to the players' inventory. 
+   >  It should be noted that the transaction is completed only when there is enough space in the inventory and that the stackable items are stacked and not placed in separate places. If the players do not have enough money, the total amount will be displayed in red and the [Kaufen] button will be disabled. 
+   >  <br>
+   > <img src="https://user-images.githubusercontent.com/104200268/227770519-99289146-2117-4316-bfc8-f4d785567e80.gif" width="90%" height="auto">
+   > <img src="https://user-images.githubusercontent.com/104200268/227770826-a3e598af-7dfa-428b-95e4-d6a2278be8af.gif" width="40%" height="auto">
+   > </div> 
+   > <br>
+   > <div align="center"> 
+   > There exist different types of shops for example, an armor shop sells different armor items. Some of these shops can also be seen in the image below, where a weapons shop can be seen on the left and an armor shop on the right.
+   > <br>
+   > <img src="https://user-images.githubusercontent.com/104200268/227770464-ebbb5689-2909-4237-acb7-b239e64786f8.png" width="70%" height="auto">
+   > </div> 
+   > <br>
+   > <div align="center"> 
+   > There are various configuration options for shops: the name of the shop, the stock is set by adding items to the stock list and configuring them. Therefore, the initial stock of an item and the level at which the item is sold in the shop can be set. This is used to replenish the shop when a player reaches a new level. Also, the default discount for an item and the sell percentage at which the item can be sold back to the shop can be set. Furthermore, a default selling percentage can be set for the whole shop, which is the percentage of money that the players will receive less for each item that they sell in that shop. Also the maximum discount that players can get in this shop if they maximize the Charisma trait, can be set.
+   > <br>
+   > <img src="https://user-images.githubusercontent.com/104200268/227975579-137436f0-f745-41a3-8981-af81d934cb19.PNG" width="70%" height="auto">
+   > </div>
+   > <br>
 
 </details>
 
 <details>
   <summary>Item Upgrades</summary>
-  <br>
-    <div align="center"> 
-     Mathematical content is also integrated into the game through item upgrades. Players can increase a stat corresponding to the item they are upgrading by assigning numbers and signs to different slots to form an equation that gets as close as possible to the maximum number, without exceeding it. This should motivate players to practice mental arithmetic and provides them with the opportunity to optimize their equations each time they collect a new number or sign.
-     <br>
-     <img src="https://user-images.githubusercontent.com/104200268/227770235-918c6946-e085-44bb-8934-d9b8539eb122.gif" width="100%" height="auto">
-    </div>
-    <br>
-    <div align="center"> 
-     Players can move numbers between different items to maximize their stats. The reached value is automatically updated and added to the respective stat. The numbers and signs can be changed at any time to optimize the stat of the item. Only simple operations like addition, subtraction, multiplication, and division are currently supported.
-     <br>
-     <img src="https://user-images.githubusercontent.com/104200268/227773157-4fd39c2a-9f3e-492e-a889-8a4d9cde515f.png" width="50%" height="auto">
-    </div>
-     <br>
+ 
+   > <br>
+   > <div align="center"> 
+   > Mathematical content is also integrated into the game through item upgrades. Players can increase a stat corresponding to the item they are upgrading by assigning numbers and signs to different slots to form an equation that gets as close as possible to the maximum number, without exceeding it. This should motivate players to practice mental arithmetic and provides them with the opportunity to optimize their equations each time they collect a new number or sign.
+   > <br>
+   > <img src="https://user-images.githubusercontent.com/104200268/227770235-918c6946-e085-44bb-8934-d9b8539eb122.gif" width="100%" height="auto">
+   > </div>
+   > <br>
+   > <div align="center"> 
+   > Players can move numbers between different items to maximize their stats. The reached value is automatically updated and added to the respective stat. The numbers and signs can be changed at any time to optimize the stat of the item. Only simple operations like addition, subtraction, multiplication, and division are currently supported.
+   > <br>
+   > <img src="https://user-images.githubusercontent.com/104200268/227773157-4fd39c2a-9f3e-492e-a889-8a4d9cde515f.png" width="50%" height="auto">
+   > </div>
+   > <br>
  
 </details>
 
 <details>
   <summary>Quests</summary>
-  <br>
-  <div align="center"> 
-     The game features various levels, each focused on a different topic such as percentage calculations, and includes quests that present real-world problems related to the topic. The quests are designed to engage players emotionally by creating an attachment to NPC characters and motivating them to solve mathematical problems to help those characters.
- The game also includes a quest window displaying active and completed quests, along with their goals and rewards.
-     <br>
-     <img src="https://user-images.githubusercontent.com/104200268/227773129-757250c6-f349-4574-a258-8c4c31d723f8.png" width="80%" height="auto">
-    </div>
-  
-  <br>
-  <div align="center"> 
-      Quests are implemented using scriptable objects that contain objectives, descriptions, and conditions for completion.
-     <br>
-     <img src="https://user-images.githubusercontent.com/104200268/227784059-d7468f50-ab60-453d-9dc0-a67f2a4eeebe.PNG" width="70%" height="auto">
-    </div>
-   <br>
+ 
+  > <br>
+  > <div align="center"> 
+  > The game features various levels, each focused on a different topic such as percentage calculations, and includes quests that present real-world problems related to the topic. The quests are designed to engage players emotionally by creating an attachment to NPC characters and motivating them to solve mathematical problems to help those characters.
+  > The game also includes a quest window displaying active and completed quests, along with their goals and rewards.
+  > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/227773129-757250c6-f349-4574-a258-8c4c31d723f8.png" width="80%" height="auto">
+  > </div>
+  > <br>
+  > <div align="center"> 
+  > Quests are implemented using scriptable objects that contain objectives, descriptions, and conditions for completion.
+  > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/227784059-d7468f50-ab60-453d-9dc0-a67f2a4eeebe.PNG" width="70%" height="auto">
+  > </div>
+  > <br>
    
  </details>
 
 <details>
   <summary>NPCs</summary>
- <br>
-  <div align="center"> 
-    Non-playable characters (NPCs) play a crucial role in a game's story, gameplay, and immersion. There are two types of NPCs: static NPCs and those with dialogs or quests for players. 
-     <img src="https://user-images.githubusercontent.com/104200268/228180590-fa9d8973-d424-455f-aba7-bfbc68b266ae.png" width="80%" height="auto">
- </div>
- <br>
-  <div align="center"> 
-    Static NPCs help make the game world feel more lively, while those with quests or dialogs allow players to interact with them and advance the game's story.  
-   <br>
-     <img src="https://user-images.githubusercontent.com/104200268/228180616-3b94ff96-29eb-4d8c-ac92-5ff912173a2f.png" width="80%" height="auto">
- </div>
-<br>
-  <div align="center">     
-   To implement NPCs, an NPC Controller is used, which contains a list of NPCActions. Each NPCAction includes a description, position in the game world, time for the action, speed, dialog, and list of animation states. The NPC begins in the first action and moves at the set speed to the next action's position when the specified time has elapsed or when a dialog trigger changes the action. 
-     <br>
-     <img src="https://user-images.githubusercontent.com/104200268/228182600-d797f8b2-2c40-41ab-a73c-17a17bbceab7.PNG" width="70%" height="auto">
-    </div>
- <br>
-  <div align="center">
-   The use of dialogue triggers provides a high level of control over the NPC's behavior, allowing for multiple actions and dialogues for a single NPC to enhance the game's realism. Also The NPCs gan give quests, complete quest or give the players items.
-     <br>
-     <img src="https://user-images.githubusercontent.com/104200268/227784080-f1cc0818-f074-486c-a6da-b61cf8b560dc.PNG" width="70%" height="auto">
-    </div>
-   <br>
+ 
+  > <br>
+  > <div align="center"> 
+  > Non-playable characters (NPCs) play a crucial role in a game's story, gameplay, and immersion. There are two types of NPCs: static NPCs and those with dialogs or quests for players. 
+  > <img src="https://user-images.githubusercontent.com/104200268/228180590-fa9d8973-d424-455f-aba7-bfbc68b266ae.png" width="80%" height="auto">
+  > </div>
+  > <br>
+  > <div align="center"> 
+  > Static NPCs help make the game world feel more lively, while those with quests or dialogs allow players to interact with them and advance the game's story.  
+  > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/228180616-3b94ff96-29eb-4d8c-ac92-5ff912173a2f.png" width="80%" height="auto">
+  > </div>
+  > <br>
+  > <div align="center">     
+  > To implement NPCs, an NPC Controller is used, which contains a list of NPCActions. Each NPCAction includes a description, position in the game world, time for the action, speed, dialog, and list of animation states. The NPC begins in the first action and moves at the set speed to the next action's position when the specified time has elapsed or when a dialog trigger changes the action. 
+  > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/228182600-d797f8b2-2c40-41ab-a73c-17a17bbceab7.PNG" width="70%" height="auto">
+  > </div>
+  > <br>
+  > <div align="center">
+  > The use of dialogue triggers provides a high level of control over the NPC's behavior, allowing for multiple actions and dialogues for a single NPC to enhance the game's realism. Also The NPCs gan give quests, complete quest or give the players items.
+  > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/227784080-f1cc0818-f074-486c-a6da-b61cf8b560dc.PNG" width="70%" height="auto">
+  > </div>
+  > <br>
 
 </details>
 
