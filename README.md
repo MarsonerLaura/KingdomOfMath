@@ -756,19 +756,16 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   > <div align="center"> 
   > The tutorial introduces various mechanics and features to players in a linear manner. It is implemented using an NPC that explains each feature to the players in a dialog and verifies their understanding through checkpoints. 
  > The tutorial in a game starts with the players interacting with an NPC, who explains the movement and camera controls, basic combat, and HUD. The players must then open a chest, collect an item, and equip it to fight an enemy blocking the way to the next tutorial level. To reach the second level, the players must collect items and pass through a portal, which is explained to them.
-  > <img src="https://user-images.githubusercontent.com/104200268/227773147-16f01469-d92c-4dd5-acf4-150a542f906f.png" width="80%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227770307-db398f6f-c979-40eb-82f8-4371b3911c14.png" width="90%" height="auto">
   > </div>
   > <br>
   > <div align="center"> 
   >  In the second part of the game tutorial, players are introduced to abilities and the action bar, followed by a combat sequence where they can test their new abilities. An item dropped by an enemy is used to explain the players' stats, and a chest is opened to show how items are enhanced by bonus stats. Quests are then introduced, where players must collect diamonds from enemies to deepen their understanding of combat mechanics and quests. Completing the quest levels up the player, and trait points are explained. Shops are then introduced, followed by a lesson on how to pause and save the game.
  > <br>
-  > <img src="https://user-images.githubusercontent.com/104200268/227773147-16f01469-d92c-4dd5-acf4-150a542f906f.png" width="80%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227770308-6e6f8038-4a5b-4b0e-a55b-abe1af29667d.png" width="90%" height="auto">
   > </div>
   > <br>
-   ![tutorial01_Text03](https://user-images.githubusercontent.com/104200268/227770307-db398f6f-c979-40eb-82f8-4371b3911c14.png)
-
-   ![tutorial02_Text](https://user-images.githubusercontent.com/104200268/227770308-6e6f8038-4a5b-4b0e-a55b-abe1af29667d.png)
-
+ 
 </details>
 
 <details>
@@ -778,7 +775,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   > <div align="center"> 
   >  The first level of the game, includes a main quest line where players help a farmer chase dwarves away from his farm. To complete the quest, players must defeat enemies in the forest and ruins, talk to the dwarves, and retrieve ingredients to bake apple pie for them. There are also enemies to battle, chests hidden throughout the level that provide items to make combat easier, and shops where players can buy items to get stronger.
  > <br>
-  > <img src="https://user-images.githubusercontent.com/104200268/227773147-16f01469-d92c-4dd5-acf4-150a542f906f.png" width="80%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227773147-16f01469-d92c-4dd5-acf4-150a542f906f.png" width="90%" height="auto">
   > </div>
   > <br>
 
