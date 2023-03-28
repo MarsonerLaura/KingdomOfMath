@@ -677,18 +677,54 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 <details>
   <summary>Quests</summary>
-  
-   ![Quest](https://user-images.githubusercontent.com/104200268/227773125-841c8a2a-b0e1-4848-b38b-02a13c8a884c.png)
+  The article discusses the integration of mathematics into a video game to help players learn and understand mathematical concepts. The game features various levels, each focused on a different topic such as percentage calculations, and includes quests that present real-world problems related to the topic. The quests are designed to engage players emotionally by creating an attachment to NPC characters and motivating them to solve mathematical problems to help those characters. The game also includes a quest window displaying active and completed quests, along with their goals and rewards. Quests are implemented using scriptable objects that contain objectives, descriptions, and conditions for completion. The article highlights the benefits of using quests to teach mathematics, such as increasing player immersion and recognizing mathematical concepts in real-world situations.
+ 
+    <div align="center"> 
+     Players can move numbers between different items to maximize their stats. The reached value is automatically updated and added to the respective stat. The numbers and signs can be changed at any time to optimize the stat of the item. Only simple operations like addition, subtraction, multiplication, and division are currently supported.
+     <br>
+     <img src="https://user-images.githubusercontent.com/104200268/227773157-4fd39c2a-9f3e-492e-a889-8a4d9cde515f.png" width="50%" height="auto">
+    </div>
 
    ![Quest02 (1)](https://user-images.githubusercontent.com/104200268/227773129-757250c6-f349-4574-a258-8c4c31d723f8.png)
    
-   ![ezgif com-optimize](https://user-images.githubusercontent.com/104200268/227770657-7a97f0d5-4023-4d54-b5b8-06b8be63d407.gif)
- 
-   ![npccontroller](https://user-images.githubusercontent.com/104200268/227784055-3c87845f-5980-4aec-bd95-8efcfaecced8.PNG)
-
+  
+  <div align="center"> 
+     Players can move numbers between different items to maximize their stats. The reached value is automatically updated and added to the respective stat. The numbers and signs can be changed at any time to optimize the stat of the item. Only simple operations like addition, subtraction, multiplication, and division are currently supported.
+     <br>
+     <img src="https://user-images.githubusercontent.com/104200268/227773157-4fd39c2a-9f3e-492e-a889-8a4d9cde515f.png" width="50%" height="auto">
+    </div>
+  
    ![questso](https://user-images.githubusercontent.com/104200268/227784059-d7468f50-ab60-453d-9dc0-a67f2a4eeebe.PNG)
-   
-   ![triggers](https://user-images.githubusercontent.com/104200268/227784080-f1cc0818-f074-486c-a6da-b61cf8b560dc.PNG)
+   Non-playable characters (NPCs) play a crucial role in a game's story, gameplay, and immersion. There are two types of NPCs: static NPCs and those with dialogs or quests for players. Static NPCs help make the game world feel more lively, while those with quests or dialogs allow players to interact with them and advance the game's story.
+ </details>
+
+<details>
+  <summary>NPCs</summary>
+ <br>
+
+<br>
+  <div align="center"> 
+    Non-playable characters (NPCs) play a crucial role in a game's story, gameplay, and immersion. There are two types of NPCs: static NPCs and those with dialogs or quests for players. 
+     <img src="shopkeepersd2](https://user-images.githubusercontent.com/104200268/228180590-fa9d8973-d424-455f-aba7-bfbc68b266ae.png" width="50%" height="auto">
+ </div>
+ <br>
+  <div align="center"> 
+    Static NPCs help make the game world feel more lively, while those with quests or dialogs allow players to interact with them and advance the game's story.     
+     <img src="https://user-images.githubusercontent.com/104200268/228180616-3b94ff96-29eb-4d8c-ac92-5ff912173a2f.png" width="50%" height="auto">
+ </div>
+<br>
+  <div align="center">     
+   To implement NPCs, an NPC Controller is used, which contains a list of NPCActions. Each NPCAction includes a description, position in the game world, time for the action, speed, dialog, and list of animation states. The NPC begins in the first action and moves at the set speed to the next action's position when the specified time has elapsed or when a dialog trigger changes the action. 
+     <br>
+     <img src="https://user-images.githubusercontent.com/104200268/227773157-4fd39c2a-9f3e-492e-a889-8a4d9cde515f.png" width="50%" height="auto">
+    </div>
+ <br>
+  <div align="center"> 
+   The use of dialogue triggers provides a high level of control over the NPC's behavior, allowing for multiple actions and dialogues for a single NPC to enhance the game's realism. Also The NPCs gan give quests, complete quest or give the players items.
+     <br>
+     <img src="https://user-images.githubusercontent.com/104200268/227784080-f1cc0818-f074-486c-a6da-b61cf8b560dc.PNG" width="50%" height="auto">
+    </div>
+   <br>
 
 </details>
 
