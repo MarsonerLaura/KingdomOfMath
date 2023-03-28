@@ -682,14 +682,14 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
      The game features various levels, each focused on a different topic such as percentage calculations, and includes quests that present real-world problems related to the topic. The quests are designed to engage players emotionally by creating an attachment to NPC characters and motivating them to solve mathematical problems to help those characters.
  The game also includes a quest window displaying active and completed quests, along with their goals and rewards.
      <br>
-     <img src="https://user-images.githubusercontent.com/104200268/227773129-757250c6-f349-4574-a258-8c4c31d723f8.png" width="70%" height="auto">
+     <img src="https://user-images.githubusercontent.com/104200268/227773129-757250c6-f349-4574-a258-8c4c31d723f8.png" width="80%" height="auto">
     </div>
   
   <br>
   <div align="center"> 
       Quests are implemented using scriptable objects that contain objectives, descriptions, and conditions for completion.
      <br>
-     <img src="https://user-images.githubusercontent.com/104200268/227784059-d7468f50-ab60-453d-9dc0-a67f2a4eeebe.PNG" width="60%" height="auto">
+     <img src="https://user-images.githubusercontent.com/104200268/227784059-d7468f50-ab60-453d-9dc0-a67f2a4eeebe.PNG" width="70%" height="auto">
     </div>
    <br>
    
