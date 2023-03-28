@@ -840,7 +840,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   > <br>
   > <br>
   >
-  > [Presentation.pptx.pdf](https://github.com/MarsonerLaura/KingdomOfMath/files/11094236/BA.Prasentation.pptx.pdf)
+  > [Presentation.pdf](https://github.com/MarsonerLaura/KingdomOfMath/files/11094274/BA.Prasentation.pptx.pdf)
   > <br>
   >
   > [Thesis.pdf](https://github.com/MarsonerLaura/KingdomOfMath/files/11094238/Thesis.pdf)
