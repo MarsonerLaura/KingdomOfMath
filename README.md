@@ -659,11 +659,20 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 <details>
   <summary>Item Upgrades</summary>
-  
-   ![image14](https://user-images.githubusercontent.com/104200268/227770235-918c6946-e085-44bb-8934-d9b8539eb122.gif)
-
-   ![item_upgrade_window (1)](https://user-images.githubusercontent.com/104200268/227773157-4fd39c2a-9f3e-492e-a889-8a4d9cde515f.png)
-
+  <br>
+    <div align="center"> 
+     Mathematical content is also integrated into the game through item upgrades. Players can increase a stat corresponding to the item they are upgrading by assigning numbers and signs to different slots to form an equation that gets as close as possible to the maximum number, without exceeding it. This should motivate players to practice mental arithmetic and provides them with the opportunity to optimize their equations each time they collect a new number or sign.
+     <br>
+     <img src="https://user-images.githubusercontent.com/104200268/227770235-918c6946-e085-44bb-8934-d9b8539eb122.gif" width="100%" height="auto">
+    </div>
+    <br>
+    <div align="center"> 
+     Players can move numbers between different items to maximize their stats. The reached value is automatically updated and added to the respective stat. The numbers and signs can be changed at any time to optimize the stat of the item. Only simple operations like addition, subtraction, multiplication, and division are currently supported.
+     <br>
+     <img src="https://user-images.githubusercontent.com/104200268/227773157-4fd39c2a-9f3e-492e-a889-8a4d9cde515f.png" width="50%" height="auto">
+    </div>
+     <br>
+ 
 </details>
 
 <details>
