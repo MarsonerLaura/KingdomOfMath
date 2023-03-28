@@ -707,7 +707,8 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
  </div>
  <br>
   <div align="center"> 
-    Static NPCs help make the game world feel more lively, while those with quests or dialogs allow players to interact with them and advance the game's story.     
+    Static NPCs help make the game world feel more lively, while those with quests or dialogs allow players to interact with them and advance the game's story.  
+   <br>
      <img src="https://user-images.githubusercontent.com/104200268/228180616-3b94ff96-29eb-4d8c-ac92-5ff912173a2f.png" width="50%" height="auto">
  </div>
 <br>
