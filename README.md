@@ -811,9 +811,6 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 <details>
   <summary>Menu</summary>
-  The game can be paused with the [P] key, which freezes time and opens a pause menu where players can save the game. 
- 
-   ![image21](https://user-images.githubusercontent.com/104200268/227770525-ef541b4f-d53b-4120-807c-01e16119342c.png)
  
 ![mainmenu](https://user-images.githubusercontent.com/104200268/228370267-889bcbcd-40ce-475b-a79f-2b02f120232f.PNG)
  
