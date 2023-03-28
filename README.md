@@ -831,4 +831,31 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 </details>
  
+ <details>
+  <summary>Thesis</summary>
+ <br>
+  
+  > <div align="center"> 
+  >  If you are interested in obtaining more information, you can download the final presentation and the bachelor's thesis using the links provided below. These resources contain valuable insights and details about the project.
+  > <br>
+  >
+  > [Presentation.pptx.pdf](https://github.com/MarsonerLaura/KingdomOfMath/files/11094236/BA.Prasentation.pptx.pdf)
+  > <br>
+  >
+  > [Thesis.pdf](https://github.com/MarsonerLaura/KingdomOfMath/files/11094238/Thesis.pdf)
+  > <br>
+  > <br>
+  > Abstract
+  > <br>
+  > Serious games have shown promise as a tool to enhance the learning experience by generating higher intrinsic motivation than traditional learning methods. In this paper, a serious game called Kingdom of Math is developed that aims to teach mathematics to secondary school students using proven design principles. To this end, essential terms and concepts are described, and related work is analyzed. The requirements for such a serious game are outlined, and the approach and design decisions made are discussed and implemented. A user study is conducted to evaluate the developed game, and the results are presented and discussed. In addition, possible improvements and enhancements for this project in the future are suggested.
+  > </div>
+  > <br>
+> 
+   
+
+  
+
+
+</details>
+ 
 </p>
