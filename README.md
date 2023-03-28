@@ -810,14 +810,35 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 </details>
 
 <details>
-  <summary>Menu & HUD</summary>
+  <summary>Menu</summary>
   The game can be paused with the [P] key, which freezes time and opens a pause menu where players can save the game. 
+ 
    ![image21](https://user-images.githubusercontent.com/104200268/227770525-ef541b4f-d53b-4120-807c-01e16119342c.png)
+ 
+![mainmenu](https://user-images.githubusercontent.com/104200268/228370267-889bcbcd-40ce-475b-a79f-2b02f120232f.PNG)
+ 
+ ![Settings](https://user-images.githubusercontent.com/104200268/228370299-11aee5eb-5d0a-4963-a0bb-0d6d80bdf896.PNG)
+
 
    ![Main_Menu](https://user-images.githubusercontent.com/104200268/227770545-a1086e54-4a32-4f67-aca6-2fe967083310.png)
+ 
+ ![loadgame](https://user-images.githubusercontent.com/104200268/228370253-86b38c17-2f6f-4566-9d82-d96892c1ed7b.PNG)
+
 
    ![PauseMenue02](https://user-images.githubusercontent.com/104200268/227770529-10d03e56-53cc-4d44-85d2-3c4264bc70d0.png)
-  
+ 
+ ![creategame](https://user-images.githubusercontent.com/104200268/228370229-e0d6bd59-3068-4ddb-9f0d-486bceb5e15d.PNG)
+
+</details>
+ 
+ <details>
+  <summary>HUD</summary>
+  The game can be paused with the [P] key, which freezes time and opens a pause menu where players can save the game. 
+ 
+   ![image21](https://user-images.githubusercontent.com/104200268/227770525-ef541b4f-d53b-4120-807c-01e16119342c.png)
+ 
+
+
 </details>
 
 <details>
