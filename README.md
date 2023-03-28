@@ -586,7 +586,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
  >     }
  > }
  > ```
- >
+ > <br>
  > </details>
    
 
@@ -657,7 +657,6 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
    > <img src="https://user-images.githubusercontent.com/104200268/227975579-137436f0-f745-41a3-8981-af81d934cb19.PNG" width="70%" height="auto">
    > </div>
    <br>
-
 </details>
 
 <details>
@@ -676,7 +675,6 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
    > <img src="https://user-images.githubusercontent.com/104200268/227773157-4fd39c2a-9f3e-492e-a889-8a4d9cde515f.png" width="50%" height="auto">
    > </div>
    <br>
- 
 </details>
 
 <details>
@@ -695,8 +693,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   > <br>
   > <img src="https://user-images.githubusercontent.com/104200268/227784059-d7468f50-ab60-453d-9dc0-a67f2a4eeebe.PNG" width="70%" height="auto">
   > </div>
-  <br>
-   
+  <br> 
  </details>
 
 <details>
@@ -725,7 +722,6 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   > <br>
   > <img src="https://user-images.githubusercontent.com/104200268/227784080-f1cc0818-f074-486c-a6da-b61cf8b560dc.PNG" width="70%" height="auto">
   > </div>
-  
  <br>
 
 </details>
