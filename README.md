@@ -760,8 +760,14 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 <details>
   <summary>Level</summary>
+ <br>
   
-   ![Level01_mit_Legende](https://user-images.githubusercontent.com/104200268/227773147-16f01469-d92c-4dd5-acf4-150a542f906f.png)
+  > <div align="center"> 
+  >  The first level of the game, includes a main quest line where players help a farmer chase dwarves away from his farm. To complete the quest, players must defeat enemies in the forest and ruins, talk to the dwarves, and retrieve ingredients to bake apple pie for them. There are also enemies to battle, chests hidden throughout the level that provide items to make combat easier, and shops where players can buy items to get stronger.
+ > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/227773147-16f01469-d92c-4dd5-acf4-150a542f906f.png" width="80%" height="auto">
+  > </div>
+  > <br>
 
 </details>
 
