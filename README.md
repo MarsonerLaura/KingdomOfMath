@@ -624,13 +624,13 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
  > <br>
  > <img src="https://user-images.githubusercontent.com/104200268/227963440-7fca7c13-5cd7-4499-abdd-c4c1eb7a5585.png" width="70%" height="auto">
  > </div> 
-> <br>
+ <br>
 </details>
 
 <details>
   <summary>Shops</summary>
- 
-   > <br>
+   <br>
+   
    > <div align="center"> 
    >   Shops subtly teach math by motivating the players to buy and sell items at different prices and with or without discounts. A shop is indicated in the game by an NPC called a shopkeeper. The shop window shown below opens when clicking on a shopkeeper.
    >  <br>
@@ -656,14 +656,14 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
    > <br>
    > <img src="https://user-images.githubusercontent.com/104200268/227975579-137436f0-f745-41a3-8981-af81d934cb19.PNG" width="70%" height="auto">
    > </div>
-   > <br>
+   <br>
 
 </details>
 
 <details>
   <summary>Item Upgrades</summary>
- 
-   > <br>
+   <br>
+   
    > <div align="center"> 
    > Mathematical content is also integrated into the game through item upgrades. Players can increase a stat corresponding to the item they are upgrading by assigning numbers and signs to different slots to form an equation that gets as close as possible to the maximum number, without exceeding it. This should motivate players to practice mental arithmetic and provides them with the opportunity to optimize their equations each time they collect a new number or sign.
    > <br>
@@ -675,14 +675,14 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
    > <br>
    > <img src="https://user-images.githubusercontent.com/104200268/227773157-4fd39c2a-9f3e-492e-a889-8a4d9cde515f.png" width="50%" height="auto">
    > </div>
-   > <br>
+   <br>
  
 </details>
 
 <details>
-  <summary>Quests</summary>
+ <summary>Quests</summary>
+  <br>
  
-  > <br>
   > <div align="center"> 
   > The game features various levels, each focused on a different topic such as percentage calculations, and includes quests that present real-world problems related to the topic. The quests are designed to engage players emotionally by creating an attachment to NPC characters and motivating them to solve mathematical problems to help those characters.
   > The game also includes a quest window displaying active and completed quests, along with their goals and rewards.
@@ -695,14 +695,14 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   > <br>
   > <img src="https://user-images.githubusercontent.com/104200268/227784059-d7468f50-ab60-453d-9dc0-a67f2a4eeebe.PNG" width="70%" height="auto">
   > </div>
-  > <br>
+  <br>
    
  </details>
 
 <details>
   <summary>NPCs</summary>
- 
-  > <br>
+    <br>
+  
   > <div align="center"> 
   > Non-playable characters (NPCs) play a crucial role in a game's story, gameplay, and immersion. There are two types of NPCs: static NPCs and those with dialogs or quests for players. 
   > <img src="https://user-images.githubusercontent.com/104200268/228180590-fa9d8973-d424-455f-aba7-bfbc68b266ae.png" width="80%" height="auto">
@@ -725,7 +725,8 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   > <br>
   > <img src="https://user-images.githubusercontent.com/104200268/227784080-f1cc0818-f074-486c-a6da-b61cf8b560dc.PNG" width="70%" height="auto">
   > </div>
-  > <br>
+  
+ <br>
 
 </details>
 
