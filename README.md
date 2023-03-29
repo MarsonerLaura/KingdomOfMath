@@ -746,16 +746,39 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
  
 <details>
   <summary>Combat</summary>
+  <br>
+  
+   > <div align="center"> 
+  >  The text describes the combat mechanics in a game where players can fight against enemies. The players can hover their mouse cursor over a potential enemy, and if they can fight it, the cursor turns into a sword. Players can attack enemies by clicking on them with the left mouse button, and the automatic attack feature makes combat easier for players. When an opponent or player is hit, the damage value is displayed above their head. After the player's first attack, the enemy's life bar is displayed, and loot is spawned when an enemy dies. If players die, they respawn at a set point with 70 percent health, and the enemies they fought regenerate health and return to their starting position over time. Different sounds and animations are played for different character classes.
+  > <img src="https://user-images.githubusercontent.com/104200268/227770574-cb417695-9541-4a4f-8e6f-ce76981e2da6.gif" width="90%" height="auto">
+  > </div>
+  > <br>
+  
+
  
-   ![Circle_Auf_Boden](https://user-images.githubusercontent.com/104200268/227770296-7393e827-009d-40d3-8bf2-66c58208fe2a.png)
+  > <div align="center"> 
+  > 
+  > <img src="https://user-images.githubusercontent.com/104200268/227770574-cb417695-9541-4a4f-8e6f-ce76981e2da6.gif" width="90%" height="auto">
+  > </div>
+  > <br>
+  > <div align="center"> 
+  > 
+  > <img src="https://user-images.githubusercontent.com/104200268/227770574-cb417695-9541-4a4f-8e6f-ce76981e2da6.gif" width="90%" height="auto">
+  > </div>
+  > <br>
+   > <div align="center"> 
+  > 
+  > <img src="https://user-images.githubusercontent.com/104200268/227770574-cb417695-9541-4a4f-8e6f-ce76981e2da6.gif" width="90%" height="auto">
+  > </div>
+  > <br>
+  
    
    ![Combat02 (1)](https://user-images.githubusercontent.com/104200268/227770300-7b7ad007-3772-4824-a9cb-df7fcbc2a674.png)
    
 
     ![ezgif com-optimize](https://user-images.githubusercontent.com/104200268/227770574-cb417695-9541-4a4f-8e6f-ce76981e2da6.gif)
   
-   
-   ![Actionbar (1)](https://user-images.githubusercontent.com/104200268/227773065-0ac0cdaf-2a90-47f8-b20a-23169dcc175b.png)
+ 
 
    ![image24](https://user-images.githubusercontent.com/104200268/227770600-8bd23f67-29e6-4a71-b5c4-b9e46901845b.gif)
   
@@ -764,7 +787,28 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 
 </details>
-
+<details>
+  <summary>Abilities</summary>
+  <br>
+    
+  > <div align="center"> 
+  > Abilities are a key aspect of combat in the game, providing players with an additional attack option alongside normal attacks. Abilities can be activated by pressing the appropriate key, with some taking effect immediately, such as health potions, while others require the player to click on the ground where they want the ability to be cast. Abilities have mana costs and cooldowns, and consumables are removed from the inventory when used up.
+  > <img src="https://user-images.githubusercontent.com/104200268/227770296-7393e827-009d-40d3-8bf2-66c58208fe2a.png" width="70%" height="auto">
+  > </div>
+  > <br>
+  > <div align="center"> 
+  >  These abilities can be equipped in the action bar, with the first four slots reserved for abilities and the last two for consumables like health potions.
+  > <img src="https://user-images.githubusercontent.com/104200268/227773065-0ac0cdaf-2a90-47f8-b20a-23169dcc175b.png" width="90%" height="auto">
+  > </div>
+  > <br>
+  
+  > <div align="center"> 
+  > Abilities are implemented as scriptable objects with configuration options such as being consumable, equipment slot, cooldown, and mana cost. A targeting strategy, filtering strategy, and effect strategy must also be defined. The targeting strategy can be self-targeting, multiple-targeting, single-targeting, or directional-targeting. The filtering strategy specifies which characters to target and how to filter them. After setting the target, effects such as animations and particle effects are executed in the specified order.
+  > <img src="https://user-images.githubusercontent.com/104200268/227770307-db398f6f-c979-40eb-82f8-4371b3911c14.png" width="90%" height="auto">
+  > </div>
+  > <br>
+</details>
+ 
 <details>
   <summary>Tutorial</summary>
   <br>
@@ -817,9 +861,10 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 <details>
   <summary>Stats & Traits</summary>
-  
+  The game includes various stats such as Health, Damage, Mana, Defense, and Cooldown Reduction, among others. The player and enemies have base stats based on their level. The player can increase their stats by leveling up, assigning traits, and equipping or upgrading items. The player can view their stats by pressing the [\textit{S}] key.
    ![Stats](https://user-images.githubusercontent.com/104200268/227770405-c5de455d-2b22-4b6a-9718-c5bfed2134e6.png)
    
+ The game features a trait system where players can improve their stats without equipping items. Traits such as Charisma and Stamina increase specific stats by a set amount per trait point. The trait window can be opened with the [T] key, and players can assign trait points by clicking on the [+] next to the desired trait and confirming. Once a trait point is confirmed, it cannot be undone.
    ![Stats02](https://user-images.githubusercontent.com/104200268/227770407-1ae44eb7-fcd5-489c-94f2-1a1e2b7dbf7c.png)
   
 </details>
