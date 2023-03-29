@@ -747,20 +747,21 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 <details>
   <summary>Combat</summary>
   <br>
-  
+ 
   > <div align="center"> 
-  >  
+  >  When the players hover over a potential enemy, the cursor turns into a sword if they can fight it. After that, the players automatically attack until the enemy is dead, and move to the next enemy, which is randomly selected from the attacking enemies. 
+ The automatic attack was implemented to make combat a bit easier, as the controls and camera are difficult to control at first, and the colliders of the enemies are quite small, so the players may click out of place, which can be frustrating. However, the players can also switch between enemies and run away by themselves and do not have to use automatic attacks, as they only serve as an aid
   > <img src="https://user-images.githubusercontent.com/104200268/227770574-cb417695-9541-4a4f-8e6f-ce76981e2da6.gif" width="80%" height="auto">
   > </div>
   > <br>
-  > <div align="center"> 
-  > 
-  > <img src="https://user-images.githubusercontent.com/104200268/227770600-8bd23f67-29e6-4a71-b5c4-b9e46901845b.gif" width="80%" height="auto">
+   > <div align="center"> 
+  > When an opponent or the player is hit, the damage value is displayed above the head of the respective character. After the player's first attack, the enemy's life bar is also displayed. This was implemented so that the world still looks immersive and players cannot see the enemies' life bars from afar and find them easily.
+  > <img src="https://user-images.githubusercontent.com/104200268/227770300-7b7ad007-3772-4824-a9cb-df7fcbc2a674.png" width="50%" height="auto">
   > </div>
   > <br>
   > <div align="center"> 
-  > 
-  > <img src="https://user-images.githubusercontent.com/104200268/227770300-7b7ad007-3772-4824-a9cb-df7fcbc2a674.png" width="50%" height="auto">
+  >  When an enemy dies, the loot is spawned according to the respective drop table and the enemy will remain dead. If the players die, they will respawn at a set respawn point in the level with 70 percent health, and the enemies they fought will also regenerate up to 70 percent health and will move back to their starting position over time. The players also do not lose loot when they die, as not to punish them for it. Also, different sounds are played for the different character classes when they get hit or die, along with corresponding animations.
+  > <img src="https://user-images.githubusercontent.com/104200268/227770600-8bd23f67-29e6-4a71-b5c4-b9e46901845b.gif" width="80%" height="auto">
   > </div>
   > <br>
  
