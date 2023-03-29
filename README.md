@@ -841,11 +841,20 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 <details>
   <summary>Stats & Traits</summary>
-  The game includes various stats such as Health, Damage, Mana, Defense, and Cooldown Reduction, among others. The player and enemies have base stats based on their level. The player can increase their stats by leveling up, assigning traits, and equipping or upgrading items. The player can view their stats by pressing the [\textit{S}] key.
-   ![Stats](https://user-images.githubusercontent.com/104200268/227770405-c5de455d-2b22-4b6a-9718-c5bfed2134e6.png)
-   
- The game features a trait system where players can improve their stats without equipping items. Traits such as Charisma and Stamina increase specific stats by a set amount per trait point. The trait window can be opened with the [T] key, and players can assign trait points by clicking on the [+] next to the desired trait and confirming. Once a trait point is confirmed, it cannot be undone.
-   ![Stats02](https://user-images.githubusercontent.com/104200268/227770407-1ae44eb7-fcd5-489c-94f2-1a1e2b7dbf7c.png)
+ <br>
+  
+  > <div align="center"> 
+  > The game includes various stats such as Health, Damage, Mana, Defense, and Cooldown Reduction, among others. The player and enemies have base stats based on their level. Players can increase their stats by leveling up, assigning traits, and equipping or upgrading items. The players can view their stats by pressing the [S] key.
+ > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/227770405-c5de455d-2b22-4b6a-9718-c5bfed2134e6.png" width="60%" height="auto">
+  > </div>
+  > <br>  
+  > <div align="center"> 
+  >  The game also features a trait system where players can improve their stats without equipping items. Traits such as Charisma and Stamina increase specific stats by a set amount per trait point. The trait window can be opened with the [T] key, and players can assign trait points by clicking on the [+] next to the desired trait and confirming. Once a trait point is confirmed, it cannot be undone.
+ > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/227770407-1ae44eb7-fcd5-489c-94f2-1a1e2b7dbf7c.png" width="60%" height="auto">
+  > </div>
+  > <br>
   
 </details>
 
