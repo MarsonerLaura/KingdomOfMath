@@ -865,7 +865,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   > <div align="center"> 
   > The game has a main menu where players can continue a game, create a new game with a name, open a saved game, play the tutorial, or quit the game.
   > <br>
-  > <img src="https://user-images.githubusercontent.com/104200268/227770545-a1086e54-4a32-4f67-aca6-2fe967083310.png" width="50%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227770545-a1086e54-4a32-4f67-aca6-2fe967083310.png" width="80%" height="auto">
   > </div>
   > <br>  
   > <div align="center"> 
