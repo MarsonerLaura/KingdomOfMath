@@ -674,7 +674,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
    > <br>
    > <img src="https://user-images.githubusercontent.com/104200268/227773157-4fd39c2a-9f3e-492e-a889-8a4d9cde515f.png" width="50%" height="auto">
    > </div>
-   <br>
+   > <br>
 </details>
 
 <details>
@@ -693,7 +693,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   > <br>
   > <img src="https://user-images.githubusercontent.com/104200268/227784059-d7468f50-ab60-453d-9dc0-a67f2a4eeebe.PNG" width="70%" height="auto">
   > </div>
-  <br> 
+  > <br> 
  </details>
 
 <details>
@@ -781,7 +781,6 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   > <img src="https://user-images.githubusercontent.com/104200268/227770308-6e6f8038-4a5b-4b0e-a55b-abe1af29667d.png" width="90%" height="auto">
   > </div>
   > <br>
- The text describes a game feature where players can fight against enemies with different classes and types, each having their own basic stats and appearance. The enemies have various configuration options, such as chase distance, suspicion time, patrol path, aggro cooldown, and shout distance, which allow for dynamic behavior. Additionally, aggro groups can be defined to make nearby enemies attack when one is attacked. These features allow developers to easily create a large set of enemies with different behavior, making the game feel more natural.
 </details>
 
 <details>
