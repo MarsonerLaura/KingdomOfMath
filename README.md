@@ -860,7 +860,8 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 <details>
   <summary>Menu</summary>
-<br>
+  <br>
+ 
   > <div align="center"> 
   > The game has a main menu where players can continue a game, create a new game with a name, open a saved game, play the tutorial, or quit the game.
   > <br>
@@ -882,7 +883,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   > <div align="center"> 
   > It is also possible to have multiple games with different states and to load a previously saved game.
   > <br>
-  > <img src="hhttps://user-images.githubusercontent.com/104200268/228370253-86b38c17-2f6f-4566-9d82-d96892c1ed7b.PNG" width="50%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/228370253-86b38c17-2f6f-4566-9d82-d96892c1ed7b.PNG" width="50%" height="auto">
   > </div>
   > <br>  
   > <div align="center"> 
