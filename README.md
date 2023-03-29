@@ -750,17 +750,17 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   
   > <div align="center"> 
   >  
-  > <img src="https://user-images.githubusercontent.com/104200268/227770574-cb417695-9541-4a4f-8e6f-ce76981e2da6.gif" width="90%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227770574-cb417695-9541-4a4f-8e6f-ce76981e2da6.gif" width="80%" height="auto">
   > </div>
   > <br>
   > <div align="center"> 
   > 
-  > <img src="https://user-images.githubusercontent.com/104200268/227770600-8bd23f67-29e6-4a71-b5c4-b9e46901845b.gif" width="90%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227770600-8bd23f67-29e6-4a71-b5c4-b9e46901845b.gif" width="80%" height="auto">
   > </div>
   > <br>
   > <div align="center"> 
   > 
-  > <img src="https://user-images.githubusercontent.com/104200268/227770300-7b7ad007-3772-4824-a9cb-df7fcbc2a674.png" width="90%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227770300-7b7ad007-3772-4824-a9cb-df7fcbc2a674.png" width="50%" height="auto">
   > </div>
   > <br>
  
@@ -776,8 +776,8 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   > </div>
   > <br>
   > <div align="center"> 
-  > <br>
   >  These abilities can be equipped in the action bar, with the first four slots reserved for abilities and the last two for consumables like health potions.
+  > <br>
   > <img src="https://user-images.githubusercontent.com/104200268/227773065-0ac0cdaf-2a90-47f8-b20a-23169dcc175b.png" width="60%" height="auto">
   > </div>
   > <br>
