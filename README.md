@@ -822,32 +822,44 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 <details>
   <summary>Items, Inventory & Equipment</summary>
-
-Equipment items are used to describe items that the players can equip in a separate equipment window, as shown in Figure \ref{fig:Equipment_image}. They represent different armor types, including helmets, chests, gloves, boots, and shields. Each armor type can only be equipped in a specific slot, indicated by a grayed-out image. The items can be equipped by dragging them from the inventory to the corresponding slot in the equipment window. In addition, weapon items can also be equipped in the Equipment window, but they are a separate item type as they have extra configuration options, as explained in detail later in section \ref{weapons}.
-
-   ![Gladiature](https://user-images.githubusercontent.com/104200268/227773632-13ac5757-80d4-482c-8c00-0a187c97fb62.png)
-
- In addition, items can also be dropped and removed from the inventory by dragging them from the inventory interface into the world. When the players want to collect the item again, all they have to do is click on the pickup in the world, and it will be added back to the inventory.
- There are different types of items: Equipment items, consumable items, ability items, weapon items, number items, sign items, quest items, currency items, and experience items. Some of these items, such as numbers, signs, consumable items, and quest items, are stackable, meaning they only take up one slot in the inventory, even if there are 20 of them. Others, such as equipment, ability, and weapon items, require a separate slot per item.
-   ![Voll_Bag](https://user-images.githubusercontent.com/104200268/227773165-9d35752c-2f08-4d92-ab82-c4e7d3b60c9c.png)
-
- Furthermore, when hovering over an item, a tooltip appears showing details about the item, such as its name and description, as displayed in Figure \ref{fig:Tooltip_image}.  
-   ![Inventar_ZuoftSchunGmocht](https://user-images.githubusercontent.com/104200268/227770376-1bd74a0c-e1eb-49fa-aa4f-ba115ed9c0a5.png)
-
- There are also different qualities of items. They range from common to legendary and have a corresponding pickup, as shown in Figure \ref{fig:Pickups_image}, where white stands for common and orange for legendary. A pickup is an object that appears in the real world as a placeholder for the different items and can be collected by clicking on it to obtain the item. This is how an item dropped by an enemy or a chest is added to the player's inventory. 
-   ![pickups_mit_Untertitel02 (1)](https://user-images.githubusercontent.com/104200268/227773612-9354560d-2631-44d9-bac0-9722b049a7f2.PNG)
-
- 
-    Items are implemented using scriptable objects, each of which has a name, a unique ID, a description, an icon, and a pickup. Also, for each item, its price in the store, its category, which is described in section \ref{types} and is used to filter items in the store, whether it is stackable, its level and, if it has a bonus stat, what stat that is, its maximum value and its current value can be configured. In addition, there exist other configurations that depend on the type of item and are described in the corresponding section.
- 
-   ![math so](https://user-images.githubusercontent.com/104200268/227782490-362ea03f-2107-456b-b195-65b74c05f1ae.PNG)
-
- ne of the most essential item types are weapons, as they are the important for combat. At the moment there exist three different types of weapons: The unarmed weapon, which refers to hand-to-hand fighting, the sword as a melee weapon, and the bow as a ranged weapon. The selected weapon is displayed in real-time in the game on the character model and follows the character's movements as if they were holding it.
-
-Weapons are implemented using scriptable objects where, in addition to the default item configurations, developers can configure weapon range, weapon damage, percent damage, a weapon prefab, which is the object that is equipped and displayed at runtime, an animator override controller with the appropriate attack animation, whether the weapon is right-handed, which is the case for swords, or left-handed, which is the case for bows, and possibly a projectile for ranged weapons. 
-
-The various animations for, say, a sword or a bow are controlled during runtime with an animator override controller, so that the weapons can be changed during runtime but still maintain the correct animations, as shown in Figure \ref{fig:Guy_mit_Schwert}. Also, a hit point can be set in the weapons' animations where the animation will call a hit function when passing that point so that enemies are hit when the sword hits them and not when the animation is started or stopped. This should contribute to more realistic combat behavior, as an enemy or player should not take damage if the sword has not yet hit them.
-   ![bowso](https://user-images.githubusercontent.com/104200268/227783402-ae62c1aa-3ba2-4de1-a588-ec69baa010b7.PNG)
+ <br>
+  
+  > <div align="center"> 
+  > Items are an essential part of the RPG game and can be collected by players in the game world and added to their inventory. There exist different types of items, including equipment, consumables, abilities, weapons, numbers, signs, quests, currency, and experience items. Some items are stackable, while others require a separate slot in the inventory. Players can drop and remove items from the inventory and pick them up again by clicking on them in the game world.
+  > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/227773165-9d35752c-2f08-4d92-ab82-c4e7d3b60c9c.png" width="90%" height="auto">
+  > </div>
+  > <br>
+  > <div align="center"> 
+  >  When hovering over an item, a tooltip appears showing details about the item, such as its name and description.
+  > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/227770376-1bd74a0c-e1eb-49fa-aa4f-ba115ed9c0a5.png" width="60%" height="auto">
+  > </div>
+  > <br>
+  > <div align="center"> 
+  >  There exist different qualities of items. They range from common to legendary and have a corresponding pickup, as shown below, where white stands for common and orange for legendary. A pickup is an object that appears in the real world as a placeholder for the different items and can be collected by clicking on it to obtain the item. 
+  > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/227773612-9354560d-2631-44d9-bac0-9722b049a7f2.PNG" width="80%" height="auto">
+  > </div>
+  > <br>
+  > <div align="center"> 
+  >  Equipment items are used to describe items that the players can equip in a separate equipment window, as shown below. They represent different armor types, including helmets, chests, gloves, boots, and shields. Each armor type can only be equipped in a specific slot, indicated by a grayed-out image. The items can be equipped by dragging them from the inventory to the corresponding slot in the equipment window. In addition, weapon items can also be equipped in the Equipment window, but they are a separate item type as they have extra configuration options.
+  > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/227773632-13ac5757-80d4-482c-8c00-0a187c97fb62.png" width="60%" height="auto">
+  > </div>
+  > <br> 
+  > <div align="center"> 
+  > Items are implemented using scriptable objects, each of which has a name, a unique ID, a description, an icon, and a pickup. Also, for each item, its price in the store, its category, which is used to filter items in the store, whether it is stackable, its level and, if it has a bonus stat, what stat that is, its maximum value and its current value can be configured. In addition, there exist other configurations that depend on the type of item and are described in the corresponding section.
+  > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/227782490-362ea03f-2107-456b-b195-65b74c05f1ae.PNG" width="60%" height="auto">
+  > </div>
+  > <br>
+  > <div align="center"> 
+  > Weapons are an important item type and are categorized into three types: unarmed, sword, and bow. The weapons are implemented using scriptable objects, which allow for customization of their range, damage, animation, and appearance. The animations are controlled by an animator override controller to maintain correct animations when changing weapons during runtime. Additionally, hit points can be set in the animations for more realistic combat behavior.
+  > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/227783402-ae62c1aa-3ba2-4de1-a588-ec69baa010b7.PNG" width="60%" height="auto">
+  > </div>
+  > <br>
 
 </details>
 
