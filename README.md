@@ -789,36 +789,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   > <br>
 </details>
  
-<details>
-  <summary>Tutorial</summary>
-  <br>
-  
-  > <div align="center"> 
-  > The tutorial introduces various mechanics and features to players in a linear manner. It is implemented using an NPC that explains each feature to the players in a dialog and verifies their understanding through checkpoints. 
- > The tutorial in a game starts with the players interacting with an NPC, who explains the movement and camera controls, basic combat, and HUD. The players must then open a chest, collect an item, and equip it to fight an enemy blocking the way to the next tutorial level. To reach the second level, the players must collect items and pass through a portal, which is explained to them.
-  > <img src="https://user-images.githubusercontent.com/104200268/227770307-db398f6f-c979-40eb-82f8-4371b3911c14.png" width="90%" height="auto">
-  > </div>
-  > <br>
-  > <div align="center"> 
-  >  In the second part of the game tutorial, players are introduced to abilities and the action bar, followed by a combat sequence where they can test their new abilities. An item dropped by an enemy is used to explain the players' stats, and a chest is opened to show how items are enhanced by bonus stats. Quests are then introduced, where players must collect diamonds from enemies to deepen their understanding of combat mechanics and quests. Completing the quest levels up the player, and trait points are explained. Shops are then introduced, followed by a lesson on how to pause and save the game.
- > <br>
-  > <img src="https://user-images.githubusercontent.com/104200268/227770308-6e6f8038-4a5b-4b0e-a55b-abe1af29667d.png" width="90%" height="auto">
-  > </div>
-  > <br>
-</details>
 
-<details>
-  <summary>Level</summary>
- <br>
-  
-  > <div align="center"> 
-  >  The first level of the game, includes a main quest line where players help a farmer chase dwarves away from his farm. To complete the quest, players must defeat enemies in the forest and ruins, talk to the dwarves, and retrieve ingredients to bake apple pie for them. There are also enemies to battle, chests hidden throughout the level that provide items to make combat easier, and shops where players can buy items to get stronger.
- > <br>
-  > <img src="https://user-images.githubusercontent.com/104200268/227773147-16f01469-d92c-4dd5-acf4-150a542f906f.png" width="90%" height="auto">
-  > </div>
-  > <br>
-
-</details>
 
 <details>
   <summary>Items, Inventory & Equipment</summary>
@@ -827,13 +798,13 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   > <div align="center"> 
   > Items are an essential part of the RPG game and can be collected by players in the game world and added to their inventory. There exist different types of items, including equipment, consumables, abilities, weapons, numbers, signs, quests, currency, and experience items. Some items are stackable, while others require a separate slot in the inventory. Players can drop and remove items from the inventory and pick them up again by clicking on them in the game world.
   > <br>
-  > <img src="https://user-images.githubusercontent.com/104200268/227773165-9d35752c-2f08-4d92-ab82-c4e7d3b60c9c.png" width="90%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227773165-9d35752c-2f08-4d92-ab82-c4e7d3b60c9c.png" width="50%" height="auto">
   > </div>
   > <br>
   > <div align="center"> 
   >  When hovering over an item, a tooltip appears showing details about the item, such as its name and description.
   > <br>
-  > <img src="https://user-images.githubusercontent.com/104200268/227770376-1bd74a0c-e1eb-49fa-aa4f-ba115ed9c0a5.png" width="60%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227770376-1bd74a0c-e1eb-49fa-aa4f-ba115ed9c0a5.png" width="50%" height="auto">
   > </div>
   > <br>
   > <div align="center"> 
@@ -845,19 +816,19 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   > <div align="center"> 
   >  Equipment items are used to describe items that the players can equip in a separate equipment window, as shown below. They represent different armor types, including helmets, chests, gloves, boots, and shields. Each armor type can only be equipped in a specific slot, indicated by a grayed-out image. The items can be equipped by dragging them from the inventory to the corresponding slot in the equipment window. In addition, weapon items can also be equipped in the Equipment window, but they are a separate item type as they have extra configuration options.
   > <br>
-  > <img src="https://user-images.githubusercontent.com/104200268/227773632-13ac5757-80d4-482c-8c00-0a187c97fb62.png" width="60%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227773632-13ac5757-80d4-482c-8c00-0a187c97fb62.png" width="50%" height="auto">
   > </div>
   > <br> 
   > <div align="center"> 
   > Items are implemented using scriptable objects, each of which has a name, a unique ID, a description, an icon, and a pickup. Also, for each item, its price in the store, its category, which is used to filter items in the store, whether it is stackable, its level and, if it has a bonus stat, what stat that is, its maximum value and its current value can be configured. In addition, there exist other configurations that depend on the type of item and are described in the corresponding section.
   > <br>
-  > <img src="https://user-images.githubusercontent.com/104200268/227782490-362ea03f-2107-456b-b195-65b74c05f1ae.PNG" width="60%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227782490-362ea03f-2107-456b-b195-65b74c05f1ae.PNG" width="70%" height="auto">
   > </div>
   > <br>
   > <div align="center"> 
   > Weapons are an important item type and are categorized into three types: unarmed, sword, and bow. The weapons are implemented using scriptable objects, which allow for customization of their range, damage, animation, and appearance. The animations are controlled by an animator override controller to maintain correct animations when changing weapons during runtime. Additionally, hit points can be set in the animations for more realistic combat behavior.
   > <br>
-  > <img src="https://user-images.githubusercontent.com/104200268/227783402-ae62c1aa-3ba2-4de1-a588-ec69baa010b7.PNG" width="60%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227783402-ae62c1aa-3ba2-4de1-a588-ec69baa010b7.PNG" width="70%" height="auto">
   > </div>
   > <br>
 
@@ -932,6 +903,37 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   
 </details>
 
+ <details>
+  <summary>Tutorial</summary>
+  <br>
+  
+  > <div align="center"> 
+  > The tutorial introduces various mechanics and features to players in a linear manner. It is implemented using an NPC that explains each feature to the players in a dialog and verifies their understanding through checkpoints. 
+ > The tutorial in a game starts with the players interacting with an NPC, who explains the movement and camera controls, basic combat, and HUD. The players must then open a chest, collect an item, and equip it to fight an enemy blocking the way to the next tutorial level. To reach the second level, the players must collect items and pass through a portal, which is explained to them.
+  > <img src="https://user-images.githubusercontent.com/104200268/227770307-db398f6f-c979-40eb-82f8-4371b3911c14.png" width="90%" height="auto">
+  > </div>
+  > <br>
+  > <div align="center"> 
+  >  In the second part of the game tutorial, players are introduced to abilities and the action bar, followed by a combat sequence where they can test their new abilities. An item dropped by an enemy is used to explain the players' stats, and a chest is opened to show how items are enhanced by bonus stats. Quests are then introduced, where players must collect diamonds from enemies to deepen their understanding of combat mechanics and quests. Completing the quest levels up the player, and trait points are explained. Shops are then introduced, followed by a lesson on how to pause and save the game.
+ > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/227770308-6e6f8038-4a5b-4b0e-a55b-abe1af29667d.png" width="90%" height="auto">
+  > </div>
+  > <br>
+</details>
+
+<details>
+  <summary>Level</summary>
+ <br>
+  
+  > <div align="center"> 
+  >  The first level of the game, includes a main quest line where players help a farmer chase dwarves away from his farm. To complete the quest, players must defeat enemies in the forest and ruins, talk to the dwarves, and retrieve ingredients to bake apple pie for them. There are also enemies to battle, chests hidden throughout the level that provide items to make combat easier, and shops where players can buy items to get stronger.
+ > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/227773147-16f01469-d92c-4dd5-acf4-150a542f906f.png" width="90%" height="auto">
+  > </div>
+  > <br>
+
+</details>
+ 
  <details>
   <summary>Thesis</summary>
  <br>
