@@ -738,7 +738,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
  > <div align="center"> 
   > Each enemy has its own base stats, a droptable and an AIController. There are various configuration options, such as chase distance, suspicion time, patrol path, aggro cooldown, and shout distance, which allow for dynamic behavior. Additionally, aggro groups can be defined to make nearby enemies attack when one is attacked. These features allow developers to easily create a large set of enemies with different behavior, making the game feel more natural.
  > <br>
-  > <img src="https://user-images.githubusercontent.com/104200268/227782446-ce732ad7-9e89-4f33-bd9d-aa1a6d338b1c.PNG" width="70" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227782446-ce732ad7-9e89-4f33-bd9d-aa1a6d338b1c.PNG" width="70%" height="auto">
   > </div>
 > <br>
  
