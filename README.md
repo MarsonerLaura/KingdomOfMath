@@ -732,13 +732,13 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
  
  > <div align="center"> 
   > An enemy is a character similar to the NPC, but with the difference that players can fight against it. In this game, there are different classes of enemies such as unarmed, soldiers, and archers, depending on the fighting style. This class also determines the basic stats of the enemy. There are also different enemy types such as skeletons, goblins, and guards, which currently only determine the appearance of the enemies, but not their stats.
-  > <img src="https://user-images.githubusercontent.com/104200268/227770721-d5af6a25-117b-4bcf-bbc9-f14638d5cdc3.PNG" width="90%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227770721-d5af6a25-117b-4bcf-bbc9-f14638d5cdc3.PNG" width="80%" height="auto">
   > </div>
   > <br>
  > <div align="center"> 
   > Each enemy has its own base stats, a droptable and an AIController. There are various configuration options, such as chase distance, suspicion time, patrol path, aggro cooldown, and shout distance, which allow for dynamic behavior. Additionally, aggro groups can be defined to make nearby enemies attack when one is attacked. These features allow developers to easily create a large set of enemies with different behavior, making the game feel more natural.
  > <br>
-  > <img src="https://user-images.githubusercontent.com/104200268/227782446-ce732ad7-9e89-4f33-bd9d-aa1a6d338b1c.PNG" width="90%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227782446-ce732ad7-9e89-4f33-bd9d-aa1a6d338b1c.PNG" width="70" height="auto">
   > </div>
 > <br>
  
