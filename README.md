@@ -772,18 +772,18 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
     
   > <div align="center"> 
   > Abilities are a key aspect of combat in the game, providing players with an additional attack option alongside normal attacks. Abilities can be activated by pressing the appropriate key, with some taking effect immediately, such as health potions, while others require the player to click on the ground where they want the ability to be cast. Abilities have mana costs and cooldowns, and consumables are removed from the inventory when used up.
-  > <img src="https://user-images.githubusercontent.com/104200268/227770296-7393e827-009d-40d3-8bf2-66c58208fe2a.png" width="70%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227770296-7393e827-009d-40d3-8bf2-66c58208fe2a.png" width="50%" height="auto">
   > </div>
   > <br>
   > <div align="center"> 
   >  These abilities can be equipped in the action bar, with the first four slots reserved for abilities and the last two for consumables like health potions.
-  > <img src="https://user-images.githubusercontent.com/104200268/227773065-0ac0cdaf-2a90-47f8-b20a-23169dcc175b.png" width="90%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227773065-0ac0cdaf-2a90-47f8-b20a-23169dcc175b.png" width="60%" height="auto">
   > </div>
   > <br>
   
   > <div align="center"> 
   > Abilities are implemented as scriptable objects with configuration options such as being consumable, equipment slot, cooldown, and mana cost. A targeting strategy, filtering strategy, and effect strategy must also be defined. The targeting strategy can be self-targeting, multiple-targeting, single-targeting, or directional-targeting. The filtering strategy specifies which characters to target and how to filter them. After setting the target, effects such as animations and particle effects are executed in the specified order.
-  > <img src="https://user-images.githubusercontent.com/104200268/227782438-9990bba2-73d9-488f-89f5-8ca20afa2ae3.PNG" width="90%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227782438-9990bba2-73d9-488f-89f5-8ca20afa2ae3.PNG" width="70%" height="auto">
   > </div>
   > <br>
 </details>
