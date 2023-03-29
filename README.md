@@ -749,8 +749,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   <br>
  
   > <div align="center"> 
-  >  When the players hover over a potential enemy, the cursor turns into a sword if they can fight it. After that, the players automatically attack until the enemy is dead, and move to the next enemy, which is randomly selected from the attacking enemies. 
- The automatic attack was implemented to make combat a bit easier, as the controls and camera are difficult to control at first, and the colliders of the enemies are quite small, so the players may click out of place, which can be frustrating. However, the players can also switch between enemies and run away by themselves and do not have to use automatic attacks, as they only serve as an aid
+  >  When the players hover over a potential enemy, the cursor turns into a sword if they can fight it. After that, the players automatically attack until the enemy is dead, and move to the next enemy, which is randomly selected from the attacking enemies. The automatic attack was implemented to make combat a bit easier, as the controls and camera are difficult to control at first, and the colliders of the enemies are quite small, so the players may click out of place, which can be frustrating. However, the players can also switch between enemies and run away by themselves and do not have to use automatic attacks, as they only serve as an aid
   > <img src="https://user-images.githubusercontent.com/104200268/227770574-cb417695-9541-4a4f-8e6f-ce76981e2da6.gif" width="80%" height="auto">
   > </div>
   > <br>
