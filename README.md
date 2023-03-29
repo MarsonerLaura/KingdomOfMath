@@ -733,9 +733,9 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
    
    ![Combat02 (1)](https://user-images.githubusercontent.com/104200268/227770300-7b7ad007-3772-4824-a9cb-df7fcbc2a674.png)
    
-   ![ezgif com-optimize](https://user-images.githubusercontent.com/104200268/227770574-cb417695-9541-4a4f-8e6f-ce76981e2da6.gif)
+
    
-   ![enemies](https://user-images.githubusercontent.com/104200268/227770721-d5af6a25-117b-4bcf-bbc9-f14638d5cdc3.PNG)
+  
    
    ![Actionbar (1)](https://user-images.githubusercontent.com/104200268/227773065-0ac0cdaf-2a90-47f8-b20a-23169dcc175b.png)
 
@@ -743,12 +743,30 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   
    ![abilityso](https://user-images.githubusercontent.com/104200268/227782438-9990bba2-73d9-488f-89f5-8ca20afa2ae3.PNG)
 
-   ![enemieconfig](https://user-images.githubusercontent.com/104200268/227782446-ce732ad7-9e89-4f33-bd9d-aa1a6d338b1c.PNG)
 
-   ![droptableso](https://user-images.githubusercontent.com/104200268/227782459-acca4fc9-8328-49c5-8588-ef98f6702e5a.PNG)
 
 </details>
-
+<details>
+  <summary>Tutorial</summary>
+  <br>
+    ![ezgif com-optimize](https://user-images.githubusercontent.com/104200268/227770574-cb417695-9541-4a4f-8e6f-ce76981e2da6.gif)
+     ![enemieconfig](https://user-images.githubusercontent.com/104200268/227782446-ce732ad7-9e89-4f33-bd9d-aa1a6d338b1c.PNG)
+ ![enemies](https://user-images.githubusercontent.com/104200268/227770721-d5af6a25-117b-4bcf-bbc9-f14638d5cdc3.PNG)
+   ![droptableso](https://user-images.githubusercontent.com/104200268/227782459-acca4fc9-8328-49c5-8588-ef98f6702e5a.PNG)
+  > <div align="center"> 
+  > The tutorial introduces various mechanics and features to players in a linear manner. It is implemented using an NPC that explains each feature to the players in a dialog and verifies their understanding through checkpoints. 
+ > The tutorial in a game starts with the players interacting with an NPC, who explains the movement and camera controls, basic combat, and HUD. The players must then open a chest, collect an item, and equip it to fight an enemy blocking the way to the next tutorial level. To reach the second level, the players must collect items and pass through a portal, which is explained to them.
+  > <img src="https://user-images.githubusercontent.com/104200268/227770307-db398f6f-c979-40eb-82f8-4371b3911c14.png" width="90%" height="auto">
+  > </div>
+  > <br>
+  > <div align="center"> 
+  >  In the second part of the game tutorial, players are introduced to abilities and the action bar, followed by a combat sequence where they can test their new abilities. An item dropped by an enemy is used to explain the players' stats, and a chest is opened to show how items are enhanced by bonus stats. Quests are then introduced, where players must collect diamonds from enemies to deepen their understanding of combat mechanics and quests. Completing the quest levels up the player, and trait points are explained. Shops are then introduced, followed by a lesson on how to pause and save the game.
+ > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/227770308-6e6f8038-4a5b-4b0e-a55b-abe1af29667d.png" width="90%" height="auto">
+  > </div>
+  > <br>
+ 
+</details>
 <details>
   <summary>Tutorial</summary>
   <br>
@@ -765,7 +783,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   > <img src="https://user-images.githubusercontent.com/104200268/227770308-6e6f8038-4a5b-4b0e-a55b-abe1af29667d.png" width="90%" height="auto">
   > </div>
   > <br>
- 
+ The text describes a game feature where players can fight against enemies with different classes and types, each having their own basic stats and appearance. The enemies have various configuration options, such as chase distance, suspicion time, patrol path, aggro cooldown, and shout distance, which allow for dynamic behavior. Additionally, aggro groups can be defined to make nearby enemies attack when one is attacked. These features allow developers to easily create a large set of enemies with different behavior, making the game feel more natural.
 </details>
 
 <details>
