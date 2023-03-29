@@ -860,21 +860,46 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 <details>
   <summary>Menu</summary>
+<br>
+  > <div align="center"> 
+  > The game has a main menu where players can continue a game, create a new game with a name, open a saved game, play the tutorial, or quit the game.
+ > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/227770545-a1086e54-4a32-4f67-aca6-2fe967083310.png" width="50%" height="auto">
+  > </div>
+  > <br>  
+ <br>
+  
+  > <div align="center"> 
+  >  The settings menu allows players to configure sound and quality settings.
+ > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/228370299-11aee5eb-5d0a-4963-a0bb-0d6d80bdf896.PNG" width="50%" height="auto">
+  > </div>
+  > <br>  
+ <br>
+  
+  > <div align="center"> 
+  > TODO
+ > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/228370229-e0d6bd59-3068-4ddb-9f0d-486bceb5e15d.PNG" width="50%" height="auto">
+  > </div>
+  > <br>  
+ <br>
+  
+  > <div align="center"> 
+  > TODO
+ > <br>
+  > <img src="hhttps://user-images.githubusercontent.com/104200268/228370253-86b38c17-2f6f-4566-9d82-d96892c1ed7b.PNG" width="50%" height="auto">
+  > </div>
+  > <br>  
+ <br>
+  
+  > <div align="center"> 
+  >  The game can be paused with the [P] key, which freezes time and opens a pause menu where players can save the game. 
+ > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/227770529-10d03e56-53cc-4d44-85d2-3c4264bc70d0.png" width="50%" height="auto">
+  > </div>
+  > <br>  
  
-![mainmenu](https://user-images.githubusercontent.com/104200268/228370267-889bcbcd-40ce-475b-a79f-2b02f120232f.PNG)
- 
- ![Settings](https://user-images.githubusercontent.com/104200268/228370299-11aee5eb-5d0a-4963-a0bb-0d6d80bdf896.PNG)
-
-
-   ![Main_Menu](https://user-images.githubusercontent.com/104200268/227770545-a1086e54-4a32-4f67-aca6-2fe967083310.png)
- 
- ![loadgame](https://user-images.githubusercontent.com/104200268/228370253-86b38c17-2f6f-4566-9d82-d96892c1ed7b.PNG)
-  The game can be paused with the [P] key, which freezes time and opens a pause menu where players can save the game. 
-
-   ![PauseMenue02](https://user-images.githubusercontent.com/104200268/227770529-10d03e56-53cc-4d44-85d2-3c4264bc70d0.png)
- 
- ![creategame](https://user-images.githubusercontent.com/104200268/228370229-e0d6bd59-3068-4ddb-9f0d-486bceb5e15d.PNG)
-
 </details>
  
  <details>
