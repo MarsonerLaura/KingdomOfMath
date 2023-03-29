@@ -776,6 +776,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   > </div>
   > <br>
   > <div align="center"> 
+  > <br>
   >  These abilities can be equipped in the action bar, with the first four slots reserved for abilities and the last two for consumables like health potions.
   > <img src="https://user-images.githubusercontent.com/104200268/227773065-0ac0cdaf-2a90-47f8-b20a-23169dcc175b.png" width="60%" height="auto">
   > </div>
