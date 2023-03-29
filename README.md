@@ -748,45 +748,24 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   <summary>Combat</summary>
   <br>
   
-   > <div align="center"> 
-  >  The text describes the combat mechanics in a game where players can fight against enemies. The players can hover their mouse cursor over a potential enemy, and if they can fight it, the cursor turns into a sword. Players can attack enemies by clicking on them with the left mouse button, and the automatic attack feature makes combat easier for players. When an opponent or player is hit, the damage value is displayed above their head. After the player's first attack, the enemy's life bar is displayed, and loot is spawned when an enemy dies. If players die, they respawn at a set point with 70 percent health, and the enemies they fought regenerate health and return to their starting position over time. Different sounds and animations are played for different character classes.
-  > <img src="https://user-images.githubusercontent.com/104200268/227770574-cb417695-9541-4a4f-8e6f-ce76981e2da6.gif" width="90%" height="auto">
-  > </div>
-  > <br>
-  
-
- 
   > <div align="center"> 
-  > 
+  >  
   > <img src="https://user-images.githubusercontent.com/104200268/227770574-cb417695-9541-4a4f-8e6f-ce76981e2da6.gif" width="90%" height="auto">
   > </div>
   > <br>
   > <div align="center"> 
   > 
-  > <img src="https://user-images.githubusercontent.com/104200268/227770574-cb417695-9541-4a4f-8e6f-ce76981e2da6.gif" width="90%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227770600-8bd23f67-29e6-4a71-b5c4-b9e46901845b.gif" width="90%" height="auto">
   > </div>
   > <br>
-   > <div align="center"> 
+  > <div align="center"> 
   > 
-  > <img src="https://user-images.githubusercontent.com/104200268/227770574-cb417695-9541-4a4f-8e6f-ce76981e2da6.gif" width="90%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227770300-7b7ad007-3772-4824-a9cb-df7fcbc2a674.png" width="90%" height="auto">
   > </div>
   > <br>
-  
-   
-   ![Combat02 (1)](https://user-images.githubusercontent.com/104200268/227770300-7b7ad007-3772-4824-a9cb-df7fcbc2a674.png)
-   
-
-    ![ezgif com-optimize](https://user-images.githubusercontent.com/104200268/227770574-cb417695-9541-4a4f-8e6f-ce76981e2da6.gif)
-  
  
-
-   ![image24](https://user-images.githubusercontent.com/104200268/227770600-8bd23f67-29e6-4a71-b5c4-b9e46901845b.gif)
-  
-   ![abilityso](https://user-images.githubusercontent.com/104200268/227782438-9990bba2-73d9-488f-89f5-8ca20afa2ae3.PNG)
-
-
-
 </details>
+ 
 <details>
   <summary>Abilities</summary>
   <br>
@@ -804,7 +783,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   
   > <div align="center"> 
   > Abilities are implemented as scriptable objects with configuration options such as being consumable, equipment slot, cooldown, and mana cost. A targeting strategy, filtering strategy, and effect strategy must also be defined. The targeting strategy can be self-targeting, multiple-targeting, single-targeting, or directional-targeting. The filtering strategy specifies which characters to target and how to filter them. After setting the target, effects such as animations and particle effects are executed in the specified order.
-  > <img src="https://user-images.githubusercontent.com/104200268/227770307-db398f6f-c979-40eb-82f8-4371b3911c14.png" width="90%" height="auto">
+  > <img src="https://user-images.githubusercontent.com/104200268/227782438-9990bba2-73d9-488f-89f5-8ca20afa2ae3.PNG" width="90%" height="auto">
   > </div>
   > <br>
 </details>
