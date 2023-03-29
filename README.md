@@ -835,7 +835,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
    ![Main_Menu](https://user-images.githubusercontent.com/104200268/227770545-a1086e54-4a32-4f67-aca6-2fe967083310.png)
  
  ![loadgame](https://user-images.githubusercontent.com/104200268/228370253-86b38c17-2f6f-4566-9d82-d96892c1ed7b.PNG)
-
+  The game can be paused with the [P] key, which freezes time and opens a pause menu where players can save the game. 
 
    ![PauseMenue02](https://user-images.githubusercontent.com/104200268/227770529-10d03e56-53cc-4d44-85d2-3c4264bc70d0.png)
  
@@ -845,12 +845,15 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
  
  <details>
   <summary>HUD</summary>
-  The game can be paused with the [P] key, which freezes time and opens a pause menu where players can save the game. 
- 
-   ![image21](https://user-images.githubusercontent.com/104200268/227770525-ef541b4f-d53b-4120-807c-01e16119342c.png)
- 
-
-
+  <br>
+  
+  > <div align="center"> 
+  >   The HUD is used to display various information to the players. It is static on the screen so that the information remains visible during the game. In this game, the HUD consists of the purse, which displays the player's current money in the lower left, the quest menu in the lower right, the action bar in the lower center, and the player status in the upper left. The player's status bar shows the player's icon, current and maximum Health, current and maximum Mana, and current level and the experience needed to level up.
+ > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/227770525-ef541b4f-d53b-4120-807c-01e16119342c.png" width="90%" height="auto">
+  > </div>
+  > <br>
+  
 </details>
 
 <details>
