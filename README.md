@@ -98,6 +98,7 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 <p>
 <h1>Additional Information</h1>
+<h2>Feature Descriptions and Code Snippets</h2>
 <details>
 
   <summary>Dialogues & Dialogue Editor</summary>
@@ -934,6 +935,8 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 </details>
  
+ <h2>Thesis</h2>
+ 
  <details>
   <summary>Thesis</summary>
  <br>
@@ -954,12 +957,27 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   > Serious games have shown promise as a tool to enhance the learning experience by generating higher intrinsic motivation than traditional learning methods. In this paper, a serious game called Kingdom of Math is developed that aims to teach mathematics to secondary school students using proven design principles. To this end, essential terms and concepts are described, and related work is analyzed. The requirements for such a serious game are outlined, and the approach and design decisions made are discussed and implemented. A user study is conducted to evaluate the developed game, and the results are presented and discussed. In addition, possible improvements and enhancements for this project in the future are suggested.
   > </div>
   > <br>
-> 
-   
-
-  
-
-
 </details>
  
+ <h2>Achievements</h2>
+  <details>
+  <summary>GG Bavaria</summary>
+ <br>
+  
+  > <div align="center"> 
+  >  I had the opportunity to present my game development project at the GGBavaria for the Technical University of Munich (TUM), and it was an amazing experience. As a game developer, being able to showcase my skills to peers in the same field was truly satisfying. The experience was a proud moment for me, and I am incredibly grateful for the opportunity to prove my expertise in game development and validate the quality of my work.
+  > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/230560252-f3f052cd-f08f-4424-9c79-19570d739329.jpg" width="70%" height="auto">
+  > </div>
+  > <br>
+</details>
+ <details>
+  <summary>TUM DemoDay</summary>
+ <br>
+  
+  > <div align="center"> 
+  >  I was really excited to present my game development project at Demo Day at TUM. It was an awesome chance to show off my skills and let people see what I'm capable of. Being selected to present at this event meant a lot to me and was a great recognition of my expertise in game development. It was really rewarding to see people have fun playing my game and getting feedback from them. This experience gave me the inspiration to keep creating cool and engaging games.
+  > </div>
+  > <br>
+</details>
 </p>
