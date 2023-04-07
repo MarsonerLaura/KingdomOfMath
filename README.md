@@ -935,6 +935,28 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
 
 </details>
  
+  <h2>Achievements</h2>
+  <details>
+  <summary>GG Bavaria</summary>
+ <br>
+  
+  > <div align="center"> 
+  >  I had the opportunity to present my game development project at the GGBavaria for the Technical University of Munich (TUM), and it was an amazing experience. As a game developer, being able to showcase my skills to peers in the same field was truly satisfying. The experience was a proud moment for me, and I am incredibly grateful for the opportunity to prove my expertise in game development and validate the quality of my work.
+  > <br>
+  > <img src="https://user-images.githubusercontent.com/104200268/230560252-f3f052cd-f08f-4424-9c79-19570d739329.jpg" width="70%" height="auto">
+  > </div>
+  > <br>
+</details>
+ <details>
+  <summary>TUM DemoDay</summary>
+ <br>
+  
+  > <div align="center"> 
+  >  I was really excited to present my game development project at Demo Day at TUM. It was an awesome chance to show off my skills and let people see what I'm capable of. Being selected to present at this event meant a lot to me and was a great recognition of my expertise in game development. It was really rewarding to see people have fun playing my game and getting feedback from them. This experience gave me the inspiration to keep creating cool and engaging games.
+  > </div>
+  > <br>
+</details>
+ 
  <h2>Thesis</h2>
  
  <details>
@@ -959,25 +981,5 @@ alt="Watch Trailer on YouTube" align="right" width="60%" height="auto" border="1
   > <br>
 </details>
  
- <h2>Achievements</h2>
-  <details>
-  <summary>GG Bavaria</summary>
- <br>
-  
-  > <div align="center"> 
-  >  I had the opportunity to present my game development project at the GGBavaria for the Technical University of Munich (TUM), and it was an amazing experience. As a game developer, being able to showcase my skills to peers in the same field was truly satisfying. The experience was a proud moment for me, and I am incredibly grateful for the opportunity to prove my expertise in game development and validate the quality of my work.
-  > <br>
-  > <img src="https://user-images.githubusercontent.com/104200268/230560252-f3f052cd-f08f-4424-9c79-19570d739329.jpg" width="70%" height="auto">
-  > </div>
-  > <br>
-</details>
- <details>
-  <summary>TUM DemoDay</summary>
- <br>
-  
-  > <div align="center"> 
-  >  I was really excited to present my game development project at Demo Day at TUM. It was an awesome chance to show off my skills and let people see what I'm capable of. Being selected to present at this event meant a lot to me and was a great recognition of my expertise in game development. It was really rewarding to see people have fun playing my game and getting feedback from them. This experience gave me the inspiration to keep creating cool and engaging games.
-  > </div>
-  > <br>
-</details>
+
 </p>
